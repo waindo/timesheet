@@ -1611,7 +1611,11 @@ return array(
     'Symfony\\Component\\Translation\\Writer\\TranslationWriter' => $vendorDir . '/symfony/translation/Symfony/Component/Translation/Writer/TranslationWriter.php',
     'System_SSH_Agent' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH_Agent.php',
     'System_SSH_Agent_Identity' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH_Agent.php',
+<<<<<<< HEAD
     'TPRJCT' => $baseDir . '/app/database/migrations/2014_04_30_045330_t_PRJCT.php',
+=======
+    'TUSERS' => $baseDir . '/app/database/migrations/2014_04_30_075629_t_USERS.php',
+>>>>>>> 98de059d4956b3c029c3511737b364367a1ac43a
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
