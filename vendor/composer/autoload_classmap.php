@@ -29,7 +29,11 @@ return array(
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
     'CreateTCodes' => $baseDir . '/app/database/migrations/2014_04_25_183527_create_t_Codes.php',
+<<<<<<< HEAD
     'CreateTKrywn' => $baseDir . '/app/database/migrations/2014_04_25_184226_create_t_Krywn.php',
+=======
+    'CreateTSHETD' => $baseDir . '/app/database/migrations/2014_04_25_184433_create_t_SHETD.php',
+>>>>>>> edc9419bd6b8c6628d797fc7174a0c382cfc4237
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
