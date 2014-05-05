@@ -14,6 +14,7 @@ return array(
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
+    'TCodesLoggs' => $baseDir . '/app/database/migrations/2014_05_02_024928_t_codes_loggs.php',
     'TPRJCT' => $baseDir . '/app/database/migrations/2014_04_30_045330_t_PRJCT.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
