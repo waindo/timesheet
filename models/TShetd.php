@@ -1,0 +1,1 @@
+<?php class TShetd extends Eloquent { }  ?>
