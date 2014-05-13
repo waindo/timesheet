@@ -13,5 +13,18 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('pages.home');
 });
+
+Route::get('formtimesheet', function()
+{
+ return View::make('pages.formtimesheet');
+});
+
+Route::get('contact', function()
+{
+	return View::make('pages.contact');
+});
+
+
+Route::post('tshetd/insert', 'TShetdController@store');
