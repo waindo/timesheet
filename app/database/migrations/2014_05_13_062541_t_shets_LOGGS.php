@@ -3,8 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTShets extends Migration {
-
+class TShetsLOGGS extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,13 +12,15 @@ class CreateTShets extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('t_SHETS', function($table){
+		Schema::create('t_shets_LOGGS', function($table){
          $table->tinyInteger('shetsIdent');
+		 $table->string('shetsParam',1);
          $table->string('shetsPrjct',50);
-         $table->string('staffEmail',50);
+         $table->string('shetsKrywn',50);
          $table->string('shetsUsrid',50);
       });
 	}
+	
 
 	/**
 	 * Reverse the migrations.
@@ -28,7 +29,7 @@ class CreateTShets extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('t_SHETS');
+		Schema::drop('t_shets_LOGGS');
 	}
 
 }

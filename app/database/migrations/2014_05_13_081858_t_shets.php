@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTSessi extends Migration {
+class TShets extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,11 @@ class CreateTSessi extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('t_sessi', function($table){
-         $table->increments('sessiUsrid');
-         $table->datetime('sessiRegis');
-         $table->datetime('sessiLast');
-         $table->timestamps();
+		Schema::create('t_shets', function($table){
+         $table->tinyInteger('shetsIdent');
+         $table->string('shetsPrjct',50);
+         $table->string('staffEmail',50);
+         $table->string('shetsUsrid',50);
       });
 	}
 
@@ -27,8 +27,7 @@ class CreateTSessi extends Migration {
 	 */
 	public function down()
 	{
-		 Schema::drop('t_sessi');
+		Schema::drop('t_shets');
 	}
 
-} 
-?>
+}
