@@ -18,6 +18,7 @@ class TPrjcs extends Migration {
          $table->tinyInteger('prjcsInsta');
          $table->string('prjcsYears',4);
          $table->string('prjcsUsrid',50);
+	 $table->string('prjcsUsrdt',50);
          $table->timestamps();
       });
 
