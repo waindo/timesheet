@@ -17,7 +17,7 @@ class CreateTKrywn extends Migration {
          $table->Char('krywnNames',100);
          $table->string('krywnTmlhr',100);
          $table->datetime('krywnTglhr');
-         $table->string('krywnJekel',20);
+         $table->string('krywnJnskl',20);
 	$table->tinyInteger('krywnAgama');
 	$table->string('krywnAlamat',1000);
 	$table->string('krywnNomhp',20);
