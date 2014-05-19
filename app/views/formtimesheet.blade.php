@@ -1,35 +1,33 @@
 @extends('layout')
 
 @section('content')
+@extends('layout')
+
+@section('content')
 
 <div class='container'>
 
-<h3>TAMBAH PROJECT</h3>
+<h3>Insert new book</h3>
 
  {{ Form::open()}}
 
- {{Form::label('instansi', 'Instansi') }}
- 
- 
+ {{Form::label('tanggal', 'Tanggal') }}
 
- {{Form::select('shetdinstansi', array('' => 'content1','content1' => 'Content2'),'Content2')}}</br>
+ {{Form::text('title', '', array('class' => 'form-control'))}}
 
+ {{Form::label('author', 'Author') }}
 
- {{Form::label('project', 'Project') }}
+ {{Form::text('author', '', array('class' => 'form-control'))}}
 
- {{Form::text('shetdproject', '', array('class' => 'form-control','placeholder' => 'project'))}}</br>
+ {{Form::label('kegiatan', 'Kegiatan') }}
 
- {{Form::label('tahun', 'Tahun') }}
+ {{Form::textarea('kegiatan', '', array('class' => 'form-control'))}}
 
- {{Form::text('shetdtahun', '', array('class' => 'form-control','placeholder' => 'tahun'))}}</br>
-
- 
-</br>
  {{Form::submit('Submit', array('class' => 'btn btn-primary')) }}
-  {{Form::submit('Cancel', array('class' => 'btn btn-primary')) }}
 
  {{ Form::close() }}
 
  </div>
 
  @stop
+@stop
