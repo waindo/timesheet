@@ -34,8 +34,13 @@
  {{Form::select('shetdagama', array('' => 'islam','Islam' => 'kristen'),'Kristen')}}</br>
 
  {{Form::label('hp', 'No hp') }}
-
  {{Form::text('shetdhp', '', array('class' => 'form-control','placeholder' => 'hp'))}}</br>
+{{Form::label('tahunmasuk', 'Tahun Masuk') }}
+ {{Form::text('shettahunmasuk', '', array('class' => 'form-control','placeholder' => 'tahunmasuk'))}}</br>
+{{Form::label('divisi', 'Divisi') }}
+ {{Form::select('shetdivisi', array('' => 'IT','it' => 'GIS'),'gis')}}</br>
+{{Form::label('jabatan', 'Jabatan') }}
+ {{Form::select('shetjabatan', array('' => 'Manager','manager' => 'Karyawan'),'karyawan')}}</br>
 
  
  
