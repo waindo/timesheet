@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'timesheet',
+			'database'  => 'time_sheet',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

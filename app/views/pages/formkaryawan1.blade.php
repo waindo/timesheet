@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.defaultkaryawan')
 
 @section('content')
 
@@ -29,24 +29,27 @@
  {{Form::label('Pria', 'Pria') }}
  {{Form::radio('shetdPria', '', array('class' => 'form-control','placeholder' => 'Pria'))}}
  {{Form::label('Wanita', 'Wanita') }}
- {{Form::radio('shetdWanita', '', array('class' => 'form-control','placeholder' => 'Wanita'))}}</br>
- {{Form::label('agama', 'Agama') }}
- {{Form::select('shetdagama', array('' => 'islam','Islam' => 'kristen'),'Kristen')}}</br>
+ {{Form::radio('shetdWanita', '', array('class' => 'form-control','placeholder' => 'Wanita'))}}</br></br>
+ 
+ {{Form::label('agama', 'Agama') }} </br>
+ {{Form::select('shetdagama', array('' => 'islam','Islam' => 'kristen'),'Kristen')}}</br> </br>
 
- {{Form::label('hp', 'No hp') }}
+ {{Form::label('hp', 'No hp') }} </br>
  {{Form::text('shetdhp', '', array('class' => 'form-control','placeholder' => 'hp'))}}</br>
-{{Form::label('tahunmasuk', 'Tahun Masuk') }}
+ 
+{{Form::label('tahunmasuk', 'Tahun Masuk') }} </br>
  {{Form::text('shettahunmasuk', '', array('class' => 'form-control','placeholder' => 'tahunmasuk'))}}</br>
-{{Form::label('divisi', 'Divisi') }}
- {{Form::select('shetdivisi', array('' => 'IT','it' => 'GIS'),'gis')}}</br>
-{{Form::label('jabatan', 'Jabatan') }}
+ 
+{{Form::label('divisi', 'Divisi') }} </br>
+ {{Form::select('shetdivisi', array('' => 'IT','it' => 'GIS'),'gis')}}</br></br>
+ 
+{{Form::label('jabatan', 'Jabatan') }} </br>
  {{Form::select('shetjabatan', array('' => 'Manager','manager' => 'Karyawan'),'karyawan')}}</br>
 
  
- 
 </br>
  {{Form::submit('Submit', array('class' => 'btn btn-primary')) }}
-  {{Form::submit('Cancel', array('class' => 'btn btn-primary')) }}
+  {{Form::submit('Cancel', array('class' => 'btn btn-primary')) }} 
 
  {{ Form::close() }}
 
