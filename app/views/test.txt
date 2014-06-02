@@ -1,1 +1,1 @@
-coba itu adalah test
+coba file test di awal bulan juni 2014 untuk mempertajam teknik seputar git
