@@ -14,7 +14,7 @@ class tsheet extends Migration {
 	{
 		Schema::create('t_SHEET', function($table){
          $table->tinyInteger('sheetIdent');
-         $table->string('shetsPrjct',50);
+         $table->string('sheetPrjct',50);
          $table->string('sheetKrywn',50);
          $table->string('codesUsrid',50);
       });

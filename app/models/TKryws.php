@@ -1,0 +1,1 @@
+<?php class TKryws extends Eloquent { }  ?>

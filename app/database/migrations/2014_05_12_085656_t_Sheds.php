@@ -15,6 +15,7 @@ class TSheds extends Migration {
 		Schema::create('t_Sheds', function($table){
          $table->increments('shedsIdent');
          $table->integer('shedsSquan');
+		 $table->datetime('shedsTnggl');
          $table->string('shedsKgtan',1000);
          $table->string('shedsStatsn',50);
          $table->string('shedsUsrid',50);
