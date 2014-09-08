@@ -27,11 +27,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 class TokenBasedRememberMeServices extends AbstractRememberMeServices
 {
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function processAutoLoginCookie(array $cookieParts, Request $request)
     {
@@ -77,11 +73,7 @@ class TokenBasedRememberMeServices extends AbstractRememberMeServices
      * @param string $hash1 The first hash
      * @param string $hash2 The second hash
      *
-<<<<<<< HEAD
      * @return bool    true if the two hashes are the same, false otherwise
-=======
-     * @return Boolean true if the two hashes are the same, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function compareHashes($hash1, $hash2)
     {
@@ -98,11 +90,7 @@ class TokenBasedRememberMeServices extends AbstractRememberMeServices
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function onLoginSuccess(Request $request, Response $response, TokenInterface $token)
     {
@@ -128,11 +116,7 @@ class TokenBasedRememberMeServices extends AbstractRememberMeServices
      *
      * @param string  $class
      * @param string  $username The username
-<<<<<<< HEAD
      * @param int     $expires  The Unix timestamp when the cookie expires
-=======
-     * @param integer $expires  The Unix timestamp when the cookie expires
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $password The encoded password
      *
      * @throws \RuntimeException if username contains invalid chars
@@ -154,11 +138,7 @@ class TokenBasedRememberMeServices extends AbstractRememberMeServices
      *
      * @param string  $class
      * @param string  $username The username
-<<<<<<< HEAD
      * @param int     $expires  The Unix timestamp when the cookie expires
-=======
-     * @param integer $expires  The Unix timestamp when the cookie expires
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $password The encoded password
      *
      * @throws \RuntimeException when the private key is empty

@@ -143,11 +143,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if the debug is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if debug is enabled, false otherwise
-=======
-     * @return Boolean true if debug is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isDebug()
     {
@@ -157,11 +153,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if the XDebug is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if XDebug is enabled, false otherwise
-=======
-     * @return Boolean true if XDebug is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasXDebug()
     {
@@ -171,11 +163,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if EAccelerator is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if EAccelerator is enabled, false otherwise
-=======
-     * @return Boolean true if EAccelerator is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasEAccelerator()
     {
@@ -185,11 +173,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if APC is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if APC is enabled, false otherwise
-=======
-     * @return Boolean true if APC is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasApc()
     {
@@ -199,11 +183,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if Zend OPcache is enabled
      *
-<<<<<<< HEAD
      * @return bool    true if Zend OPcache is enabled, false otherwise
-=======
-     * @return Boolean true if Zend OPcache is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasZendOpcache()
     {
@@ -213,11 +193,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if XCache is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if XCache is enabled, false otherwise
-=======
-     * @return Boolean true if XCache is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasXCache()
     {
@@ -227,11 +203,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if WinCache is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if WinCache is enabled, false otherwise
-=======
-     * @return Boolean true if WinCache is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasWinCache()
     {
@@ -241,11 +213,7 @@ class ConfigDataCollector extends DataCollector
     /**
      * Returns true if any accelerator is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if any accelerator is enabled, false otherwise
-=======
-     * @return Boolean true if any accelerator is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasAccelerator()
     {

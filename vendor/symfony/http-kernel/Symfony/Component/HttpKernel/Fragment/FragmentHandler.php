@@ -45,11 +45,7 @@ class FragmentHandler
      * RequestStack will become required in 3.0.
      *
      * @param FragmentRendererInterface[] $renderers    An array of FragmentRendererInterface instances
-<<<<<<< HEAD
      * @param bool                        $debug        Whether the debug mode is enabled or not
-=======
-     * @param Boolean                     $debug        Whether the debug mode is enabled or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param RequestStack|null           $requestStack The Request stack that controls the lifecycle of requests
      */
     public function __construct(array $renderers = array(), $debug = false, RequestStack $requestStack = null)

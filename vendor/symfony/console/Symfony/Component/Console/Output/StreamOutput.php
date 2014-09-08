@@ -36,13 +36,8 @@ class StreamOutput extends Output
      * Constructor.
      *
      * @param mixed                         $stream    A stream resource
-<<<<<<< HEAD
      * @param int                           $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
      * @param bool|null                     $decorated Whether to decorate messages (null for auto-guessing)
-=======
-     * @param integer                       $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
-     * @param Boolean|null                  $decorated Whether to decorate messages (null for auto-guessing)
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param OutputFormatterInterface|null $formatter Output formatter instance (null to use default OutputFormatter)
      *
      * @throws \InvalidArgumentException When first argument is not a real stream
@@ -97,11 +92,7 @@ class StreamOutput extends Output
      *  -  Windows without Ansicon and ConEmu
      *  -  non tty consoles
      *
-<<<<<<< HEAD
      * @return bool    true if the stream supports colorization, false otherwise
-=======
-     * @return Boolean true if the stream supports colorization, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function hasColorSupport()
     {

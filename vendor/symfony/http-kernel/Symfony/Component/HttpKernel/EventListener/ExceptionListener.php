@@ -83,11 +83,7 @@ class ExceptionListener implements EventSubscriberInterface
      *
      * @param \Exception $exception The original \Exception instance
      * @param string     $message   The error message to log
-<<<<<<< HEAD
      * @param bool       $original  False when the handling of the exception thrown another exception
-=======
-     * @param Boolean    $original  False when the handling of the exception thrown another exception
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function logException(\Exception $exception, $message, $original = true)
     {

@@ -36,11 +36,7 @@ class InputOption
      *
      * @param string       $name        The option name
      * @param string|array $shortcut    The shortcuts, can be null, a string of shortcuts delimited by | or an array of shortcuts
-<<<<<<< HEAD
      * @param int          $mode        The option mode: One of the VALUE_* constants
-=======
-     * @param integer      $mode        The option mode: One of the VALUE_* constants
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string       $description A description text
      * @param mixed        $default     The default value (must be null for self::VALUE_REQUIRED or self::VALUE_NONE)
      *
@@ -116,11 +112,7 @@ class InputOption
     /**
      * Returns true if the option accepts a value.
      *
-<<<<<<< HEAD
      * @return bool    true if value mode is not self::VALUE_NONE, false otherwise
-=======
-     * @return Boolean true if value mode is not self::VALUE_NONE, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function acceptValue()
     {
@@ -130,11 +122,7 @@ class InputOption
     /**
      * Returns true if the option requires a value.
      *
-<<<<<<< HEAD
      * @return bool    true if value mode is self::VALUE_REQUIRED, false otherwise
-=======
-     * @return Boolean true if value mode is self::VALUE_REQUIRED, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isValueRequired()
     {
@@ -144,11 +132,7 @@ class InputOption
     /**
      * Returns true if the option takes an optional value.
      *
-<<<<<<< HEAD
      * @return bool    true if value mode is self::VALUE_OPTIONAL, false otherwise
-=======
-     * @return Boolean true if value mode is self::VALUE_OPTIONAL, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isValueOptional()
     {
@@ -158,11 +142,7 @@ class InputOption
     /**
      * Returns true if the option can take multiple values.
      *
-<<<<<<< HEAD
      * @return bool    true if mode is self::VALUE_IS_ARRAY, false otherwise
-=======
-     * @return Boolean true if mode is self::VALUE_IS_ARRAY, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isArray()
     {
@@ -217,11 +197,7 @@ class InputOption
      * Checks whether the given option equals this one
      *
      * @param InputOption $option option to compare
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function equals(InputOption $option)
     {

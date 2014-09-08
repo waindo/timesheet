@@ -25,11 +25,7 @@ interface RequestMatcherInterface
      *
      * @param Request $request The request to check for a match
      *
-<<<<<<< HEAD
      * @return bool    true if the request matches, false otherwise
-=======
-     * @return Boolean true if the request matches, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

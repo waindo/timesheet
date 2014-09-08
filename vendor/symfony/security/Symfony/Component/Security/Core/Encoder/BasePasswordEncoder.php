@@ -79,11 +79,7 @@ abstract class BasePasswordEncoder implements PasswordEncoderInterface
      * @param string $password1 The first password
      * @param string $password2 The second password
      *
-<<<<<<< HEAD
      * @return bool    true if the two passwords are the same, false otherwise
-=======
-     * @return Boolean true if the two passwords are the same, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function comparePasswords($password1, $password2)
     {
@@ -93,11 +89,7 @@ abstract class BasePasswordEncoder implements PasswordEncoderInterface
     /**
      * Checks if the password is too long.
      *
-<<<<<<< HEAD
      * @return bool    true if the password is too long, false otherwise
-=======
-     * @return Boolean true if the password is too long, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function isPasswordTooLong($password)
     {

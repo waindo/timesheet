@@ -30,26 +30,16 @@ class PushoverHandler extends SocketHandler
 
     private $highPriorityLevel;
     private $emergencyLevel;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     /**
      * Sounds the api supports by default
      * @see https://pushover.net/api#sounds
      * @var array
      */
     private $sounds = array(
-<<<<<<< HEAD
         'pushover', 'bike', 'bugle', 'cashregister', 'classical', 'cosmic', 'falling', 'gamelan', 'incoming',
         'intermission', 'magic', 'mechanical', 'pianobar', 'siren', 'spacealarm', 'tugboat', 'alien', 'climb',
         'persistent', 'echo', 'updown', 'none',
-=======
-    	'pushover', 'bike', 'bugle', 'cashregister', 'classical', 'cosmic', 'falling', 'gamelan', 'incoming',
-    	'intermission', 'magic', 'mechanical', 'pianobar', 'siren', 'spacealarm', 'tugboat', 'alien', 'climb',
-    	'persistent', 'echo', 'updown', 'none',
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     );
 
     /**
@@ -110,11 +100,7 @@ class PushoverHandler extends SocketHandler
         } elseif ($record['level'] >= $this->highPriorityLevel) {
             $dataArray['priority'] = 1;
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         if (isset($record['context']['sound']) && in_array($record['context']['sound'], $this->sounds)) {
             $dataArray['sound'] = $record['context']['sound'];
         } elseif (isset($record['extra']['sound']) && in_array($record['extra']['sound'], $this->sounds)) {

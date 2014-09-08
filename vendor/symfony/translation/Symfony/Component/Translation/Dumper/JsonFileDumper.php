@@ -25,11 +25,7 @@ if (!defined('JSON_PRETTY_PRINT')) {
 class JsonFileDumper extends FileDumper
 {
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function format(MessageCatalogue $messages, $domain = 'messages')
     {
@@ -37,11 +33,7 @@ class JsonFileDumper extends FileDumper
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function getExtension()
     {

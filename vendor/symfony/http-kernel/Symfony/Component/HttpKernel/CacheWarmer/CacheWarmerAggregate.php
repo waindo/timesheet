@@ -52,11 +52,7 @@ class CacheWarmerAggregate implements CacheWarmerInterface
     /**
      * Checks whether this warmer is optional or not.
      *
-<<<<<<< HEAD
      * @return bool    always true
-=======
-     * @return Boolean always true
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isOptional()
     {

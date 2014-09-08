@@ -28,11 +28,7 @@ interface SessionStorageInterface
      *
      * @throws \RuntimeException If something goes wrong starting the session.
      *
-<<<<<<< HEAD
      * @return bool    True if started.
-=======
-     * @return boolean True if started.
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -41,11 +37,7 @@ interface SessionStorageInterface
     /**
      * Checks if the session is started.
      *
-<<<<<<< HEAD
      * @return bool    True if started, false otherwise.
-=======
-     * @return boolean True if started, false otherwise.
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isStarted();
 
@@ -96,22 +88,13 @@ interface SessionStorageInterface
      * Note regenerate+destroy should not clear the session data in memory
      * only delete the session data from persistent storage.
      *
-<<<<<<< HEAD
      * @param bool    $destroy  Destroy session when regenerating?
      * @param int     $lifetime Sets the cookie lifetime for the session cookie. A null value
-=======
-     * @param Boolean $destroy  Destroy session when regenerating?
-     * @param integer $lifetime Sets the cookie lifetime for the session cookie. A null value
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                          will leave the system settings unchanged, 0 sets the cookie
      *                          to expire with browser session. Time is in seconds, and is
      *                          not a Unix timestamp.
      *
-<<<<<<< HEAD
      * @return bool    True if session regenerated, false if error
-=======
-     * @return Boolean True if session regenerated, false if error
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \RuntimeException If an error occurs while regenerating this storage
      *

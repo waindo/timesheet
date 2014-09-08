@@ -30,11 +30,7 @@ class Filesystem
      *
      * @param string  $originFile The original filename
      * @param string  $targetFile The target filename
-<<<<<<< HEAD
      * @param bool    $override   Whether to override an existing file or not
-=======
-     * @param boolean $override   Whether to override an existing file or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws FileNotFoundException    When originFile doesn't exist
      * @throws IOException              When copy fails
@@ -72,11 +68,7 @@ class Filesystem
      * Creates a directory recursively.
      *
      * @param string|array|\Traversable $dirs The directory path
-<<<<<<< HEAD
      * @param int                       $mode The directory mode
-=======
-     * @param integer                   $mode The directory mode
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException On any directory creation failure
      */
@@ -98,11 +90,7 @@ class Filesystem
      *
      * @param string|array|\Traversable $files A filename, an array of files, or a \Traversable instance to check
      *
-<<<<<<< HEAD
      * @return bool    true if the file exists, false otherwise
-=======
-     * @return Boolean true if the file exists, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function exists($files)
     {
@@ -119,13 +107,8 @@ class Filesystem
      * Sets access and modification time of file.
      *
      * @param string|array|\Traversable $files A filename, an array of files, or a \Traversable instance to create
-<<<<<<< HEAD
      * @param int                       $time  The touch time as a Unix timestamp
      * @param int                       $atime The access time as a Unix timestamp
-=======
-     * @param integer                   $time  The touch time as a Unix timestamp
-     * @param integer                   $atime The access time as a Unix timestamp
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException When touch fails
      */
@@ -180,15 +163,9 @@ class Filesystem
      * Change mode for an array of files or directories.
      *
      * @param string|array|\Traversable $files     A filename, an array of files, or a \Traversable instance to change mode
-<<<<<<< HEAD
      * @param int                       $mode      The new mode (octal)
      * @param int                       $umask     The mode mask (octal)
      * @param bool                      $recursive Whether change the mod recursively or not
-=======
-     * @param integer                   $mode      The new mode (octal)
-     * @param integer                   $umask     The mode mask (octal)
-     * @param Boolean                   $recursive Whether change the mod recursively or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException When the change fail
      */
@@ -209,11 +186,7 @@ class Filesystem
      *
      * @param string|array|\Traversable $files     A filename, an array of files, or a \Traversable instance to change owner
      * @param string                    $user      The new owner user name
-<<<<<<< HEAD
      * @param bool                      $recursive Whether change the owner recursively or not
-=======
-     * @param Boolean                   $recursive Whether change the owner recursively or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException When the change fail
      */
@@ -240,11 +213,7 @@ class Filesystem
      *
      * @param string|array|\Traversable $files     A filename, an array of files, or a \Traversable instance to change group
      * @param string                    $group     The group name
-<<<<<<< HEAD
      * @param bool                      $recursive Whether change the group recursively or not
-=======
-     * @param Boolean                   $recursive Whether change the group recursively or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException When the change fail
      */
@@ -271,11 +240,7 @@ class Filesystem
      *
      * @param string  $origin    The origin filename or directory
      * @param string  $target    The new filename or directory
-<<<<<<< HEAD
      * @param bool    $overwrite Whether to overwrite the target if it already exists
-=======
-     * @param Boolean $overwrite Whether to overwrite the target if it already exists
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException When target file or directory already exists
      * @throws IOException When origin cannot be renamed
@@ -297,11 +262,7 @@ class Filesystem
      *
      * @param string  $originDir     The origin directory path
      * @param string  $targetDir     The symbolic link name
-<<<<<<< HEAD
      * @param bool    $copyOnWindows Whether to copy files if on Windows
-=======
-     * @param Boolean $copyOnWindows Whether to copy files if on Windows
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws IOException When symlink fails
      */
@@ -452,11 +413,7 @@ class Filesystem
      *
      * @param string $file A file path
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAbsolutePath($file)
     {
@@ -478,11 +435,7 @@ class Filesystem
      *
      * @param  string       $filename The file to be written to.
      * @param  string       $content  The data to write into the file.
-<<<<<<< HEAD
      * @param  null|int     $mode     The file mode (octal). If null, file permissions are not modified
-=======
-     * @param  null|integer $mode     The file mode (octal). If null, file permissions are not modified
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                                Deprecated since version 2.3.12, to be removed in 3.0.
      * @throws IOException            If the file cannot be written to.
      */

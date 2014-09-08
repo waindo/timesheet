@@ -281,11 +281,7 @@ class Command
      * Insert a string or a Command instance before the bit at given position $index (index starts from 0).
      *
      * @param string|Command $bit
-<<<<<<< HEAD
      * @param int            $index
-=======
-     * @param integer        $index
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Command The current Command instance
      */

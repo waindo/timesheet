@@ -19,11 +19,7 @@ class RecursiveDirectoryIteratorTest extends IteratorTestCase
      * @dataProvider getPaths
      *
      * @param string  $path
-<<<<<<< HEAD
      * @param bool    $seekable
-=======
-     * @param Boolean $seekable
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $contains
      * @param string  $message
      */
@@ -44,11 +40,7 @@ class RecursiveDirectoryIteratorTest extends IteratorTestCase
      * @dataProvider getPaths
      *
      * @param string  $path
-<<<<<<< HEAD
      * @param bool    $seekable
-=======
-     * @param Boolean $seekable
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $contains
      * @param string  $message
      */

@@ -58,11 +58,7 @@ interface StoreInterface
      *
      * @param Request $request A Request instance
      *
-<<<<<<< HEAD
      * @return bool|string    true if the lock is acquired, the path to the current lock otherwise
-=======
-     * @return Boolean|string true if the lock is acquired, the path to the current lock otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function lock(Request $request);
 
@@ -71,11 +67,7 @@ interface StoreInterface
      *
      * @param Request $request A Request instance
      *
-<<<<<<< HEAD
      * @return bool    False if the lock file does not exist or cannot be unlocked, true otherwise
-=======
-     * @return Boolean False if the lock file does not exist or cannot be unlocked, true otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function unlock(Request $request);
 
@@ -84,11 +76,7 @@ interface StoreInterface
      *
      * @param Request $request A Request instance
      *
-<<<<<<< HEAD
      * @return bool    true if lock exists, false otherwise
-=======
-     * @return Boolean true if lock exists, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isLocked(Request $request);
 
@@ -97,11 +85,7 @@ interface StoreInterface
      *
      * @param string $url A URL
      *
-<<<<<<< HEAD
      * @return bool    true if the URL exists and has been purged, false otherwise
-=======
-     * @return Boolean true if the URL exists and has been purged, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function purge($url);
 

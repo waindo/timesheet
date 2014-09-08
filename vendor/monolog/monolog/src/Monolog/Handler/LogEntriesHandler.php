@@ -12,10 +12,6 @@
 namespace Monolog\Handler;
 
 use Monolog\Logger;
-<<<<<<< HEAD
-=======
-use Monolog\Formatter\LineFormatter;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
 /**
  * @author Robert Kaufmann III <rok3@rok3.me>
@@ -58,8 +54,4 @@ class LogEntriesHandler extends SocketHandler
         return $this->logToken . ' ' . $record['formatted'];
     }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887

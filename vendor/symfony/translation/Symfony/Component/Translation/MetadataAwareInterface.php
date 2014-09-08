@@ -25,13 +25,8 @@ interface MetadataAwareInterface
      * domain and then by key. Passing an empty key will return an array with all
      * metadata for the given domain.
      *
-<<<<<<< HEAD
      * @param string $key    The key
      * @param string $domain The domain name
-=======
-     * @param string $domain The domain name
-     * @param string $key    The key
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return mixed The value that was set or an array with the domains/keys or null
      */
@@ -52,13 +47,8 @@ interface MetadataAwareInterface
      * Passing an empty domain will delete all metadata. Passing an empty key will
      * delete all metadata for the given domain.
      *
-<<<<<<< HEAD
      * @param string $key    The key
      * @param string $domain The domain name
-=======
-     * @param string $domain The domain name
-     * @param string $key    The key
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function deleteMetadata($key = '', $domain = 'messages');
 }

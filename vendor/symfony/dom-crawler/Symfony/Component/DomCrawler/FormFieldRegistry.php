@@ -99,11 +99,7 @@ class FormFieldRegistry
      *
      * @param string $name The fully qualified name of the field
      *
-<<<<<<< HEAD
      * @return bool    Whether the form has the given field
-=======
-     * @return Boolean Whether the form has the given field
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function has($name)
     {

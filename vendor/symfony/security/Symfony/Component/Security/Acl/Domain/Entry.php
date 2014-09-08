@@ -34,7 +34,6 @@ class Entry implements AuditableEntryInterface
     /**
      * Constructor
      *
-<<<<<<< HEAD
      * @param int                       $id
      * @param AclInterface              $acl
      * @param SecurityIdentityInterface $sid
@@ -43,16 +42,6 @@ class Entry implements AuditableEntryInterface
      * @param bool                      $granting
      * @param bool                      $auditFailure
      * @param bool                      $auditSuccess
-=======
-     * @param integer                   $id
-     * @param AclInterface              $acl
-     * @param SecurityIdentityInterface $sid
-     * @param string                    $strategy
-     * @param integer                   $mask
-     * @param Boolean                   $granting
-     * @param Boolean                   $auditFailure
-     * @param Boolean                   $auditSuccess
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __construct($id, AclInterface $acl, SecurityIdentityInterface $sid, $strategy, $mask, $granting, $auditFailure, $auditSuccess)
     {
@@ -67,11 +56,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getAcl()
     {
@@ -79,11 +64,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getMask()
     {
@@ -91,11 +72,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getId()
     {
@@ -103,11 +80,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getSecurityIdentity()
     {
@@ -115,11 +88,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getStrategy()
     {
@@ -127,11 +96,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAuditFailure()
     {
@@ -139,11 +104,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAuditSuccess()
     {
@@ -151,11 +112,7 @@ class Entry implements AuditableEntryInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isGranting()
     {
@@ -168,11 +125,7 @@ class Entry implements AuditableEntryInterface
      * Do never call this method directly. Use the respective methods on the
      * AclInterface instead.
      *
-<<<<<<< HEAD
      * @param bool    $boolean
-=======
-     * @param Boolean $boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setAuditFailure($boolean)
     {
@@ -185,11 +138,7 @@ class Entry implements AuditableEntryInterface
      * Do never call this method directly. Use the respective methods on the
      * AclInterface instead.
      *
-<<<<<<< HEAD
      * @param bool    $boolean
-=======
-     * @param Boolean $boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setAuditSuccess($boolean)
     {
@@ -202,11 +151,7 @@ class Entry implements AuditableEntryInterface
      * Do never call this method directly. Use the respective methods on the
      * AclInterface instead.
      *
-<<<<<<< HEAD
      * @param int     $mask
-=======
-     * @param integer $mask
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setMask($mask)
     {

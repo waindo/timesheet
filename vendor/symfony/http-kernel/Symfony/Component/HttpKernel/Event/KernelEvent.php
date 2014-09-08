@@ -39,11 +39,7 @@ class KernelEvent extends Event
     /**
      * The request type the kernel is currently processing.  One of
      * HttpKernelInterface::MASTER_REQUEST and HttpKernelInterface::SUB_REQUEST
-<<<<<<< HEAD
      * @var int
-=======
-     * @var integer
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $requestType;
 
@@ -81,11 +77,7 @@ class KernelEvent extends Event
     /**
      * Returns the request type the kernel is currently processing
      *
-<<<<<<< HEAD
      * @return int      One of HttpKernelInterface::MASTER_REQUEST and
-=======
-     * @return integer  One of HttpKernelInterface::MASTER_REQUEST and
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                  HttpKernelInterface::SUB_REQUEST
      *
      * @api
@@ -98,11 +90,7 @@ class KernelEvent extends Event
     /**
      * Checks if this is a master request.
      *
-<<<<<<< HEAD
      * @return bool    True if the request is a master request
-=======
-     * @return Boolean True if the request is a master request
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

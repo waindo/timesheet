@@ -72,11 +72,7 @@ class MaskBuilder
     /**
      * Constructor
      *
-<<<<<<< HEAD
      * @param int     $mask optional; defaults to 0
-=======
-     * @param integer $mask optional; defaults to 0
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException
      */
@@ -114,11 +110,7 @@ class MaskBuilder
     /**
      * Returns the mask of this permission
      *
-<<<<<<< HEAD
      * @return int
-=======
-     * @return integer
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function get()
     {
@@ -186,11 +178,7 @@ class MaskBuilder
     /**
      * Returns the code for the passed mask
      *
-<<<<<<< HEAD
      * @param int     $mask
-=======
-     * @param integer $mask
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
      * @return string

@@ -21,22 +21,14 @@ interface AuditableEntryInterface extends EntryInterface
     /**
      * Whether auditing for successful grants is turned on
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAuditFailure();
 
     /**
      * Whether auditing for successful denies is turned on
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAuditSuccess();
 }

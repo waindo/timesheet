@@ -65,11 +65,7 @@ class NullSessionHandler implements \SessionHandlerInterface
     /**
      * {@inheritdoc}
      */
-<<<<<<< HEAD
     public function gc($maxlifetime)
-=======
-    public function gc($lifetime)
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     {
         return true;
     }

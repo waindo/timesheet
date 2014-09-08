@@ -39,11 +39,7 @@ class ValueExporter
         }
 
         if (is_resource($value)) {
-<<<<<<< HEAD
             return sprintf('Resource(%s#%d)', get_resource_type($value), $value);
-=======
-            return sprintf('Resource(%s)', get_resource_type($value));
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         if (null === $value) {

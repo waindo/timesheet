@@ -61,11 +61,7 @@ class GetResponseEvent extends KernelEvent
     /**
      * Returns whether a response was set
      *
-<<<<<<< HEAD
      * @return bool    Whether a response was set
-=======
-     * @return Boolean Whether a response was set
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

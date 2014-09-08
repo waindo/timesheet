@@ -99,11 +99,7 @@ class Application
      * @param InputInterface  $input  An Input instance
      * @param OutputInterface $output An Output instance
      *
-<<<<<<< HEAD
      * @return int     0 if everything went fine, or an error code
-=======
-     * @return integer 0 if everything went fine, or an error code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \Exception When doRun returns Exception
      *
@@ -163,11 +159,7 @@ class Application
      * @param InputInterface  $input  An Input instance
      * @param OutputInterface $output An Output instance
      *
-<<<<<<< HEAD
      * @return int     0 if everything went fine, or an error code
-=======
-     * @return integer 0 if everything went fine, or an error code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function doRun(InputInterface $input, OutputInterface $output)
     {
@@ -278,41 +270,25 @@ class Application
     /**
      * Sets whether to catch exceptions or not during commands execution.
      *
-<<<<<<< HEAD
      * @param bool    $boolean Whether to catch exceptions or not during commands execution
-=======
-     * @param Boolean $boolean Whether to catch exceptions or not during commands execution
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
     public function setCatchExceptions($boolean)
     {
-<<<<<<< HEAD
         $this->catchExceptions = (bool) $boolean;
-=======
-        $this->catchExceptions = (Boolean) $boolean;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
      * Sets whether to automatically exit after a command execution or not.
      *
-<<<<<<< HEAD
      * @param bool    $boolean Whether to automatically exit after a command execution or not
-=======
-     * @param Boolean $boolean Whether to automatically exit after a command execution or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
     public function setAutoExit($boolean)
     {
-<<<<<<< HEAD
         $this->autoExit = (bool) $boolean;
-=======
-        $this->autoExit = (Boolean) $boolean;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -477,11 +453,7 @@ class Application
      *
      * @param string $name The command name or alias
      *
-<<<<<<< HEAD
      * @return bool    true if the command exists, false otherwise
-=======
-     * @return Boolean true if the command exists, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -661,11 +633,7 @@ class Application
      * Returns a text representation of the Application.
      *
      * @param string  $namespace An optional namespace name
-<<<<<<< HEAD
      * @param bool    $raw       Whether to return raw command list
-=======
-     * @param boolean $raw       Whether to return raw command list
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string A string representing the Application
      *
@@ -684,11 +652,7 @@ class Application
      * Returns an XML representation of the Application.
      *
      * @param string  $namespace An optional namespace name
-<<<<<<< HEAD
      * @param bool    $asDom     Whether to return a DOM or an XML string
-=======
-     * @param Boolean $asDom     Whether to return a DOM or an XML string
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|\DOMDocument An XML string representing the Application
      *
@@ -731,16 +695,11 @@ class Application
         do {
             $title = sprintf('  [%s]  ', get_class($e));
             $len = $strlen($title);
-<<<<<<< HEAD
             $width = $this->getTerminalWidth() ? $this->getTerminalWidth() - 1 : PHP_INT_MAX;
             // HHVM only accepts 32 bits integer in str_split, even when PHP_INT_MAX is a 64 bit integer: https://github.com/facebook/hhvm/issues/1327
             if (defined('HHVM_VERSION') && $width > 1 << 31) {
                 $width = 1 << 31;
             }
-=======
-            // HHVM only accepts 32 bits integer in str_split, even when PHP_INT_MAX is a 64 bit integer: https://github.com/facebook/hhvm/issues/1327
-            $width = $this->getTerminalWidth() ? $this->getTerminalWidth() - 1 : (defined('HHVM_VERSION') ? 1 << 31 : PHP_INT_MAX);
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
             $formatter = $output->getFormatter();
             $lines = array();
             foreach (preg_split('/\r?\n/', $e->getMessage()) as $line) {
@@ -864,13 +823,8 @@ class Application
      *
      * Can be useful to force terminal dimensions for functional tests.
      *
-<<<<<<< HEAD
      * @param int     $width  The width
      * @param int     $height The height
-=======
-     * @param integer $width  The width
-     * @param integer $height The height
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Application The current application
      */
@@ -927,11 +881,7 @@ class Application
      * @param InputInterface  $input   An Input instance
      * @param OutputInterface $output  An Output instance
      *
-<<<<<<< HEAD
      * @return int     0 if everything went fine, or an error code
-=======
-     * @return integer 0 if everything went fine, or an error code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function doRunCommand(Command $command, InputInterface $input, OutputInterface $output)
     {

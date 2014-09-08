@@ -65,11 +65,7 @@ class ArrayInput extends Input
      *
      * @param string|array $values The values to look for in the raw parameters (can be an array)
      *
-<<<<<<< HEAD
      * @return bool    true if the value is contained in the raw parameters
-=======
-     * @return Boolean true if the value is contained in the raw parameters
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasParameterOption($values)
     {

@@ -29,11 +29,7 @@ class RouteCompiler implements RouteCompilerInterface
     const SEPARATORS = '/,;.:-_~+*=@|';
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \LogicException  If a variable is referenced more than once
      * @throws \DomainException If a variable name is numeric because PHP raises an error for such
@@ -200,13 +196,8 @@ class RouteCompiler implements RouteCompilerInterface
      * Computes the regexp used to match a specific token. It can be static text or a subpattern.
      *
      * @param array   $tokens        The route tokens
-<<<<<<< HEAD
      * @param int     $index         The index of the current token
      * @param int     $firstOptional The index of the first optional token
-=======
-     * @param integer $index         The index of the current token
-     * @param integer $firstOptional The index of the first optional token
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string The regexp pattern for a single token
      */

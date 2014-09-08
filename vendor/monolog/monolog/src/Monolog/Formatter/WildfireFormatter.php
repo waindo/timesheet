@@ -69,11 +69,7 @@ class WildfireFormatter extends NormalizerFormatter
             $message = reset($message);
         }
 
-<<<<<<< HEAD
         if (isset($record['context'][self::TABLE])) {
-=======
-        if(isset($record['context'][self::TABLE])){
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
             $type  = 'TABLE';
             $label = $record['channel'] .': '. $record['message'];
             $message = $record['context'][self::TABLE];

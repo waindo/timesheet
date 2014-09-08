@@ -24,17 +24,10 @@ class PluralizationRules
     /**
      * Returns the plural position to use for the given locale and number.
      *
-<<<<<<< HEAD
      * @param int     $number The number
      * @param string  $locale The locale
      *
      * @return int     The plural position
-=======
-     * @param integer $number The number
-     * @param string  $locale The locale
-     *
-     * @return integer The plural position
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public static function get($number, $locale)
     {
@@ -187,11 +180,7 @@ class PluralizationRules
                 return ($number == 1) ? 0 : ((($number == 0) || (($number % 100 > 0) && ($number % 100 < 20))) ? 1 : 2);
 
             case 'ar':
-<<<<<<< HEAD
                 return ($number == 0) ? 0 : (($number == 1) ? 1 : (($number == 2) ? 2 : ((($number % 100 >= 3) && ($number % 100 <= 10)) ? 3 : ((($number % 100 >= 11) && ($number % 100 <= 99)) ? 4 : 5))));
-=======
-                return ($number == 0) ? 0 : (($number == 1) ? 1 : (($number == 2) ? 2 : ((($number >= 3) && ($number <= 10)) ? 3 : ((($number >= 11) && ($number <= 99)) ? 4 : 5))));
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
             default:
                 return 0;

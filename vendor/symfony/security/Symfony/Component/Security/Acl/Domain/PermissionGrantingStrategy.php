@@ -42,11 +42,7 @@ class PermissionGrantingStrategy implements PermissionGrantingStrategyInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isGranted(AclInterface $acl, array $masks, array $sids, $administrativeMode = false)
     {
@@ -78,11 +74,7 @@ class PermissionGrantingStrategy implements PermissionGrantingStrategyInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isFieldGranted(AclInterface $acl, $field, array $masks, array $sids, $administrativeMode = false)
     {
@@ -136,15 +128,9 @@ class PermissionGrantingStrategy implements PermissionGrantingStrategyInterface
      * @param EntryInterface[]            $aces               An array of ACE to check against
      * @param array                       $masks              An array of permission masks
      * @param SecurityIdentityInterface[] $sids               An array of SecurityIdentityInterface implementations
-<<<<<<< HEAD
      * @param bool                        $administrativeMode True turns off audit logging
      *
      * @return bool    true, or false; either granting, or denying access respectively.
-=======
-     * @param Boolean                     $administrativeMode True turns off audit logging
-     *
-     * @return Boolean true, or false; either granting, or denying access respectively.
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws NoAceFoundException
      */
@@ -202,17 +188,10 @@ class PermissionGrantingStrategy implements PermissionGrantingStrategyInterface
      * Strategy EQUAL:
      * The ACE will be considered applicable when the bitmasks are equal.
      *
-<<<<<<< HEAD
      * @param int            $requiredMask
      * @param EntryInterface $ace
      *
      * @return bool
-=======
-     * @param integer        $requiredMask
-     * @param EntryInterface $ace
-     *
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \RuntimeException if the ACE strategy is not supported
      */

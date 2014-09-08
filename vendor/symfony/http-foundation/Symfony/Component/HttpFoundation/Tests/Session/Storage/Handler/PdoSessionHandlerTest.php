@@ -32,11 +32,7 @@ class PdoSessionHandlerTest extends \PHPUnit_Framework_TestCase
     public function testIncompleteOptions()
     {
         $this->setExpectedException('InvalidArgumentException');
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($this->pdo, array());
-=======
-        $storage = new PdoSessionHandler($this->pdo, array(), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     public function testWrongPdoErrMode()
@@ -46,69 +42,42 @@ class PdoSessionHandlerTest extends \PHPUnit_Framework_TestCase
         $pdo->exec("CREATE TABLE sessions (sess_id VARCHAR(255) PRIMARY KEY, sess_data TEXT, sess_time INTEGER)");
 
         $this->setExpectedException('InvalidArgumentException');
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($pdo, array('db_table' => 'sessions'));
-=======
-        $storage = new PdoSessionHandler($pdo, array('db_table' => 'sessions'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     public function testWrongTableOptionsWrite()
     {
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'bad_name'));
-=======
-        $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'bad_name'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $this->setExpectedException('RuntimeException');
         $storage->write('foo', 'bar');
     }
 
     public function testWrongTableOptionsRead()
     {
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'bad_name'));
-=======
-        $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'bad_name'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $this->setExpectedException('RuntimeException');
         $storage->read('foo', 'bar');
     }
 
     public function testWriteRead()
     {
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'));
-=======
-        $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $storage->write('foo', 'bar');
         $this->assertEquals('bar', $storage->read('foo'), 'written value can be read back correctly');
     }
 
     public function testMultipleInstances()
     {
-<<<<<<< HEAD
         $storage1 = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'));
         $storage1->write('foo', 'bar');
 
         $storage2 = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'));
-=======
-        $storage1 = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'), array());
-        $storage1->write('foo', 'bar');
-
-        $storage2 = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $this->assertEquals('bar', $storage2->read('foo'), 'values persist between instances');
     }
 
     public function testSessionDestroy()
     {
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'));
-=======
-        $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $storage->write('foo', 'bar');
         $this->assertCount(1, $this->pdo->query('SELECT * FROM sessions')->fetchAll());
 
@@ -119,11 +88,7 @@ class PdoSessionHandlerTest extends \PHPUnit_Framework_TestCase
 
     public function testSessionGC()
     {
-<<<<<<< HEAD
         $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'));
-=======
-        $storage = new PdoSessionHandler($this->pdo, array('db_table' => 'sessions'), array());
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         $storage->write('foo', 'bar');
         $storage->write('baz', 'bar');

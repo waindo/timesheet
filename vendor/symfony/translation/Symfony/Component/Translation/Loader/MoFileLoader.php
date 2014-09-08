@@ -39,11 +39,7 @@ class MoFileLoader extends ArrayLoader implements LoaderInterface
     /**
      * The size of the header of a MO file in bytes.
      *
-<<<<<<< HEAD
      * @var int     Number of bytes.
-=======
-     * @var integer Number of bytes.
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     const MO_HEADER_SIZE = 28;
 
@@ -173,23 +169,14 @@ class MoFileLoader extends ArrayLoader implements LoaderInterface
      * Reads an unsigned long from stream respecting endianess.
      *
      * @param  resource $stream
-<<<<<<< HEAD
      * @param  bool     $isBigEndian
      * @return int
-=======
-     * @param  boolean  $isBigEndian
-     * @return integer
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function readLong($stream, $isBigEndian)
     {
         $result = unpack($isBigEndian ? 'N1' : 'V1', fread($stream, 4));
         $result = current($result);
 
-<<<<<<< HEAD
         return (int) substr($result, -8);
-=======
-        return (integer) substr($result, -8);
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 }

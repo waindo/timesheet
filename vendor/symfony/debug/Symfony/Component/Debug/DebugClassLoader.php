@@ -110,11 +110,7 @@ class DebugClassLoader
      *
      * @param string $class The name of the class
      *
-<<<<<<< HEAD
      * @return bool|null    True, if loaded
-=======
-     * @return Boolean|null True, if loaded
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \RuntimeException
      */

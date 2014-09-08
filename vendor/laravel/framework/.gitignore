@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 /vendor
 composer.phar
 composer.lock
 .DS_Store
-=======
-/vendor
-composer.phar
-composer.lock
-.DS_Store
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887

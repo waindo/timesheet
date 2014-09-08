@@ -92,11 +92,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string  $path    The key
      * @param mixed   $default The default value if the parameter key does not exist
-<<<<<<< HEAD
      * @param bool    $deep    If true, a path like foo[bar] will find deeper items
-=======
-     * @param boolean $deep    If true, a path like foo[bar] will find deeper items
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return mixed
      *
@@ -171,11 +167,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string $key The key
      *
-<<<<<<< HEAD
      * @return bool    true if the parameter exists, false otherwise
-=======
-     * @return Boolean true if the parameter exists, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -201,11 +193,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string  $key     The parameter key
      * @param mixed   $default The default value if the parameter key does not exist
-<<<<<<< HEAD
      * @param bool    $deep    If true, a path like foo[bar] will find deeper items
-=======
-     * @param boolean $deep    If true, a path like foo[bar] will find deeper items
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string The filtered value
      *
@@ -221,11 +209,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string  $key     The parameter key
      * @param mixed   $default The default value if the parameter key does not exist
-<<<<<<< HEAD
      * @param bool    $deep    If true, a path like foo[bar] will find deeper items
-=======
-     * @param boolean $deep    If true, a path like foo[bar] will find deeper items
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string The filtered value
      *
@@ -241,11 +225,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string  $key     The parameter key
      * @param mixed   $default The default value if the parameter key does not exist
-<<<<<<< HEAD
      * @param bool    $deep    If true, a path like foo[bar] will find deeper items
-=======
-     * @param boolean $deep    If true, a path like foo[bar] will find deeper items
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string The filtered value
      *
@@ -262,15 +242,9 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string  $key     The parameter key
      * @param mixed   $default The default value if the parameter key does not exist
-<<<<<<< HEAD
      * @param bool    $deep    If true, a path like foo[bar] will find deeper items
      *
      * @return int     The filtered value
-=======
-     * @param boolean $deep    If true, a path like foo[bar] will find deeper items
-     *
-     * @return integer The filtered value
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -284,13 +258,8 @@ class ParameterBag implements \IteratorAggregate, \Countable
      *
      * @param string  $key     Key.
      * @param mixed   $default Default = null.
-<<<<<<< HEAD
      * @param bool    $deep    Default = false.
      * @param int     $filter  FILTER_* constant.
-=======
-     * @param boolean $deep    Default = false.
-     * @param integer $filter  FILTER_* constant.
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param mixed   $options Filter options.
      *
      * @see http://php.net/manual/en/function.filter-var.php

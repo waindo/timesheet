@@ -205,11 +205,7 @@ abstract class BaseMemcacheProfilerStorage implements ProfilerStorageInterface
      * @param mixed  $value
      * @param int    $expiration
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     abstract protected function setValue($key, $value, $expiration = 0);
 
@@ -218,11 +214,7 @@ abstract class BaseMemcacheProfilerStorage implements ProfilerStorageInterface
      *
      * @param string $key
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     abstract protected function delete($key);
 
@@ -232,11 +224,7 @@ abstract class BaseMemcacheProfilerStorage implements ProfilerStorageInterface
      * @param string $value
      * @param int    $expiration
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     abstract protected function appendValue($key, $value, $expiration = 0);
 

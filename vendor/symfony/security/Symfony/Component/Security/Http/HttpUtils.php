@@ -53,11 +53,7 @@ class HttpUtils
      *
      * @param Request $request A Request instance
      * @param string  $path    A path (an absolute path (/foo), an absolute URL (http://...), or a route name (foo))
-<<<<<<< HEAD
      * @param int     $status  The status code
-=======
-     * @param integer $status  The status code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return RedirectResponse A RedirectResponse instance
      */
@@ -100,11 +96,7 @@ class HttpUtils
      * @param Request $request A Request instance
      * @param string  $path    A path (an absolute path (/foo), an absolute URL (http://...), or a route name (foo))
      *
-<<<<<<< HEAD
      * @return bool    true if the path is the same as the one from the Request, false otherwise
-=======
-     * @return Boolean true if the path is the same as the one from the Request, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function checkRequestPath(Request $request, $path)
     {

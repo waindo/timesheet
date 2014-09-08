@@ -36,11 +36,7 @@ class AuthenticationTrustResolver implements AuthenticationTrustResolverInterfac
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAnonymous(TokenInterface $token = null)
     {
@@ -52,11 +48,7 @@ class AuthenticationTrustResolver implements AuthenticationTrustResolverInterfac
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isRememberMe(TokenInterface $token = null)
     {
@@ -68,11 +60,7 @@ class AuthenticationTrustResolver implements AuthenticationTrustResolverInterfac
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isFullFledged(TokenInterface $token = null)
     {

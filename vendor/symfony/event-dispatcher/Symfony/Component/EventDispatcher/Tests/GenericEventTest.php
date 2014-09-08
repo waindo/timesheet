@@ -34,11 +34,7 @@ class GenericEventTest extends \PHPUnit_Framework_TestCase
         parent::setUp();
 
         $this->subject = new \stdClass();
-<<<<<<< HEAD
         $this->event = new GenericEvent($this->subject, array('name' => 'Event'));
-=======
-        $this->event = new GenericEvent($this->subject, array('name' => 'Event'), 'foo');
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

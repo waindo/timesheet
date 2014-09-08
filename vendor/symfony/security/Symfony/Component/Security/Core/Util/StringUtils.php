@@ -31,11 +31,7 @@ class StringUtils
      * @param string $knownString The string of known length to compare against
      * @param string $userInput   The string that the user can control
      *
-<<<<<<< HEAD
      * @return bool    true if the two strings are the same, false otherwise
-=======
-     * @return Boolean true if the two strings are the same, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public static function equals($knownString, $userInput)
     {

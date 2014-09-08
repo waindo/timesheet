@@ -21,11 +21,7 @@ use Symfony\Component\Translation\MessageCatalogue;
 class IcuResFileDumper implements DumperInterface
 {
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function dump(MessageCatalogue $messages, $options = array())
     {
@@ -53,11 +49,7 @@ class IcuResFileDumper implements DumperInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function format(MessageCatalogue $messages, $domain = 'messages')
     {
@@ -134,11 +126,7 @@ class IcuResFileDumper implements DumperInterface
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function getExtension()
     {

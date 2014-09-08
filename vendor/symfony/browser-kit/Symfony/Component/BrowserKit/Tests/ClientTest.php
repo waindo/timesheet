@@ -103,7 +103,6 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('http://example.com/', $client->getRequest()->getUri(), '->getCrawler() returns the Request of the last request');
     }
 
-<<<<<<< HEAD
     public function testGetRequestWithIpAsHost()
     {
         $client = new TestClient();
@@ -112,8 +111,6 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('https://127.0.0.1/foo', $client->getRequest()->getUri());
     }
 
-=======
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     public function testGetResponse()
     {
         $client = new TestClient();

@@ -11,7 +11,6 @@
 |
 */
 
-<<<<<<< HEAD
 
 
 Route::get('formtimesheet', function()
@@ -137,9 +136,3 @@ return Response::view('Error404', array(), 404);
 });
 
 
-=======
-Route::get('/', function()
-{
-	return View::make('hello');
-});
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887

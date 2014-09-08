@@ -25,17 +25,10 @@ class MemcacheMock
      * Open memcached server connection
      *
      * @param string  $host
-<<<<<<< HEAD
      * @param int     $port
      * @param int     $timeout
      *
      * @return bool
-=======
-     * @param integer $port
-     * @param integer $timeout
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function connect($host, $port = null, $timeout = null)
     {
@@ -52,17 +45,10 @@ class MemcacheMock
      * Open memcached server persistent connection
      *
      * @param string  $host
-<<<<<<< HEAD
      * @param int     $port
      * @param int     $timeout
      *
      * @return bool
-=======
-     * @param integer $port
-     * @param integer $timeout
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function pconnect($host, $port = null, $timeout = null)
     {
@@ -79,7 +65,6 @@ class MemcacheMock
      * Add a memcached server to connection pool
      *
      * @param string   $host
-<<<<<<< HEAD
      * @param int      $port
      * @param bool     $persistent
      * @param int      $weight
@@ -90,18 +75,6 @@ class MemcacheMock
      * @param int      $timeoutms
      *
      * @return bool
-=======
-     * @param integer  $port
-     * @param boolean  $persistent
-     * @param integer  $weight
-     * @param integer  $timeout
-     * @param integer  $retry_interval
-     * @param boolean  $status
-     * @param callable $failure_callback
-     * @param integer  $timeoutms
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function addServer($host, $port = 11211, $persistent = null, $weight = null, $timeout = null, $retry_interval = null, $status = null, $failure_callback = null, $timeoutms = null)
     {
@@ -119,17 +92,10 @@ class MemcacheMock
      *
      * @param string  $key
      * @param mixed   $var
-<<<<<<< HEAD
      * @param int     $flag
      * @param int     $expire
      *
      * @return bool
-=======
-     * @param integer $flag
-     * @param integer $expire
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function add($key, $var, $flag = null, $expire = null)
     {
@@ -151,17 +117,10 @@ class MemcacheMock
      *
      * @param string  $key
      * @param string  $var
-<<<<<<< HEAD
      * @param int     $flag
      * @param int     $expire
      *
      * @return bool
-=======
-     * @param integer $flag
-     * @param integer $expire
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function set($key, $var, $flag = null, $expire = null)
     {
@@ -179,17 +138,10 @@ class MemcacheMock
      *
      * @param string  $key
      * @param mixed   $var
-<<<<<<< HEAD
      * @param int     $flag
      * @param int     $expire
      *
      * @return bool
-=======
-     * @param integer $flag
-     * @param integer $expire
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function replace($key, $var, $flag = null, $expire = null)
     {
@@ -210,11 +162,7 @@ class MemcacheMock
      * Retrieve item from the server.
      *
      * @param string|array  $key
-<<<<<<< HEAD
      * @param int|array     $flags
-=======
-     * @param integer|array $flags
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return mixed
      */
@@ -243,11 +191,7 @@ class MemcacheMock
      *
      * @param string $key
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function delete($key)
     {
@@ -267,11 +211,7 @@ class MemcacheMock
     /**
      * Flush all existing items at the server
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function flush()
     {
@@ -287,11 +227,7 @@ class MemcacheMock
     /**
      * Close memcached server connection
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function close()
     {

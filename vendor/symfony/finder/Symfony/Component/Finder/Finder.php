@@ -90,11 +90,7 @@ class Finder implements \IteratorAggregate, \Countable
      * Registers a finder engine implementation.
      *
      * @param AdapterInterface $adapter  An adapter instance
-<<<<<<< HEAD
      * @param int              $priority Highest is selected first
-=======
-     * @param integer          $priority Highest is selected first
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Finder The current Finder instance
      */
@@ -419,11 +415,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Excludes "hidden" directories and files (starting with a dot).
      *
-<<<<<<< HEAD
      * @param bool    $ignoreDotFiles Whether to exclude "hidden" files or not
-=======
-     * @param Boolean $ignoreDotFiles Whether to exclude "hidden" files or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Finder The current Finder instance
      *
@@ -445,11 +437,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Forces the finder to ignore version control directories.
      *
-<<<<<<< HEAD
      * @param bool    $ignoreVCS Whether to exclude VCS files or not
-=======
-     * @param Boolean $ignoreVCS Whether to exclude VCS files or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Finder The current Finder instance
      *
@@ -644,21 +632,13 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * By default, scanning unreadable directories content throws an AccessDeniedException.
      *
-<<<<<<< HEAD
      * @param bool    $ignore
-=======
-     * @param boolean $ignore
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Finder The current Finder instance
      */
     public function ignoreUnreadableDirs($ignore = true)
     {
-<<<<<<< HEAD
         $this->ignoreUnreadableDirs = (bool) $ignore;
-=======
-        $this->ignoreUnreadableDirs = (Boolean) $ignore;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         return $this;
     }

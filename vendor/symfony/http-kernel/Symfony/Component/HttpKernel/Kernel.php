@@ -59,41 +59,25 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     protected $startTime;
     protected $loadClassCache;
 
-<<<<<<< HEAD
     const VERSION         = '2.4.4';
     const VERSION_ID      = '20404';
     const MAJOR_VERSION   = '2';
     const MINOR_VERSION   = '4';
     const RELEASE_VERSION = '4';
-=======
-    const VERSION         = '2.4.3';
-    const VERSION_ID      = '20403';
-    const MAJOR_VERSION   = '2';
-    const MINOR_VERSION   = '4';
-    const RELEASE_VERSION = '3';
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     const EXTRA_VERSION   = '';
 
     /**
      * Constructor.
      *
      * @param string  $environment The environment
-<<<<<<< HEAD
      * @param bool    $debug       Whether to enable debugging or not
-=======
-     * @param Boolean $debug       Whether to enable debugging or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
     public function __construct($environment, $debug)
     {
         $this->environment = $environment;
-<<<<<<< HEAD
         $this->debug = (bool) $debug;
-=======
-        $this->debug = (Boolean) $debug;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $this->rootDir = $this->getRootDir();
         $this->name = $this->getName();
 
@@ -276,11 +260,7 @@ abstract class Kernel implements KernelInterface, TerminableInterface
      *
      * @param string  $name  A resource name to locate
      * @param string  $dir   A directory where to look for the resource first
-<<<<<<< HEAD
      * @param bool    $first Whether to return the first path or paths for all matching bundles
-=======
-     * @param Boolean $first Whether to return the first path or paths for all matching bundles
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|array The absolute path of the resource or an array if $first is false
      *

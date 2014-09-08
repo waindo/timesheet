@@ -368,11 +368,7 @@ class Route implements \Serializable
      *
      * @param string $name An option name
      *
-<<<<<<< HEAD
      * @return bool    true if the option is set, false otherwise
-=======
-     * @return Boolean true if the option is set, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasOption($name)
     {
@@ -441,11 +437,7 @@ class Route implements \Serializable
      *
      * @param string $name A variable name
      *
-<<<<<<< HEAD
      * @return bool    true if the default value is set, false otherwise
-=======
-     * @return Boolean true if the default value is set, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasDefault($name)
     {
@@ -532,11 +524,7 @@ class Route implements \Serializable
      *
      * @param string $key A variable name
      *
-<<<<<<< HEAD
      * @return bool    true if a requirement is specified, false otherwise
-=======
-     * @return Boolean true if a requirement is specified, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasRequirement($key)
     {

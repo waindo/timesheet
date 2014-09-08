@@ -24,11 +24,7 @@ class AccessDeniedHttpException extends HttpException
      *
      * @param string     $message  The internal exception message
      * @param \Exception $previous The previous exception
-<<<<<<< HEAD
      * @param int        $code     The internal exception code
-=======
-     * @param integer    $code     The internal exception code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __construct($message = null, \Exception $previous = null, $code = 0)
     {

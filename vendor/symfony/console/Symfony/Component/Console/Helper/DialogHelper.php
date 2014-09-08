@@ -31,21 +31,12 @@ class DialogHelper extends InputAwareHelper
      * @param OutputInterface $output       An Output instance
      * @param string|array    $question     The question to ask
      * @param array           $choices      List of choices to pick from
-<<<<<<< HEAD
      * @param bool|string     $default      The default answer if the user enters nothing
      * @param bool|int        $attempts Max number of times to ask before giving up (false by default, which means infinite)
      * @param string          $errorMessage Message which will be shown if invalid value from choice list would be picked
      * @param bool            $multiselect  Select more than one value separated by comma
      *
      * @return int|string|array     The selected value or values (the key of the choices array)
-=======
-     * @param Boolean|string  $default      The default answer if the user enters nothing
-     * @param Boolean|integer $attempts Max number of times to ask before giving up (false by default, which means infinite)
-     * @param string          $errorMessage Message which will be shown if invalid value from choice list would be picked
-     * @param Boolean         $multiselect  Select more than one value separated by comma
-     *
-     * @return integer|string|array The selected value or values (the key of the choices array)
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException
      */
@@ -236,15 +227,9 @@ class DialogHelper extends InputAwareHelper
      *
      * @param OutputInterface $output   An Output instance
      * @param string|array    $question The question to ask
-<<<<<<< HEAD
      * @param bool            $default  The default answer if the user enters nothing
      *
      * @return bool    true if the user has confirmed, false otherwise
-=======
-     * @param Boolean         $default  The default answer if the user enters nothing
-     *
-     * @return Boolean true if the user has confirmed, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function askConfirmation(OutputInterface $output, $question, $default = true)
     {
@@ -265,11 +250,7 @@ class DialogHelper extends InputAwareHelper
      *
      * @param OutputInterface $output   An Output instance
      * @param string|array    $question The question
-<<<<<<< HEAD
      * @param bool            $fallback In case the response can not be hidden, whether to fallback on non-hidden question or not
-=======
-     * @param Boolean         $fallback In case the response can not be hidden, whether to fallback on non-hidden question or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string         The answer
      *
@@ -344,11 +325,7 @@ class DialogHelper extends InputAwareHelper
      * @param OutputInterface $output       An Output instance
      * @param string|array    $question     The question to ask
      * @param callable        $validator    A PHP callback
-<<<<<<< HEAD
      * @param int             $attempts     Max number of times to ask before giving up (false by default, which means infinite)
-=======
-     * @param integer         $attempts     Max number of times to ask before giving up (false by default, which means infinite)
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string          $default      The default answer if none is given by the user
      * @param array           $autocomplete List of values to autocomplete
      *
@@ -377,13 +354,8 @@ class DialogHelper extends InputAwareHelper
      * @param OutputInterface $output    An Output instance
      * @param string|array    $question  The question to ask
      * @param callable        $validator A PHP callback
-<<<<<<< HEAD
      * @param int             $attempts  Max number of times to ask before giving up (false by default, which means infinite)
      * @param bool            $fallback  In case the response can not be hidden, whether to fallback on non-hidden question or not
-=======
-     * @param integer         $attempts  Max number of times to ask before giving up (false by default, which means infinite)
-     * @param Boolean         $fallback  In case the response can not be hidden, whether to fallback on non-hidden question or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string         The response
      *
@@ -425,11 +397,7 @@ class DialogHelper extends InputAwareHelper
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getName()
     {
@@ -439,11 +407,7 @@ class DialogHelper extends InputAwareHelper
     /**
      * Return a valid Unix shell
      *
-<<<<<<< HEAD
      * @return string|bool     The valid shell name, false in case no valid shell is found
-=======
-     * @return string|Boolean  The valid shell name, false in case no valid shell is found
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function getShell()
     {
@@ -484,11 +448,7 @@ class DialogHelper extends InputAwareHelper
      * @param callable         $interviewer  A callable that will ask for a question and return the result
      * @param OutputInterface  $output       An Output instance
      * @param callable         $validator    A PHP callback
-<<<<<<< HEAD
      * @param int              $attempts     Max number of times to ask before giving up ; false will ask infinitely
-=======
-     * @param integer          $attempts     Max number of times to ask before giving up ; false will ask infinitely
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string   The validated response
      *

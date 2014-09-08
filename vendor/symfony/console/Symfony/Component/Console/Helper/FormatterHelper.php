@@ -39,11 +39,7 @@ class FormatterHelper extends Helper
      *
      * @param string|array $messages The message to write in the block
      * @param string       $style    The style to apply to the whole block
-<<<<<<< HEAD
      * @param bool         $large    Whether to return a large block
-=======
-     * @param Boolean      $large    Whether to return a large block
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string The formatter message
      */
@@ -75,11 +71,7 @@ class FormatterHelper extends Helper
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getName()
     {

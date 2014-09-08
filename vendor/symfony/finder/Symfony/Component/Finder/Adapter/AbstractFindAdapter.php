@@ -148,11 +148,7 @@ abstract class AbstractFindAdapter extends AbstractAdapter
     /**
      * @param Command  $command
      * @param string[] $names
-<<<<<<< HEAD
      * @param bool     $not
-=======
-     * @param Boolean  $not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function buildNamesFiltering(Command $command, array $names, $not = false)
     {
@@ -200,11 +196,7 @@ abstract class AbstractFindAdapter extends AbstractAdapter
      * @param Command  $command
      * @param string   $dir
      * @param string[] $paths
-<<<<<<< HEAD
      * @param bool     $not
-=======
-     * @param Boolean  $not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function buildPathsFiltering(Command $command, $dir, array $paths, $not = false)
     {
@@ -329,11 +321,7 @@ abstract class AbstractFindAdapter extends AbstractAdapter
     /**
      * @param Command $command
      * @param array   $contains
-<<<<<<< HEAD
      * @param bool    $not
-=======
-     * @param Boolean $not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     abstract protected function buildContentFiltering(Command $command, array $contains, $not = false);
 }

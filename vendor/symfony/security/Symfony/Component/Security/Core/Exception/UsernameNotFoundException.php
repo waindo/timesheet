@@ -22,11 +22,7 @@ class UsernameNotFoundException extends AuthenticationException
     private $username;
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getMessageKey()
     {
@@ -54,11 +50,7 @@ class UsernameNotFoundException extends AuthenticationException
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function serialize()
     {
@@ -69,11 +61,7 @@ class UsernameNotFoundException extends AuthenticationException
     }
 
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function unserialize($str)
     {

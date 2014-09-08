@@ -32,13 +32,8 @@ class AccessDecisionManager implements AccessDecisionManagerInterface
      *
      * @param VoterInterface[] $voters                             An array of VoterInterface instances
      * @param string           $strategy                           The vote strategy
-<<<<<<< HEAD
      * @param bool             $allowIfAllAbstainDecisions         Whether to grant access if all voters abstained or not
      * @param bool             $allowIfEqualGrantedDeniedDecisions Whether to grant access if result are equals
-=======
-     * @param Boolean          $allowIfAllAbstainDecisions         Whether to grant access if all voters abstained or not
-     * @param Boolean          $allowIfEqualGrantedDeniedDecisions Whether to grant access if result are equals
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException
      */
@@ -55,13 +50,8 @@ class AccessDecisionManager implements AccessDecisionManagerInterface
 
         $this->voters = $voters;
         $this->strategy = $strategyMethod;
-<<<<<<< HEAD
         $this->allowIfAllAbstainDecisions = (bool) $allowIfAllAbstainDecisions;
         $this->allowIfEqualGrantedDeniedDecisions = (bool) $allowIfEqualGrantedDeniedDecisions;
-=======
-        $this->allowIfAllAbstainDecisions = (Boolean) $allowIfAllAbstainDecisions;
-        $this->allowIfEqualGrantedDeniedDecisions = (Boolean) $allowIfEqualGrantedDeniedDecisions;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

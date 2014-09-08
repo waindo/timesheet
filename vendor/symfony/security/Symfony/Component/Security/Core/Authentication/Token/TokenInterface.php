@@ -69,22 +69,14 @@ interface TokenInterface extends \Serializable
     /**
      * Returns whether the user is authenticated or not.
      *
-<<<<<<< HEAD
      * @return bool    true if the token has been authenticated, false otherwise
-=======
-     * @return Boolean true if the token has been authenticated, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAuthenticated();
 
     /**
      * Sets the authenticated flag.
      *
-<<<<<<< HEAD
      * @param bool    $isAuthenticated The authenticated flag
-=======
-     * @param Boolean $isAuthenticated The authenticated flag
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setAuthenticated($isAuthenticated);
 
@@ -112,11 +104,7 @@ interface TokenInterface extends \Serializable
      *
      * @param string $name The attribute name
      *
-<<<<<<< HEAD
      * @return bool    true if the attribute exists, false otherwise
-=======
-     * @return Boolean true if the attribute exists, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasAttribute($name);
 

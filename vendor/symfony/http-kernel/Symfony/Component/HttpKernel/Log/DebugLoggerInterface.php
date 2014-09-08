@@ -32,11 +32,7 @@ interface DebugLoggerInterface
     /**
      * Returns the number of errors.
      *
-<<<<<<< HEAD
      * @return int     The number of errors
-=======
-     * @return integer The number of errors
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function countErrors();
 }

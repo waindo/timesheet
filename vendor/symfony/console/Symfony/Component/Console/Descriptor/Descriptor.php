@@ -60,11 +60,7 @@ abstract class Descriptor implements DescriptorInterface
      * Writes content to output.
      *
      * @param string  $content
-<<<<<<< HEAD
      * @param bool    $decorated
-=======
-     * @param boolean $decorated
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function write($content, $decorated = false)
     {

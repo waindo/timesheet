@@ -24,13 +24,8 @@ interface PermissionGrantingStrategyInterface
      * @param AclInterface $acl
      * @param array        $masks
      * @param array        $sids
-<<<<<<< HEAD
      * @param bool         $administrativeMode
      * @return bool
-=======
-     * @param Boolean      $administrativeMode
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isGranted(AclInterface $acl, array $masks, array $sids, $administrativeMode = false);
 
@@ -41,15 +36,9 @@ interface PermissionGrantingStrategyInterface
      * @param string       $field
      * @param array        $masks
      * @param array        $sids
-<<<<<<< HEAD
      * @param bool         $administrativeMode
      *
      * @return bool
-=======
-     * @param Boolean      $administrativeMode
-     *
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isFieldGranted(AclInterface $acl, $field, array $masks, array $sids, $administrativeMode = false);
 }

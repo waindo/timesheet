@@ -133,11 +133,7 @@ class Command
      * Override this to check for x or y and return false if the command can not
      * run properly under the current conditions.
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isEnabled()
     {
@@ -162,11 +158,7 @@ class Command
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-<<<<<<< HEAD
      * @return null|int     null or 0 if everything went fine, or an error code
-=======
-     * @return null|integer null or 0 if everything went fine, or an error code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \LogicException When this abstract method is not implemented
      * @see    setCode()
@@ -209,11 +201,7 @@ class Command
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-<<<<<<< HEAD
      * @return int     The command exit code
-=======
-     * @return integer The command exit code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \Exception
      *
@@ -288,11 +276,7 @@ class Command
      *
      * This method is not part of public API and should not be used directly.
      *
-<<<<<<< HEAD
      * @param bool    $mergeArgs Whether to merge or not the Application definition arguments to Command definition arguments
-=======
-     * @param Boolean $mergeArgs Whether to merge or not the Application definition arguments to Command definition arguments
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function mergeApplicationDefinition($mergeArgs = true)
     {
@@ -367,11 +351,7 @@ class Command
      * Adds an argument.
      *
      * @param string  $name        The argument name
-<<<<<<< HEAD
      * @param int     $mode        The argument mode: InputArgument::REQUIRED or InputArgument::OPTIONAL
-=======
-     * @param integer $mode        The argument mode: InputArgument::REQUIRED or InputArgument::OPTIONAL
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $description A description text
      * @param mixed   $default     The default value (for InputArgument::OPTIONAL mode only)
      *
@@ -391,11 +371,7 @@ class Command
      *
      * @param string  $name        The option name
      * @param string  $shortcut    The shortcut (can be null)
-<<<<<<< HEAD
      * @param int     $mode        The option mode: One of the InputOption::VALUE_* constants
-=======
-     * @param integer $mode        The option mode: One of the InputOption::VALUE_* constants
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $description A description text
      * @param mixed   $default     The default value (must be null for InputOption::VALUE_REQUIRED or InputOption::VALUE_NONE)
      *
@@ -608,11 +584,7 @@ class Command
     /**
      * Returns an XML representation of the command.
      *
-<<<<<<< HEAD
      * @param bool    $asDom Whether to return a DOM or an XML string
-=======
-     * @param Boolean $asDom Whether to return a DOM or an XML string
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|\DOMDocument An XML string representing the command
      *

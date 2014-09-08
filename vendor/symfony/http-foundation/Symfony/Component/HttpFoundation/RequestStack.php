@@ -47,11 +47,7 @@ class RequestStack
     public function pop()
     {
         if (!$this->requests) {
-<<<<<<< HEAD
             return;
-=======
-            return null;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         return array_pop($this->requests);
@@ -77,11 +73,7 @@ class RequestStack
     public function getMasterRequest()
     {
         if (!$this->requests) {
-<<<<<<< HEAD
             return;
-=======
-            return null;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         return $this->requests[0];
@@ -103,11 +95,7 @@ class RequestStack
         $pos = count($this->requests) - 2;
 
         if (!isset($this->requests[$pos])) {
-<<<<<<< HEAD
             return;
-=======
-            return null;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         return $this->requests[$pos];

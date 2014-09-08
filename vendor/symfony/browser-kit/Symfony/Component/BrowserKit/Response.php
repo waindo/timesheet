@@ -31,11 +31,7 @@ class Response
      * then the value is an array of all the values.
      *
      * @param string  $content The content of the response
-<<<<<<< HEAD
      * @param int     $status  The response status code
-=======
-     * @param integer $status  The response status code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $headers An array of headers
      *
      * @api
@@ -96,11 +92,7 @@ class Response
     /**
      * Gets the response status code.
      *
-<<<<<<< HEAD
      * @return int     The response status code
-=======
-     * @return integer The response status code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -125,11 +117,7 @@ class Response
      * Gets a response header.
      *
      * @param string  $header The header name
-<<<<<<< HEAD
      * @param bool    $first  Whether to return the first value or all header values
-=======
-     * @param Boolean $first  Whether to return the first value or all header values
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|array The first header value if $first is true, an array of values otherwise
      */

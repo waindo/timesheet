@@ -25,17 +25,10 @@ class RedisMock
      * Add a server to connection pool
      *
      * @param string  $host
-<<<<<<< HEAD
      * @param int     $port
      * @param float   $timeout
      *
      * @return bool
-=======
-     * @param integer $port
-     * @param float   $timeout
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function connect($host, $port = 6379, $timeout = 0)
     {
@@ -51,17 +44,10 @@ class RedisMock
     /**
      * Set client option.
      *
-<<<<<<< HEAD
      * @param int     $name
      * @param int     $value
      *
      * @return bool
-=======
-     * @param integer $name
-     * @param integer $value
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setOption($name, $value)
     {
@@ -77,11 +63,7 @@ class RedisMock
      *
      * @param string $key
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function exists($key)
     {
@@ -96,17 +78,10 @@ class RedisMock
      * Store data at the server with expiration time.
      *
      * @param string  $key
-<<<<<<< HEAD
      * @param int     $ttl
      * @param mixed   $value
      *
      * @return bool
-=======
-     * @param integer $ttl
-     * @param mixed   $value
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setex($key, $ttl, $value)
     {
@@ -123,15 +98,9 @@ class RedisMock
      * Sets an expiration time on an item.
      *
      * @param string  $key
-<<<<<<< HEAD
      * @param int     $ttl
      *
      * @return bool
-=======
-     * @param integer $ttl
-     *
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setTimeout($key, $ttl)
     {
@@ -151,11 +120,7 @@ class RedisMock
      *
      * @param string $key
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function get($key)
     {
@@ -172,11 +137,7 @@ class RedisMock
      * @param string $key
      * @param string $value
      *
-<<<<<<< HEAD
      * @return int     Size of the value after the append.
-=======
-     * @return integer Size of the value after the append.
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function append($key, $value)
     {
@@ -198,11 +159,7 @@ class RedisMock
      *
      * @param string|array $key
      *
-<<<<<<< HEAD
      * @return int
-=======
-     * @return integer
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function delete($key)
     {
@@ -234,11 +191,7 @@ class RedisMock
     /**
      * Flush all existing items from all databases at the server.
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function flushAll()
     {
@@ -254,11 +207,7 @@ class RedisMock
     /**
      * Close Redis server connection
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function close()
     {

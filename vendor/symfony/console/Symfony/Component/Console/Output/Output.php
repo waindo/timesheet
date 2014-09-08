@@ -37,13 +37,8 @@ abstract class Output implements OutputInterface
     /**
      * Constructor.
      *
-<<<<<<< HEAD
      * @param int                           $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
      * @param bool                          $decorated Whether to decorate messages
-=======
-     * @param integer                       $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
-     * @param Boolean                       $decorated Whether to decorate messages
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param OutputFormatterInterface|null $formatter Output formatter instance (null to use default OutputFormatter)
      *
      * @api
@@ -164,11 +159,7 @@ abstract class Output implements OutputInterface
      * Writes a message to the output.
      *
      * @param string  $message A message to write to the output
-<<<<<<< HEAD
      * @param bool    $newline Whether to add a newline or not
-=======
-     * @param Boolean $newline Whether to add a newline or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     abstract protected function doWrite($message, $newline);
 }

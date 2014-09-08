@@ -29,11 +29,7 @@ interface VoterInterface
      *
      * @param string $attribute An attribute
      *
-<<<<<<< HEAD
      * @return bool    true if this Voter supports the attribute, false otherwise
-=======
-     * @return Boolean true if this Voter supports the attribute, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function supportsAttribute($attribute);
 
@@ -42,11 +38,7 @@ interface VoterInterface
      *
      * @param string $class A class name
      *
-<<<<<<< HEAD
      * @return bool    true if this Voter can process the class
-=======
-     * @return Boolean true if this Voter can process the class
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function supportsClass($class);
 
@@ -60,11 +52,7 @@ interface VoterInterface
      * @param object         $object     The object to secure
      * @param array          $attributes An array of attributes associated with the method being invoked
      *
-<<<<<<< HEAD
      * @return int     either ACCESS_GRANTED, ACCESS_ABSTAIN, or ACCESS_DENIED
-=======
-     * @return integer either ACCESS_GRANTED, ACCESS_ABSTAIN, or ACCESS_DENIED
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function vote(TokenInterface $token, $object, array $attributes);
 }

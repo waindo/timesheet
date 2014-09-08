@@ -56,11 +56,7 @@ class ApplicationTester
      * @param array $input   An array of arguments and options
      * @param array $options An array of options
      *
-<<<<<<< HEAD
      * @return int     The command exit code
-=======
-     * @return integer The command exit code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function run(array $input, $options = array())
     {
@@ -83,11 +79,7 @@ class ApplicationTester
     /**
      * Gets the display returned by the last execution of the application.
      *
-<<<<<<< HEAD
      * @param bool    $normalize Whether to normalize end of lines to \n or not
-=======
-     * @param Boolean $normalize Whether to normalize end of lines to \n or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string The display
      */
@@ -127,11 +119,7 @@ class ApplicationTester
     /**
      * Gets the status code returned by the last execution of the application.
      *
-<<<<<<< HEAD
      * @return int     The status code
-=======
-     * @return integer The status code
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getStatusCode()
     {

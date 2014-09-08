@@ -39,22 +39,14 @@ class OutputFormatter implements OutputFormatterInterface
     /**
      * Initializes console output formatter.
      *
-<<<<<<< HEAD
      * @param bool             $decorated Whether this formatter should actually decorate strings
-=======
-     * @param Boolean          $decorated Whether this formatter should actually decorate strings
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param OutputFormatterStyleInterface[] $styles    Array of "name => FormatterStyle" instances
      *
      * @api
      */
     public function __construct($decorated = false, array $styles = array())
     {
-<<<<<<< HEAD
         $this->decorated = (bool) $decorated;
-=======
-        $this->decorated = (Boolean) $decorated;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         $this->setStyle('error', new OutputFormatterStyle('white', 'red'));
         $this->setStyle('info', new OutputFormatterStyle('green'));
@@ -71,31 +63,19 @@ class OutputFormatter implements OutputFormatterInterface
     /**
      * Sets the decorated flag.
      *
-<<<<<<< HEAD
      * @param bool    $decorated Whether to decorate the messages or not
-=======
-     * @param Boolean $decorated Whether to decorate the messages or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
     public function setDecorated($decorated)
     {
-<<<<<<< HEAD
         $this->decorated = (bool) $decorated;
-=======
-        $this->decorated = (Boolean) $decorated;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
      * Gets the decorated flag.
      *
-<<<<<<< HEAD
      * @return bool    true if the output will decorate messages, false otherwise
-=======
-     * @return Boolean true if the output will decorate messages, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -122,11 +102,7 @@ class OutputFormatter implements OutputFormatterInterface
      *
      * @param string $name
      *
-<<<<<<< HEAD
      * @return bool
-=======
-     * @return Boolean
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -218,11 +194,7 @@ class OutputFormatter implements OutputFormatterInterface
      *
      * @param string $string
      *
-<<<<<<< HEAD
      * @return OutputFormatterStyle|bool    false if string is not format string
-=======
-     * @return OutputFormatterStyle|Boolean false if string is not format string
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function createStyleFromString($string)
     {

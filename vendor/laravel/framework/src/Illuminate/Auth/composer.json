@@ -8,10 +8,7 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
 		
-=======
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         "php": ">=5.3.0",
         "illuminate/cookie": "4.1.*",
         "illuminate/encryption": "4.1.*",
@@ -23,10 +20,7 @@
         "nesbot/carbon": "1.*"
     },
     "require-dev": {
-<<<<<<< HEAD
 	
-=======
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         "illuminate/console": "4.1.*",
         "illuminate/routing": "4.1.*",
         "phpunit/phpunit": "4.0.*"

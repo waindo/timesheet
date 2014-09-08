@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 ### 1.9.1 (2014-04-24)
 
   * Fixed regression in RotatingFileHandler file permissions
   * Fixed initialization of the BufferHandler to make sure it gets flushed after receiving records
   * Fixed ChromePHPHandler and FirePHPHandler's activation strategies to be more conservative
 
-=======
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 ### 1.9.0 (2014-04-20)
 
   * Added LogEntriesHandler to send logs to a LogEntries account

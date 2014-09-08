@@ -74,11 +74,7 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
      *
      * @param string $class A class name
      *
-<<<<<<< HEAD
      * @return bool    true if the class belongs to an active bundle, false otherwise
-=======
-     * @return Boolean true if the class belongs to an active bundle, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -88,11 +84,7 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
      * Returns a bundle and optionally its descendants by its name.
      *
      * @param string  $name  Bundle name
-<<<<<<< HEAD
      * @param bool    $first Whether to return the first bundle only or together with its descendants
-=======
-     * @param Boolean $first Whether to return the first bundle only or together with its descendants
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return BundleInterface|BundleInterface[] A BundleInterface instance or an array of BundleInterface instances if $first is false
      *
@@ -121,11 +113,7 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
      *
      * @param string  $name  A resource name to locate
      * @param string  $dir   A directory where to look for the resource first
-<<<<<<< HEAD
      * @param bool    $first Whether to return the first path or paths for all matching bundles
-=======
-     * @param Boolean $first Whether to return the first path or paths for all matching bundles
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|array The absolute path of the resource or an array if $first is false
      *
@@ -157,11 +145,7 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
     /**
      * Checks if debug mode is enabled.
      *
-<<<<<<< HEAD
      * @return bool    true if debug mode is enabled, false otherwise
-=======
-     * @return Boolean true if debug mode is enabled, false otherwise
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -188,11 +172,7 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
     /**
      * Gets the request start time (not available if debug is disabled).
      *
-<<<<<<< HEAD
      * @return int     The request start timestamp
-=======
-     * @return integer The request start timestamp
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

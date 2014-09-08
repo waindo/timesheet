@@ -13,11 +13,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	'debug' => true,
-=======
-	'debug' => false,
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,11 +78,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	'key' => 'YourSecretKey!!!',
-=======
-	'key' => 'rOnXftOAnnU7oWwIr1LOgglQw1ia3E13',
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
 	/*
 	|--------------------------------------------------------------------------
@@ -127,10 +119,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-<<<<<<< HEAD
 		
-=======
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
 	),
 

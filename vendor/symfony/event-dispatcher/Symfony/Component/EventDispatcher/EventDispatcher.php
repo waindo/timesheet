@@ -82,11 +82,7 @@ class EventDispatcher implements EventDispatcherInterface
      */
     public function hasListeners($eventName = null)
     {
-<<<<<<< HEAD
         return (bool) count($this->getListeners($eventName));
-=======
-        return (Boolean) count($this->getListeners($eventName));
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

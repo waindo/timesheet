@@ -22,22 +22,14 @@ use Symfony\Component\Security\Acl\Model\ObjectIdentityRetrievalStrategyInterfac
 class ObjectIdentityRetrievalStrategy implements ObjectIdentityRetrievalStrategyInterface
 {
     /**
-<<<<<<< HEAD
      * {@inheritdoc}
-=======
-     * {@inheritDoc}
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getObjectIdentity($domainObject)
     {
         try {
             return ObjectIdentity::fromDomainObject($domainObject);
         } catch (InvalidDomainObjectException $failed) {
-<<<<<<< HEAD
             return;
-=======
-            return null;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
     }
 }

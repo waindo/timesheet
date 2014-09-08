@@ -37,11 +37,7 @@ abstract class UserAuthenticationProvider implements AuthenticationProviderInter
      *
      * @param UserCheckerInterface $userChecker                An UserCheckerInterface interface
      * @param string               $providerKey                A provider key
-<<<<<<< HEAD
      * @param bool                 $hideUserNotFoundExceptions Whether to hide user not found exception or not
-=======
-     * @param Boolean              $hideUserNotFoundExceptions Whether to hide user not found exception or not
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException
      */
@@ -62,11 +58,7 @@ abstract class UserAuthenticationProvider implements AuthenticationProviderInter
     public function authenticate(TokenInterface $token)
     {
         if (!$this->supports($token)) {
-<<<<<<< HEAD
             return;
-=======
-            return null;
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         $username = $token->getUsername();

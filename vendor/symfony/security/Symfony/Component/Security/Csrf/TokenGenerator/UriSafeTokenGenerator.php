@@ -32,11 +32,7 @@ class UriSafeTokenGenerator implements TokenGeneratorInterface
     /**
      * The amount of entropy collected for each token (in bits).
      *
-<<<<<<< HEAD
      * @var int
-=======
-     * @var integer
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $entropy;
 
@@ -45,11 +41,7 @@ class UriSafeTokenGenerator implements TokenGeneratorInterface
      *
      * @param SecureRandomInterface|null $random  The random value generator used for
      *                                            generating entropy
-<<<<<<< HEAD
      * @param int                        $entropy The amount of entropy collected for
-=======
-     * @param integer                    $entropy The amount of entropy collected for
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                                            each token (in bits)
      */
     public function __construct(SecureRandomInterface $random = null, $entropy = 256)

@@ -81,11 +81,7 @@ EOF;
     /**
      * Generates the code for the match method implementing UrlMatcherInterface.
      *
-<<<<<<< HEAD
      * @param bool    $supportsRedirections Whether redirections are supported by the base class
-=======
-     * @param Boolean $supportsRedirections Whether redirections are supported by the base class
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string Match method as PHP code
      */
@@ -112,11 +108,7 @@ EOF;
      * Generates PHP code to match a RouteCollection with all its routes.
      *
      * @param RouteCollection $routes               A RouteCollection instance
-<<<<<<< HEAD
      * @param bool            $supportsRedirections Whether redirections are supported by the base class
-=======
-     * @param Boolean         $supportsRedirections Whether redirections are supported by the base class
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string PHP code
      */
@@ -157,11 +149,7 @@ EOF;
      * Generates PHP code recursively to match a tree of routes
      *
      * @param DumperPrefixCollection $collection           A DumperPrefixCollection instance
-<<<<<<< HEAD
      * @param bool                   $supportsRedirections Whether redirections are supported by the base class
-=======
-     * @param Boolean                $supportsRedirections Whether redirections are supported by the base class
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string                 $parentPrefix         Prefix of the parent collection
      *
      * @return string PHP code
@@ -201,11 +189,7 @@ EOF;
      *
      * @param Route       $route                A Route instance
      * @param string      $name                 The name of the Route
-<<<<<<< HEAD
      * @param bool        $supportsRedirections Whether redirections are supported by the base class
-=======
-     * @param Boolean     $supportsRedirections Whether redirections are supported by the base class
->>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string|null $parentPrefix         The prefix of the parent collection used to optimize the code
      *
      * @return string PHP code
