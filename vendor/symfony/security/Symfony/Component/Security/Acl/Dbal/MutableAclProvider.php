@@ -12,7 +12,11 @@
 namespace Symfony\Component\Security\Acl\Dbal;
 
 use Doctrine\Common\PropertyChangedListener;
+<<<<<<< HEAD
 use Doctrine\DBAL\Connection;
+=======
+use Doctrine\DBAL\Driver\Connection;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 use Symfony\Component\Security\Acl\Domain\RoleSecurityIdentity;
 use Symfony\Component\Security\Acl\Domain\UserSecurityIdentity;
 use Symfony\Component\Security\Acl\Exception\AclAlreadyExistsException;
@@ -36,7 +40,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     private $propertyChanges;
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __construct(Connection $connection, PermissionGrantingStrategyInterface $permissionGrantingStrategy, array $options, AclCacheInterface $cache = null)
     {
@@ -46,7 +54,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function createAcl(ObjectIdentityInterface $oid)
     {
@@ -73,7 +85,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function deleteAcl(ObjectIdentityInterface $oid)
     {
@@ -109,7 +125,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function findAcls(array $oids, array $sids = array())
     {
@@ -216,7 +236,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function updateAcl(MutableAclInterface $acl)
     {
@@ -354,7 +378,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     /**
      * Constructs the SQL for deleting access control entries.
      *
+<<<<<<< HEAD
      * @param int     $oidPK
+=======
+     * @param integer $oidPK
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getDeleteAccessControlEntriesSql($oidPK)
@@ -369,7 +397,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     /**
      * Constructs the SQL for deleting a specific ACE.
      *
+<<<<<<< HEAD
      * @param int     $acePK
+=======
+     * @param integer $acePK
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getDeleteAccessControlEntrySql($acePK)
@@ -384,7 +416,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     /**
      * Constructs the SQL for deleting an object identity.
      *
+<<<<<<< HEAD
      * @param int     $pk
+=======
+     * @param integer $pk
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getDeleteObjectIdentitySql($pk)
@@ -399,7 +435,11 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     /**
      * Constructs the SQL for deleting relation entries.
      *
+<<<<<<< HEAD
      * @param int     $pk
+=======
+     * @param integer $pk
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getDeleteObjectIdentityRelationsSql($pk)
@@ -414,6 +454,7 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
     /**
      * Constructs the SQL for inserting an ACE.
      *
+<<<<<<< HEAD
      * @param int          $classId
      * @param int|null     $objectIdentityId
      * @param string|null  $field
@@ -424,6 +465,18 @@ class MutableAclProvider extends AclProvider implements MutableAclProviderInterf
      * @param bool         $granting
      * @param bool         $auditSuccess
      * @param bool         $auditFailure
+=======
+     * @param integer      $classId
+     * @param integer|null $objectIdentityId
+     * @param string|null  $field
+     * @param integer      $aceOrder
+     * @param integer      $securityIdentityId
+     * @param string       $strategy
+     * @param integer      $mask
+     * @param Boolean      $granting
+     * @param Boolean      $auditSuccess
+     * @param Boolean      $auditFailure
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getInsertAccessControlEntrySql($classId, $objectIdentityId, $field, $aceOrder, $securityIdentityId, $strategy, $mask, $granting, $auditSuccess, $auditFailure)
@@ -478,8 +531,13 @@ QUERY;
     /**
      * Constructs the SQL for inserting a relation entry.
      *
+<<<<<<< HEAD
      * @param int     $objectIdentityId
      * @param int     $ancestorId
+=======
+     * @param integer $objectIdentityId
+     * @param integer $ancestorId
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getInsertObjectIdentityRelationSql($objectIdentityId, $ancestorId)
@@ -496,8 +554,13 @@ QUERY;
      * Constructs the SQL for inserting an object identity.
      *
      * @param string  $identifier
+<<<<<<< HEAD
      * @param int     $classId
      * @param bool    $entriesInheriting
+=======
+     * @param integer $classId
+     * @param Boolean $entriesInheriting
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getInsertObjectIdentitySql($identifier, $classId, $entriesInheriting)
@@ -546,10 +609,17 @@ QUERY;
     /**
      * Constructs the SQL for selecting an ACE.
      *
+<<<<<<< HEAD
      * @param int     $classId
      * @param int     $oid
      * @param string  $field
      * @param int     $order
+=======
+     * @param integer $classId
+     * @param integer $oid
+     * @param string  $field
+     * @param integer $order
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getSelectAccessControlEntryIdSql($classId, $oid, $field, $order)
@@ -614,7 +684,11 @@ QUERY;
     /**
      * Constructs the SQL for updating an object identity.
      *
+<<<<<<< HEAD
      * @param int     $pk
+=======
+     * @param integer $pk
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $changes
      * @throws \InvalidArgumentException
      * @return string
@@ -636,7 +710,11 @@ QUERY;
     /**
      * Constructs the SQL for updating an ACE.
      *
+<<<<<<< HEAD
      * @param int     $pk
+=======
+     * @param integer $pk
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $sets
      * @throws \InvalidArgumentException
      * @return string
@@ -673,7 +751,11 @@ QUERY;
      * If the type does not yet exist in the database, it will be created.
      *
      * @param string $classType
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function createOrRetrieveClassId($classType)
     {
@@ -693,7 +775,11 @@ QUERY;
      * created.
      *
      * @param SecurityIdentityInterface $sid
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function createOrRetrieveSecurityIdentityId(SecurityIdentityInterface $sid)
     {
@@ -709,7 +795,11 @@ QUERY;
     /**
      * Deletes all ACEs for the given object identity primary key.
      *
+<<<<<<< HEAD
      * @param int     $oidPK
+=======
+     * @param integer $oidPK
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function deleteAccessControlEntries($oidPK)
     {
@@ -719,7 +809,11 @@ QUERY;
     /**
      * Deletes the object identity from the database.
      *
+<<<<<<< HEAD
      * @param int     $pk
+=======
+     * @param integer $pk
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function deleteObjectIdentity($pk)
     {
@@ -729,7 +823,11 @@ QUERY;
     /**
      * Deletes all entries from the relations table from the database.
      *
+<<<<<<< HEAD
      * @param int     $pk
+=======
+     * @param integer $pk
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function deleteObjectIdentityRelations($pk)
     {

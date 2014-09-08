@@ -22,7 +22,11 @@ use Symfony\Component\Translation\Loader\MoFileLoader;
 class MoFileDumper extends FileDumper
 {
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function format(MessageCatalogue $messages, $domain = 'messages')
     {
@@ -68,7 +72,11 @@ class MoFileDumper extends FileDumper
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function getExtension()
     {

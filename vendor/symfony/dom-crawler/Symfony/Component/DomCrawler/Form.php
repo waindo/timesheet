@@ -228,7 +228,11 @@ class Form extends Link implements \ArrayAccess
      *
      * @param string $name The field name
      *
+<<<<<<< HEAD
      * @return bool    true if the field exists, false otherwise
+=======
+     * @return Boolean true if the field exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -296,7 +300,11 @@ class Form extends Link implements \ArrayAccess
      *
      * @param string $name The field name
      *
+<<<<<<< HEAD
      * @return bool    true if the field exists, false otherwise
+=======
+     * @return Boolean true if the field exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function offsetExists($name)
     {

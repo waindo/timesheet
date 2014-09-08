@@ -25,7 +25,11 @@ abstract class AuditLogger implements AuditLoggerInterface
     /**
      * Performs some checks if logging was requested
      *
+<<<<<<< HEAD
      * @param bool           $granted
+=======
+     * @param Boolean        $granted
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param EntryInterface $ace
      */
     public function logIfNeeded($granted, EntryInterface $ace)
@@ -44,7 +48,11 @@ abstract class AuditLogger implements AuditLoggerInterface
     /**
      * This method is only called when logging is needed
      *
+<<<<<<< HEAD
      * @param bool           $granted
+=======
+     * @param Boolean        $granted
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param EntryInterface $ace
      */
     abstract protected function doLog($granted, EntryInterface $ace);

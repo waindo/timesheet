@@ -47,21 +47,33 @@ class ProgressHelper extends Helper
     /**
      * Current step
      *
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $current;
 
     /**
      * Maximum number of steps
      *
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $max;
 
     /**
      * Start time of the progress bar
      *
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $startTime;
 
@@ -178,7 +190,11 @@ class ProgressHelper extends Helper
      * Starts the progress output.
      *
      * @param OutputInterface $output An Output instance
+<<<<<<< HEAD
      * @param int|null        $max    Maximum steps
+=======
+     * @param integer|null    $max    Maximum steps
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function start(OutputInterface $output, $max = null)
     {
@@ -220,8 +236,13 @@ class ProgressHelper extends Helper
     /**
      * Advances the progress output X steps.
      *
+<<<<<<< HEAD
      * @param int     $step   Number of steps to advance
      * @param bool    $redraw Whether to redraw or not
+=======
+     * @param integer $step   Number of steps to advance
+     * @param Boolean $redraw Whether to redraw or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \LogicException
      */
@@ -233,8 +254,13 @@ class ProgressHelper extends Helper
     /**
      * Sets the current progress.
      *
+<<<<<<< HEAD
      * @param int     $current The current progress
      * @param bool    $redraw  Whether to redraw or not
+=======
+     * @param integer $current The current progress
+     * @param Boolean $redraw  Whether to redraw or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \LogicException
      */
@@ -267,7 +293,11 @@ class ProgressHelper extends Helper
     /**
      * Outputs the current progress string.
      *
+<<<<<<< HEAD
      * @param bool    $finish Forces the end result
+=======
+     * @param Boolean $finish Forces the end result
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \LogicException
      */
@@ -340,7 +370,11 @@ class ProgressHelper extends Helper
     /**
      * Generates the array map of format variables to values.
      *
+<<<<<<< HEAD
      * @param bool    $finish Forces the end result
+=======
+     * @param Boolean $finish Forces the end result
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array Array of format vars and values
      */
@@ -398,7 +432,11 @@ class ProgressHelper extends Helper
     /**
      * Converts seconds into human-readable format.
      *
+<<<<<<< HEAD
      * @param int     $secs Number of seconds
+=======
+     * @param integer $secs Number of seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string Time in readable format
      */
@@ -443,7 +481,11 @@ class ProgressHelper extends Helper
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getName()
     {

@@ -40,7 +40,11 @@ class MessageSelector
      *     {0} There are no apples|one: There is one apple|more: There are %count% apples
      *
      * @param string  $message The message being translated
+<<<<<<< HEAD
      * @param int     $number  The number of items represented for the message
+=======
+     * @param integer $number  The number of items represented for the message
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $locale  The locale to use for choosing
      *
      * @return string

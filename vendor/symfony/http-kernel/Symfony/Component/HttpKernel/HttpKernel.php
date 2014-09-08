@@ -91,7 +91,11 @@ class HttpKernel implements HttpKernelInterface, TerminableInterface
      * Exceptions are not caught.
      *
      * @param Request $request A Request instance
+<<<<<<< HEAD
      * @param int     $type    The type of the request (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
+=======
+     * @param integer $type    The type of the request (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      *
@@ -153,7 +157,11 @@ class HttpKernel implements HttpKernelInterface, TerminableInterface
      *
      * @param Response $response A Response instance
      * @param Request  $request  An error message in case the response is not a Response object
+<<<<<<< HEAD
      * @param int      $type     The type of the request (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
+=======
+     * @param integer  $type     The type of the request (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response The filtered Response instance
      *
@@ -191,7 +199,11 @@ class HttpKernel implements HttpKernelInterface, TerminableInterface
      *
      * @param \Exception $e       An \Exception instance
      * @param Request    $request A Request instance
+<<<<<<< HEAD
      * @param int        $type    The type of the request
+=======
+     * @param integer    $type    The type of the request
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      *

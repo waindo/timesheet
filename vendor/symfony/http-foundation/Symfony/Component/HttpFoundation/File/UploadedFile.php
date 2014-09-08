@@ -31,7 +31,11 @@ class UploadedFile extends File
      *
      * Local files are used in test mode hence the code should not enforce HTTP uploads.
      *
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $test = false;
 
@@ -59,7 +63,11 @@ class UploadedFile extends File
     /**
      * The UPLOAD_ERR_XXX constant provided by the uploader.
      *
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $error;
 
@@ -80,9 +88,15 @@ class UploadedFile extends File
      * @param string  $path         The full temporary path to the file
      * @param string  $originalName The original file name
      * @param string  $mimeType     The type of the file as provided by PHP
+<<<<<<< HEAD
      * @param int     $size         The file size
      * @param int     $error        The error constant of the upload (one of PHP's UPLOAD_ERR_XXX constants)
      * @param bool    $test         Whether the test mode is active
+=======
+     * @param integer $size         The file size
+     * @param integer $error        The error constant of the upload (one of PHP's UPLOAD_ERR_XXX constants)
+     * @param Boolean $test         Whether the test mode is active
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws FileException         If file_uploads is disabled
      * @throws FileNotFoundException If the file does not exist
@@ -95,7 +109,11 @@ class UploadedFile extends File
         $this->mimeType = $mimeType ?: 'application/octet-stream';
         $this->size = $size;
         $this->error = $error ?: UPLOAD_ERR_OK;
+<<<<<<< HEAD
         $this->test = (bool) $test;
+=======
+        $this->test = (Boolean) $test;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         parent::__construct($path, UPLOAD_ERR_OK === $this->error);
     }
@@ -179,7 +197,11 @@ class UploadedFile extends File
      * It is extracted from the request from which the file has been uploaded.
      * Then it should not be considered as a safe value.
      *
+<<<<<<< HEAD
      * @return int|null     The file size
+=======
+     * @return integer|null The file size
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -194,7 +216,11 @@ class UploadedFile extends File
      * If the upload was successful, the constant UPLOAD_ERR_OK is returned.
      * Otherwise one of the other UPLOAD_ERR_XXX constants is returned.
      *
+<<<<<<< HEAD
      * @return int     The upload error
+=======
+     * @return integer The upload error
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -206,7 +232,11 @@ class UploadedFile extends File
     /**
      * Returns whether the file was uploaded successfully.
      *
+<<<<<<< HEAD
      * @return bool    True if the file has been uploaded with HTTP and no error occurred.
+=======
+     * @return Boolean True if the file has been uploaded with HTTP and no error occurred.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

@@ -27,15 +27,26 @@ class FieldEntry extends Entry implements FieldEntryInterface
     /**
      * Constructor
      *
+<<<<<<< HEAD
      * @param int                       $id
+=======
+     * @param integer                   $id
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param AclInterface              $acl
      * @param string                    $field
      * @param SecurityIdentityInterface $sid
      * @param string                    $strategy
+<<<<<<< HEAD
      * @param int                       $mask
      * @param bool                      $granting
      * @param bool                      $auditFailure
      * @param bool                      $auditSuccess
+=======
+     * @param integer                   $mask
+     * @param Boolean                   $granting
+     * @param Boolean                   $auditFailure
+     * @param Boolean                   $auditSuccess
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __construct($id, AclInterface $acl, $field, SecurityIdentityInterface $sid, $strategy, $mask, $granting, $auditFailure, $auditSuccess)
     {
@@ -45,7 +56,11 @@ class FieldEntry extends Entry implements FieldEntryInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getField()
     {
@@ -53,7 +68,11 @@ class FieldEntry extends Entry implements FieldEntryInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function serialize()
     {
@@ -64,7 +83,11 @@ class FieldEntry extends Entry implements FieldEntryInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function unserialize($serialized)
     {

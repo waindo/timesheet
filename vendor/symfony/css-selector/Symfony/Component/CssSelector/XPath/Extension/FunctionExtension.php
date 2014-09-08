@@ -46,8 +46,13 @@ class FunctionExtension extends AbstractExtension
     /**
      * @param XPathExpr    $xpath
      * @param FunctionNode $function
+<<<<<<< HEAD
      * @param bool         $last
      * @param bool         $addNameTest
+=======
+     * @param boolean      $last
+     * @param boolean      $addNameTest
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return XPathExpr
      *

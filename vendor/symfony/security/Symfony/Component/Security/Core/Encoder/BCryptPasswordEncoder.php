@@ -27,7 +27,11 @@ class BCryptPasswordEncoder extends BasePasswordEncoder
     /**
      * Constructor.
      *
+<<<<<<< HEAD
      * @param int     $cost The algorithmic cost that should be used
+=======
+     * @param integer $cost The algorithmic cost that should be used
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \RuntimeException When no BCrypt encoder is available
      * @throws \InvalidArgumentException if cost is out of range

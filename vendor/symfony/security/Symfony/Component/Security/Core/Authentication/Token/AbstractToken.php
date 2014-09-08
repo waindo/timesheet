@@ -127,7 +127,11 @@ abstract class AbstractToken implements TokenInterface
      */
     public function setAuthenticated($authenticated)
     {
+<<<<<<< HEAD
         $this->authenticated = (bool) $authenticated;
+=======
+        $this->authenticated = (Boolean) $authenticated;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -188,7 +192,11 @@ abstract class AbstractToken implements TokenInterface
      *
      * @param string $name The attribute name
      *
+<<<<<<< HEAD
      * @return bool    true if the attribute exists, false otherwise
+=======
+     * @return Boolean true if the attribute exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasAttribute($name)
     {
@@ -225,7 +233,11 @@ abstract class AbstractToken implements TokenInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __toString()
     {
@@ -247,7 +259,11 @@ abstract class AbstractToken implements TokenInterface
         }
 
         if ($this->user instanceof EquatableInterface) {
+<<<<<<< HEAD
             return ! (bool) $this->user->isEqualTo($user);
+=======
+            return ! (Boolean) $this->user->isEqualTo($user);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         if ($this->user->getPassword() !== $user->getPassword()) {

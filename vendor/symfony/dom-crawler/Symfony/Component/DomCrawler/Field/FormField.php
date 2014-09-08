@@ -39,7 +39,11 @@ abstract class FormField
      */
     protected $xpath;
     /**
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected $disabled;
 
@@ -98,7 +102,11 @@ abstract class FormField
     /**
      * Returns true if the field should be included in the submitted values.
      *
+<<<<<<< HEAD
      * @return bool    true if the field should be included in the submitted values, false otherwise
+=======
+     * @return Boolean true if the field should be included in the submitted values, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasValue()
     {
@@ -108,7 +116,11 @@ abstract class FormField
     /**
      * Check if the current field is disabled
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isDisabled()
     {

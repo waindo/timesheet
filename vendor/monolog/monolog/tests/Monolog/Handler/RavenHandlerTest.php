@@ -72,7 +72,11 @@ class RavenHandlerTest extends TestCase
         $this->assertEquals($ravenClient::WARNING, $ravenClient->lastData['level']);
         $this->assertContains($record['message'], $ravenClient->lastData['message']);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     public function testTag()
     {
         $ravenClient = $this->getRavenClient();

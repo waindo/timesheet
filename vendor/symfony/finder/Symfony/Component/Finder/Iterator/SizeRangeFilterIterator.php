@@ -38,7 +38,11 @@ class SizeRangeFilterIterator extends FilterIterator
     /**
      * Filters the iterator values.
      *
+<<<<<<< HEAD
      * @return bool    true if the value should be kept, false otherwise
+=======
+     * @return Boolean true if the value should be kept, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function accept()
     {

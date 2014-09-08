@@ -13,6 +13,10 @@ namespace Monolog\Handler;
 
 use Monolog\TestCase;
 use Monolog\Logger;
+<<<<<<< HEAD
+=======
+use Monolog\Formatter\LineFormatter;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
 /**
  * @author Robert Kaufmann III <rok3@rok3.me>
@@ -42,10 +46,17 @@ class LogEntriesHandlerTest extends TestCase
 
     public function testWriteBatchContent()
     {
+<<<<<<< HEAD
         $records = array(
             $this->getRecord(),
             $this->getRecord(),
             $this->getRecord()
+=======
+        $records = array( 
+            $this->getRecord(), 
+            $this->getRecord(), 
+            $this->getRecord() 
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         );
         $this->createHandler();
         $this->handler->handleBatch($records);

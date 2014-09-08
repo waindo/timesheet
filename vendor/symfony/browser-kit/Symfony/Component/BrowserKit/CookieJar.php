@@ -73,7 +73,11 @@ class CookieJar
                 }
             }
 
+<<<<<<< HEAD
             return;
+=======
+            return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         // avoid relying on this behavior that is mainly here for BC reasons
@@ -82,6 +86,11 @@ class CookieJar
                 return $cookies[$path][$name];
             }
         }
+<<<<<<< HEAD
+=======
+
+        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -199,7 +208,11 @@ class CookieJar
      * Returns not yet expired cookie values for the given URI.
      *
      * @param string  $uri             A URI
+<<<<<<< HEAD
      * @param bool    $returnsRawValue Returns raw value or urldecoded value
+=======
+     * @param Boolean $returnsRawValue Returns raw value or urldecoded value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array An array of cookie values
      */

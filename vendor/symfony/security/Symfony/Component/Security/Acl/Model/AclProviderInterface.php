@@ -24,7 +24,11 @@ interface AclProviderInterface
      * Retrieves all child object identities from the database
      *
      * @param ObjectIdentityInterface $parentOid
+<<<<<<< HEAD
      * @param bool                    $directChildrenOnly
+=======
+     * @param Boolean                 $directChildrenOnly
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array returns an array of child 'ObjectIdentity's
      */

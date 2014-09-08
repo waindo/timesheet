@@ -62,7 +62,11 @@ interface CsrfTokenManagerInterface
      *
      * @param CsrfToken $token A CSRF token
      *
+<<<<<<< HEAD
      * @return bool    Returns true if the token is valid, false otherwise
+=======
+     * @return Boolean Returns true if the token is valid, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isTokenValid(CsrfToken $token);
 }

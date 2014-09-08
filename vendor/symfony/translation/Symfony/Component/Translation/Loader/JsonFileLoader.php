@@ -54,7 +54,11 @@ class JsonFileLoader extends ArrayLoader implements LoaderInterface
     /**
      * Translates JSON_ERROR_* constant into meaningful message.
      *
+<<<<<<< HEAD
      * @param  int     $errorCode Error code returned by json_last_error() call
+=======
+     * @param  integer $errorCode Error code returned by json_last_error() call
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string  Message string
      */

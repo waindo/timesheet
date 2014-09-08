@@ -232,7 +232,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * Forwards the Request to the backend without storing the Response in the cache.
      *
      * @param Request $request A Request instance
+<<<<<<< HEAD
      * @param bool    $catch   Whether to process exceptions
+=======
+     * @param Boolean $catch   Whether to process exceptions
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      */
@@ -247,7 +251,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * Invalidates non-safe methods (like POST, PUT, and DELETE).
      *
      * @param Request $request A Request instance
+<<<<<<< HEAD
      * @param bool    $catch   Whether to process exceptions
+=======
+     * @param Boolean $catch   Whether to process exceptions
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      *
@@ -296,7 +304,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * it triggers "miss" processing.
      *
      * @param Request $request A Request instance
+<<<<<<< HEAD
      * @param bool    $catch   whether to process exceptions
+=======
+     * @param Boolean $catch   whether to process exceptions
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      *
@@ -350,7 +362,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      *
      * @param Request  $request A Request instance
      * @param Response $entry   A Response instance to validate
+<<<<<<< HEAD
      * @param bool     $catch   Whether to process exceptions
+=======
+     * @param Boolean  $catch   Whether to process exceptions
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      */
@@ -411,7 +427,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * This methods is triggered when the cache missed or a reload is required.
      *
      * @param Request $request A Request instance
+<<<<<<< HEAD
      * @param bool    $catch   whether to process exceptions
+=======
+     * @param Boolean $catch   whether to process exceptions
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      */
@@ -445,7 +465,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * Forwards the Request to the backend and returns the Response.
      *
      * @param Request  $request A Request instance
+<<<<<<< HEAD
      * @param bool     $catch   Whether to catch exceptions or not
+=======
+     * @param Boolean  $catch   Whether to catch exceptions or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param Response $entry   A Response instance (the stale entry if present, null otherwise)
      *
      * @return Response A Response instance
@@ -496,7 +520,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * @param Request  $request A Request instance
      * @param Response $entry   A Response instance
      *
+<<<<<<< HEAD
      * @return bool    true if the cache entry if fresh enough, false otherwise
+=======
+     * @return Boolean true if the cache entry if fresh enough, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function isFreshEnough(Request $request, Response $entry)
     {
@@ -517,7 +545,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * @param Request  $request A Request instance
      * @param Response $entry   A Response instance
      *
+<<<<<<< HEAD
      * @return bool    true if the cache entry can be returned even if it is staled, false otherwise
+=======
+     * @return Boolean true if the cache entry can be returned even if it is staled, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function lock(Request $request, Response $entry)
     {
@@ -651,7 +683,11 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      *
      * @param Request $request A Request instance
      *
+<<<<<<< HEAD
      * @return bool    true if the Request is private, false otherwise
+=======
+     * @return Boolean true if the Request is private, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function isPrivateRequest(Request $request)
     {

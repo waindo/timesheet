@@ -21,12 +21,20 @@ abstract class AbstractProxy
     /**
      * Flag if handler wraps an internal PHP session handler (using \SessionHandler).
      *
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected $wrapper = false;
 
     /**
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected $active = false;
 
@@ -48,7 +56,11 @@ abstract class AbstractProxy
     /**
      * Is this proxy handler and instance of \SessionHandlerInterface.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isSessionHandlerInterface()
     {
@@ -58,7 +70,11 @@ abstract class AbstractProxy
     /**
      * Returns true if this handler wraps an internal PHP session save handler using \SessionHandler.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isWrapper()
     {
@@ -68,7 +84,11 @@ abstract class AbstractProxy
     /**
      * Has a session started?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isActive()
     {
@@ -87,7 +107,11 @@ abstract class AbstractProxy
      *
      * @internal
      *
+<<<<<<< HEAD
      * @param bool    $flag
+=======
+     * @param Boolean $flag
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \LogicException
      */

@@ -28,7 +28,11 @@ interface AuthenticationTrustResolverInterface
      *
      * @param TokenInterface $token
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isAnonymous(TokenInterface $token = null);
 
@@ -38,7 +42,11 @@ interface AuthenticationTrustResolverInterface
      *
      * @param TokenInterface $token
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isRememberMe(TokenInterface $token = null);
 
@@ -47,7 +55,11 @@ interface AuthenticationTrustResolverInterface
      *
      * @param TokenInterface $token
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isFullFledged(TokenInterface $token = null);
 }

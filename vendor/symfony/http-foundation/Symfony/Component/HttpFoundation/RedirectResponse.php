@@ -26,7 +26,11 @@ class RedirectResponse extends Response
      * Creates a redirect response so that it conforms to the rules defined for a redirect status code.
      *
      * @param string  $url     The URL to redirect to
+<<<<<<< HEAD
      * @param int     $status  The status code (302 by default)
+=======
+     * @param integer $status  The status code (302 by default)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $headers The headers (Location is always set to the given URL)
      *
      * @throws \InvalidArgumentException
@@ -51,7 +55,11 @@ class RedirectResponse extends Response
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public static function create($url = '', $status = 302, $headers = array())
     {

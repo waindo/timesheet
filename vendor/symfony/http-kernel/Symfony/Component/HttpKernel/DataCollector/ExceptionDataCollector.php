@@ -37,7 +37,11 @@ class ExceptionDataCollector extends DataCollector
     /**
      * Checks if the exception is not null.
      *
+<<<<<<< HEAD
      * @return bool    true if the exception is not null, false otherwise
+=======
+     * @return Boolean true if the exception is not null, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasException()
     {
@@ -67,7 +71,11 @@ class ExceptionDataCollector extends DataCollector
     /**
      * Gets the exception code.
      *
+<<<<<<< HEAD
      * @return int     The exception code
+=======
+     * @return integer The exception code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getCode()
     {
@@ -77,7 +85,11 @@ class ExceptionDataCollector extends DataCollector
     /**
      * Gets the status code.
      *
+<<<<<<< HEAD
      * @return int     The status code
+=======
+     * @return integer The status code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getStatusCode()
     {

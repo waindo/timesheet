@@ -35,8 +35,13 @@ class ConsoleOutput extends StreamOutput implements ConsoleOutputInterface
     /**
      * Constructor.
      *
+<<<<<<< HEAD
      * @param int                           $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
      * @param bool|null                     $decorated Whether to decorate messages (null for auto-guessing)
+=======
+     * @param integer                       $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
+     * @param Boolean|null                  $decorated Whether to decorate messages (null for auto-guessing)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param OutputFormatterInterface|null $formatter Output formatter instance (null to use default OutputFormatter)
      *
      * @api
@@ -104,7 +109,11 @@ class ConsoleOutput extends StreamOutput implements ConsoleOutputInterface
      * STDOUT and doesn't properly convert ASCII to EBCDIC, resulting in garbage
      * output.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function hasStdoutSupport()
     {

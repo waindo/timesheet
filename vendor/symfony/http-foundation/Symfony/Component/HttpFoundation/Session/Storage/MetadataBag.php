@@ -44,12 +44,20 @@ class MetadataBag implements SessionBagInterface
     /**
      * Unix timestamp.
      *
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $lastUsed;
 
     /**
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $updateThreshold;
 
@@ -57,7 +65,11 @@ class MetadataBag implements SessionBagInterface
      * Constructor.
      *
      * @param string  $storageKey      The key used to store bag in the session.
+<<<<<<< HEAD
      * @param int     $updateThreshold The time to wait between two UPDATED updates
+=======
+     * @param integer $updateThreshold The time to wait between two UPDATED updates
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __construct($storageKey = '_sf2_meta', $updateThreshold = 0)
     {
@@ -87,7 +99,11 @@ class MetadataBag implements SessionBagInterface
     /**
      * Gets the lifetime that the session cookie was set with.
      *
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getLifetime()
     {
@@ -97,7 +113,11 @@ class MetadataBag implements SessionBagInterface
     /**
      * Stamps a new session's metadata.
      *
+<<<<<<< HEAD
      * @param int     $lifetime Sets the cookie lifetime for the session cookie. A null value
+=======
+     * @param integer $lifetime Sets the cookie lifetime for the session cookie. A null value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                          will leave the system settings unchanged, 0 sets the cookie
      *                          to expire with browser session. Time is in seconds, and is
      *                          not a Unix timestamp.
@@ -118,7 +138,11 @@ class MetadataBag implements SessionBagInterface
     /**
      * Gets the created timestamp metadata.
      *
+<<<<<<< HEAD
      * @return int     Unix timestamp
+=======
+     * @return integer Unix timestamp
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getCreated()
     {
@@ -128,7 +152,11 @@ class MetadataBag implements SessionBagInterface
     /**
      * Gets the last used metadata.
      *
+<<<<<<< HEAD
      * @return int     Unix timestamp
+=======
+     * @return integer Unix timestamp
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getLastUsed()
     {

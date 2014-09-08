@@ -100,11 +100,16 @@ class ChromePHPHandler extends AbstractProcessingHandler
      */
     protected function send()
     {
+<<<<<<< HEAD
         if (self::$overflowed || !self::$sendHeaders) {
+=======
+        if (self::$overflowed) {
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
             return;
         }
 
         if (!self::$initialized) {
+<<<<<<< HEAD
             self::$initialized = true;
 
             self::$sendHeaders = $this->headersAccepted();
@@ -113,6 +118,12 @@ class ChromePHPHandler extends AbstractProcessingHandler
             }
 
             self::$json['request_uri'] = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+=======
+            self::$sendHeaders = $this->headersAccepted();
+            self::$json['request_uri'] = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+
+            self::$initialized = true;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         $json = @json_encode(self::$json);
@@ -159,11 +170,16 @@ class ChromePHPHandler extends AbstractProcessingHandler
      */
     protected function headersAccepted()
     {
+<<<<<<< HEAD
         if (empty($_SERVER['HTTP_USER_AGENT'])) {
             return false;
         }
 
         return preg_match('{\bChrome/\d+[\.\d+]*\b}', $_SERVER['HTTP_USER_AGENT']);
+=======
+        return !isset($_SERVER['HTTP_USER_AGENT'])
+               || preg_match('{\bChrome/\d+[\.\d+]*\b}', $_SERVER['HTTP_USER_AGENT']);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

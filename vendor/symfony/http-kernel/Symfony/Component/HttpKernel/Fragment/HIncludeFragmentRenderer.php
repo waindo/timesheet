@@ -68,7 +68,11 @@ class HIncludeFragmentRenderer extends RoutableFragmentRenderer
     /**
      * Checks if a templating engine has been set.
      *
+<<<<<<< HEAD
      * @return bool    true if the templating engine has been set, false otherwise
+=======
+     * @return Boolean true if the templating engine has been set, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasTemplating()
     {
@@ -126,7 +130,11 @@ class HIncludeFragmentRenderer extends RoutableFragmentRenderer
     /**
      * @param string $template
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function templateExists($template)
     {

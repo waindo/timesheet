@@ -17,14 +17,22 @@ namespace Symfony\Component\Finder\Adapter;
 interface AdapterInterface
 {
     /**
+<<<<<<< HEAD
      * @param bool    $followLinks
+=======
+     * @param Boolean $followLinks
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return AdapterInterface Current instance
      */
     public function setFollowLinks($followLinks);
 
     /**
+<<<<<<< HEAD
      * @param int     $mode
+=======
+     * @param integer $mode
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return AdapterInterface Current instance
      */
@@ -94,7 +102,11 @@ interface AdapterInterface
     public function setFilters(array $filters);
 
     /**
+<<<<<<< HEAD
      * @param \Closure|int     $sort
+=======
+     * @param \Closure|integer $sort
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return AdapterInterface Current instance
      */
@@ -115,7 +127,11 @@ interface AdapterInterface
     public function setNotPath(array $notPaths);
 
     /**
+<<<<<<< HEAD
      * @param bool    $ignore
+=======
+     * @param boolean $ignore
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return AdapterInterface Current instance
      */
@@ -131,7 +147,11 @@ interface AdapterInterface
     /**
      * Tests adapter support for current platform.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isSupported();
 

@@ -104,7 +104,11 @@ final class KernelEvents
     const TERMINATE = 'kernel.terminate';
 
     /**
+<<<<<<< HEAD
      * The FINISH_REQUEST event occurs when a response was generated for a request.
+=======
+     * The REQUEST_FINISHED event occurs when a response was generated for a request.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * This event allows you to reset the global and environmental state of
      * the application, when it was changed during the request.

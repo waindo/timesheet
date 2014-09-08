@@ -55,7 +55,11 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
+<<<<<<< HEAD
 			'database'  => 'time_sheet',
+=======
+			'database'  => 'database',
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

@@ -148,7 +148,11 @@ class AttributeBag implements AttributeBagInterface, \IteratorAggregate, \Counta
     /**
      * Returns the number of attributes.
      *
+<<<<<<< HEAD
      * @return int     The number of attributes
+=======
+     * @return integer The number of attributes
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function count()
     {

@@ -29,7 +29,11 @@ class IpUtils
      * @param string       $requestIp   IP to check
      * @param string|array $ips         List of IPs or subnets (can be a string if only a single one)
      *
+<<<<<<< HEAD
      * @return bool    Whether the IP is valid
+=======
+     * @return boolean Whether the IP is valid
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public static function checkIp($requestIp, $ips)
     {
@@ -55,7 +59,11 @@ class IpUtils
      * @param string $requestIp IPv4 address to check
      * @param string $ip        IPv4 address or subnet in CIDR notation
      *
+<<<<<<< HEAD
      * @return bool    Whether the IP is valid
+=======
+     * @return boolean Whether the IP is valid
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public static function checkIp4($requestIp, $ip)
     {
@@ -83,7 +91,11 @@ class IpUtils
      * @param string $requestIp IPv6 address to check
      * @param string $ip        IPv6 address or subnet in CIDR notation
      *
+<<<<<<< HEAD
      * @return bool    Whether the IP is valid
+=======
+     * @return boolean Whether the IP is valid
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \RuntimeException When IPV6 support is not enabled
      */

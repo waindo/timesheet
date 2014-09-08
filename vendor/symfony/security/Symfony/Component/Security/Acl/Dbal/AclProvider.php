@@ -11,7 +11,11 @@
 
 namespace Symfony\Component\Security\Acl\Dbal;
 
+<<<<<<< HEAD
 use Doctrine\DBAL\Connection;
+=======
+use Doctrine\DBAL\Driver\Connection;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 use Doctrine\DBAL\Driver\Statement;
 use Symfony\Component\Security\Acl\Model\AclInterface;
 use Symfony\Component\Security\Acl\Domain\Acl;
@@ -38,6 +42,7 @@ class AclProvider implements AclProviderInterface
 {
     const MAX_BATCH_SIZE = 30;
 
+<<<<<<< HEAD
     /**
      * @var AclCacheInterface|null
      */
@@ -46,14 +51,20 @@ class AclProvider implements AclProviderInterface
     /**
      * @var Connection
      */
+=======
+    protected $cache;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     protected $connection;
     protected $loadedAces = array();
     protected $loadedAcls = array();
     protected $options;
+<<<<<<< HEAD
 
     /**
      * @var PermissionGrantingStrategyInterface
      */
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     private $permissionGrantingStrategy;
 
     /**
@@ -73,7 +84,11 @@ class AclProvider implements AclProviderInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function findChildren(ObjectIdentityInterface $parentOid, $directChildrenOnly = false)
     {
@@ -88,7 +103,11 @@ class AclProvider implements AclProviderInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function findAcl(ObjectIdentityInterface $oid, array $sids = array())
     {
@@ -96,7 +115,11 @@ class AclProvider implements AclProviderInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function findAcls(array $oids, array $sids = array())
     {
@@ -327,7 +350,11 @@ SELECTCLAUSE;
      * object identities.
      *
      * @param ObjectIdentityInterface $oid
+<<<<<<< HEAD
      * @param bool                    $directChildrenOnly
+=======
+     * @param Boolean                 $directChildrenOnly
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @return string
      */
     protected function getFindChildrenSql(ObjectIdentityInterface $oid, $directChildrenOnly)
@@ -383,7 +410,11 @@ QUERY;
      * Returns the primary key of the passed object identity.
      *
      * @param ObjectIdentityInterface $oid
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     final protected function retrieveObjectIdentityPrimaryKey(ObjectIdentityInterface $oid)
     {
@@ -563,7 +594,11 @@ QUERY;
                     $oidCache[$oidLookupKey] = new ObjectIdentity($objectIdentifier, $classType);
                 }
 
+<<<<<<< HEAD
                 $acl = new Acl((int) $aclId, $oidCache[$oidLookupKey], $permissionGrantingStrategy, $emptyArray, !!$entriesInheriting);
+=======
+                $acl = new Acl((integer) $aclId, $oidCache[$oidLookupKey], $permissionGrantingStrategy, $emptyArray, !!$entriesInheriting);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
                 // keep a local, and global reference to this ACL
                 $loadedAcls[$classType][$objectIdentifier] = $acl;
@@ -605,9 +640,15 @@ QUERY;
                     }
 
                     if (null === $fieldName) {
+<<<<<<< HEAD
                         $loadedAces[$aceId] = new Entry((int) $aceId, $acl, $sids[$key], $grantingStrategy, (int) $mask, !!$granting, !!$auditFailure, !!$auditSuccess);
                     } else {
                         $loadedAces[$aceId] = new FieldEntry((int) $aceId, $acl, $fieldName, $sids[$key], $grantingStrategy, (int) $mask, !!$granting, !!$auditFailure, !!$auditSuccess);
+=======
+                        $loadedAces[$aceId] = new Entry((integer) $aceId, $acl, $sids[$key], $grantingStrategy, (integer) $mask, !!$granting, !!$auditFailure, !!$auditSuccess);
+                    } else {
+                        $loadedAces[$aceId] = new FieldEntry((integer) $aceId, $acl, $fieldName, $sids[$key], $grantingStrategy, (integer) $mask, !!$granting, !!$auditFailure, !!$auditSuccess);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
                     }
                 }
                 $ace = $loadedAces[$aceId];

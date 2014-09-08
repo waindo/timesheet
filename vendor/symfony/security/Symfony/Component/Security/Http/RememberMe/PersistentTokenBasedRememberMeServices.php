@@ -62,7 +62,11 @@ class PersistentTokenBasedRememberMeServices extends AbstractRememberMeServices
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function cancelCookie(Request $request)
     {
@@ -79,7 +83,11 @@ class PersistentTokenBasedRememberMeServices extends AbstractRememberMeServices
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function processAutoLoginCookie(array $cookieParts, Request $request)
     {
@@ -117,7 +125,11 @@ class PersistentTokenBasedRememberMeServices extends AbstractRememberMeServices
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected function onLoginSuccess(Request $request, Response $response, TokenInterface $token)
     {

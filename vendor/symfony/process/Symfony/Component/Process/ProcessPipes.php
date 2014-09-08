@@ -26,17 +26,28 @@ class ProcessPipes
     private $fileHandles = array();
     /** @var array */
     private $readBytes = array();
+<<<<<<< HEAD
     /** @var bool    */
     private $useFiles;
     /** @var bool    */
+=======
+    /** @var Boolean */
+    private $useFiles;
+    /** @var Boolean */
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     private $ttyMode;
 
     const CHUNK_SIZE = 16384;
 
     public function __construct($useFiles, $ttyMode)
     {
+<<<<<<< HEAD
         $this->useFiles = (bool) $useFiles;
         $this->ttyMode = (bool) $ttyMode;
+=======
+        $this->useFiles = (Boolean) $useFiles;
+        $this->ttyMode = (Boolean) $ttyMode;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         // Fix for PHP bug #51800: reading from STDOUT pipe hangs forever on Windows if the output is too big.
         // Workaround for this problem is to use temporary files instead of pipes on Windows platform.
@@ -151,7 +162,11 @@ class ProcessPipes
     /**
      * Reads data in file handles and pipes.
      *
+<<<<<<< HEAD
      * @param bool    $blocking Whether to use blocking calls or not.
+=======
+     * @param Boolean $blocking Whether to use blocking calls or not.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array An array of read data indexed by their fd.
      */
@@ -163,7 +178,11 @@ class ProcessPipes
     /**
      * Reads data in file handles and pipes, closes them if EOF is reached.
      *
+<<<<<<< HEAD
      * @param bool    $blocking Whether to use blocking calls or not.
+=======
+     * @param Boolean $blocking Whether to use blocking calls or not.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array An array of read data indexed by their fd.
      */
@@ -175,21 +194,36 @@ class ProcessPipes
     /**
      * Returns if the current state has open file handles or pipes.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasOpenHandles()
     {
         if (!$this->useFiles) {
+<<<<<<< HEAD
             return (bool) $this->pipes;
         }
 
         return (bool) $this->pipes && (bool) $this->fileHandles;
+=======
+            return (Boolean) $this->pipes;
+        }
+
+        return (Boolean) $this->pipes && (Boolean) $this->fileHandles;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
      * Writes stdin data.
      *
+<<<<<<< HEAD
      * @param bool        $blocking Whether to use blocking calls or not.
+=======
+     * @param Boolean     $blocking Whether to use blocking calls or not.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string|null $stdin    The data to write.
      */
     public function write($blocking, $stdin)
@@ -240,7 +274,11 @@ class ProcessPipes
     /**
      * Reads data in file handles.
      *
+<<<<<<< HEAD
      * @param bool    $close Whether to close file handles or not.
+=======
+     * @param Boolean $close Whether to close file handles or not.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array An array of read data indexed by their fd.
      */
@@ -276,8 +314,13 @@ class ProcessPipes
     /**
      * Reads data in file pipes streams.
      *
+<<<<<<< HEAD
      * @param bool    $blocking Whether to use blocking calls or not.
      * @param bool    $close    Whether to close file handles or not.
+=======
+     * @param Boolean $blocking Whether to use blocking calls or not.
+     * @param Boolean $close    Whether to close file handles or not.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array An array of read data indexed by their fd.
      */
@@ -333,7 +376,11 @@ class ProcessPipes
     /**
      * Returns true if a system call has been interrupted.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function hasSystemCallBeenInterrupted()
     {

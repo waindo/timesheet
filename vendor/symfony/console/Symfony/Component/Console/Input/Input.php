@@ -81,7 +81,11 @@ abstract class Input implements InputInterface
     /**
      * Checks if the input is interactive.
      *
+<<<<<<< HEAD
      * @return bool    Returns true if the input is interactive
+=======
+     * @return Boolean Returns true if the input is interactive
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isInteractive()
     {
@@ -91,11 +95,19 @@ abstract class Input implements InputInterface
     /**
      * Sets the input interactivity.
      *
+<<<<<<< HEAD
      * @param bool    $interactive If the input should be interactive
      */
     public function setInteractive($interactive)
     {
         $this->interactive = (bool) $interactive;
+=======
+     * @param Boolean $interactive If the input should be interactive
+     */
+    public function setInteractive($interactive)
+    {
+        $this->interactive = (Boolean) $interactive;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -146,9 +158,15 @@ abstract class Input implements InputInterface
     /**
      * Returns true if an InputArgument object exists by name or position.
      *
+<<<<<<< HEAD
      * @param string|int     $name The InputArgument name or position
      *
      * @return bool    true if the InputArgument object exists, false otherwise
+=======
+     * @param string|integer $name The InputArgument name or position
+     *
+     * @return Boolean true if the InputArgument object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasArgument($name)
     {
@@ -187,7 +205,11 @@ abstract class Input implements InputInterface
      * Sets an option value by name.
      *
      * @param string         $name  The option name
+<<<<<<< HEAD
      * @param string|bool    $value The option value
+=======
+     * @param string|boolean $value The option value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException When option given doesn't exist
      */
@@ -205,7 +227,11 @@ abstract class Input implements InputInterface
      *
      * @param string $name The InputOption name
      *
+<<<<<<< HEAD
      * @return bool    true if the InputOption object exists, false otherwise
+=======
+     * @return Boolean true if the InputOption object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasOption($name)
     {

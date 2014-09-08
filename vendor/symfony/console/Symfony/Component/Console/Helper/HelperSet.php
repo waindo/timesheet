@@ -56,7 +56,11 @@ class HelperSet implements \IteratorAggregate
      *
      * @param string $name The helper name
      *
+<<<<<<< HEAD
      * @return bool    true if the helper is defined, false otherwise
+=======
+     * @return Boolean true if the helper is defined, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function has($name)
     {

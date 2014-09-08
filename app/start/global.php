@@ -79,8 +79,11 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+<<<<<<< HEAD
 
 // error
 App::missing(function() {
 	return Response::view('errors.404');
 });
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887

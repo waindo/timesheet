@@ -57,7 +57,11 @@ Route::filter('auth.basic', function()
 
 Route::filter('guest', function()
 {
+<<<<<<< HEAD
 	if (Auth::check()) return Redirect::to('login');
+=======
+	if (Auth::check()) return Redirect::to('/');
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 });
 
 /*
@@ -78,9 +82,12 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+<<<<<<< HEAD
 
 // ajax
 Route::filter('ajax', function()
 {
 	if (!Request::ajax()) return App::abort(404);
 });
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887

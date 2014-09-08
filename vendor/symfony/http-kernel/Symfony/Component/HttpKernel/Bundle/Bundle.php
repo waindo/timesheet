@@ -140,6 +140,10 @@ abstract class Bundle extends ContainerAware implements BundleInterface
      */
     public function getParent()
     {
+<<<<<<< HEAD
+=======
+        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

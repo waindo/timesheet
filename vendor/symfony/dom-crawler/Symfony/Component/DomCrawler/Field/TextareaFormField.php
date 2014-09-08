@@ -31,7 +31,11 @@ class TextareaFormField extends FormField
             throw new \LogicException(sprintf('A TextareaFormField can only be created from a textarea tag (%s given).', $this->node->nodeName));
         }
 
+<<<<<<< HEAD
         $this->value = '';
+=======
+        $this->value = null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         foreach ($this->node->childNodes as $node) {
             $this->value .= $node->wholeText;
         }

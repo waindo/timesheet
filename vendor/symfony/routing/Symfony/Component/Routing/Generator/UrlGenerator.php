@@ -40,7 +40,11 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
     protected $context;
 
     /**
+<<<<<<< HEAD
      * @var bool|null
+=======
+     * @var Boolean|null
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected $strictRequirements = true;
 
@@ -114,7 +118,11 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
      */
     public function setStrictRequirements($enabled)
     {
+<<<<<<< HEAD
         $this->strictRequirements = null === $enabled ? null : (bool) $enabled;
+=======
+        $this->strictRequirements = null === $enabled ? null : (Boolean) $enabled;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -126,7 +134,11 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function generate($name, $parameters = array(), $referenceType = self::ABSOLUTE_PATH)
     {
@@ -171,7 +183,11 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
                             $this->logger->error($message);
                         }
 
+<<<<<<< HEAD
                         return;
+=======
+                        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
                     }
 
                     $url = $token[1].$mergedParams[$token[3]].$url;
@@ -224,7 +240,11 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
                                 $this->logger->error($message);
                             }
 
+<<<<<<< HEAD
                             return;
+=======
+                            return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
                         }
 
                         $routeHost = $token[1].$mergedParams[$token[3]].$routeHost;

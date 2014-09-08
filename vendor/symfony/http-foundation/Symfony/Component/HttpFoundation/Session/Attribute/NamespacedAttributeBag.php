@@ -100,7 +100,11 @@ class NamespacedAttributeBag extends AttributeBag
      * This method allows structured namespacing of session attributes.
      *
      * @param string  $name         Key name
+<<<<<<< HEAD
      * @param bool    $writeContext Write context, default false
+=======
+     * @param boolean $writeContext Write context, default false
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return array
      */

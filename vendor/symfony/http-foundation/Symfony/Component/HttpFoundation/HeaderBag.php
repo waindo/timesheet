@@ -117,7 +117,11 @@ class HeaderBag implements \IteratorAggregate, \Countable
      *
      * @param string  $key     The header name
      * @param mixed   $default The default value
+<<<<<<< HEAD
      * @param bool    $first   Whether to return the first value or all header values
+=======
+     * @param Boolean $first   Whether to return the first value or all header values
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|array The first header value if $first is true, an array of values otherwise
      *
@@ -147,7 +151,11 @@ class HeaderBag implements \IteratorAggregate, \Countable
      *
      * @param string       $key     The key
      * @param string|array $values  The value or an array of values
+<<<<<<< HEAD
      * @param bool         $replace Whether to replace the actual value or not (true by default)
+=======
+     * @param Boolean      $replace Whether to replace the actual value or not (true by default)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -173,7 +181,11 @@ class HeaderBag implements \IteratorAggregate, \Countable
      *
      * @param string $key The HTTP header
      *
+<<<<<<< HEAD
      * @return bool    true if the parameter exists, false otherwise
+=======
+     * @return Boolean true if the parameter exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -188,7 +200,11 @@ class HeaderBag implements \IteratorAggregate, \Countable
      * @param string $key   The HTTP header name
      * @param string $value The HTTP value
      *
+<<<<<<< HEAD
      * @return bool    true if the value is contained in the header, false otherwise
+=======
+     * @return Boolean true if the value is contained in the header, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

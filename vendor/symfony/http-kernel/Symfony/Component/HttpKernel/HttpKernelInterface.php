@@ -33,9 +33,15 @@ interface HttpKernelInterface
      * and do its best to convert them to a Response instance.
      *
      * @param Request $request A Request instance
+<<<<<<< HEAD
      * @param int     $type    The type of the request
      *                          (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
      * @param bool    $catch Whether to catch exceptions or not
+=======
+     * @param integer $type    The type of the request
+     *                          (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
+     * @param Boolean $catch Whether to catch exceptions or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response A Response instance
      *

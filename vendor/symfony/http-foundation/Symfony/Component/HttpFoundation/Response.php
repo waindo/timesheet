@@ -97,7 +97,11 @@ class Response
     protected $version;
 
     /**
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     protected $statusCode;
 
@@ -189,7 +193,11 @@ class Response
      * Constructor.
      *
      * @param mixed   $content The response content, see setContent()
+<<<<<<< HEAD
      * @param int     $status  The response status code
+=======
+     * @param integer $status  The response status code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $headers An array of response headers
      *
      * @throws \InvalidArgumentException When the HTTP status code is not valid
@@ -216,7 +224,11 @@ class Response
      *         ->setSharedMaxAge(300);
      *
      * @param mixed   $content The response content, see setContent()
+<<<<<<< HEAD
      * @param int     $status  The response status code
+=======
+     * @param integer $status  The response status code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $headers An array of response headers
      *
      * @return Response
@@ -467,7 +479,11 @@ class Response
     /**
      * Sets the response status code.
      *
+<<<<<<< HEAD
      * @param int     $code HTTP status code
+=======
+     * @param integer $code HTTP status code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param mixed   $text HTTP status text
      *
      * If the status text is null it will be automatically populated for the known
@@ -506,7 +522,11 @@ class Response
     /**
      * Retrieves the status code for the current web response.
      *
+<<<<<<< HEAD
      * @return int     Status code
+=======
+     * @return integer Status code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -552,7 +572,11 @@ class Response
      * Responses with neither a freshness lifetime (Expires, max-age) nor cache
      * validator (Last-Modified, ETag) are considered uncacheable.
      *
+<<<<<<< HEAD
      * @return bool    true if the response is worth caching, false otherwise
+=======
+     * @return Boolean true if the response is worth caching, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -576,7 +600,11 @@ class Response
      * origin. A response is considered fresh when it includes a Cache-Control/max-age
      * indicator or Expires header and the calculated age is less than the freshness lifetime.
      *
+<<<<<<< HEAD
      * @return bool    true if the response is fresh, false otherwise
+=======
+     * @return Boolean true if the response is fresh, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -589,7 +617,11 @@ class Response
      * Returns true if the response includes headers that can be used to validate
      * the response with the origin server using a conditional GET request.
      *
+<<<<<<< HEAD
      * @return bool    true if the response is validateable, false otherwise
+=======
+     * @return Boolean true if the response is validateable, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -640,7 +672,11 @@ class Response
      * When present, the TTL of the response should not be overridden to be
      * greater than the value provided by the origin.
      *
+<<<<<<< HEAD
      * @return bool    true if the response must be revalidated by a cache, false otherwise
+=======
+     * @return Boolean true if the response must be revalidated by a cache, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -683,7 +719,11 @@ class Response
     /**
      * Returns the age of the response.
      *
+<<<<<<< HEAD
      * @return int     The age of the response in seconds
+=======
+     * @return integer The age of the response in seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getAge()
     {
@@ -758,7 +798,11 @@ class Response
      * First, it checks for a s-maxage directive, then a max-age directive, and then it falls
      * back on an expires header. It returns null when no maximum age can be established.
      *
+<<<<<<< HEAD
      * @return int|null     Number of seconds
+=======
+     * @return integer|null Number of seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -775,6 +819,11 @@ class Response
         if (null !== $this->getExpires()) {
             return $this->getExpires()->format('U') - $this->getDate()->format('U');
         }
+<<<<<<< HEAD
+=======
+
+        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -782,7 +831,11 @@ class Response
      *
      * This methods sets the Cache-Control max-age directive.
      *
+<<<<<<< HEAD
      * @param int     $value Number of seconds
+=======
+     * @param integer $value Number of seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response
      *
@@ -800,7 +853,11 @@ class Response
      *
      * This methods sets the Cache-Control s-maxage directive.
      *
+<<<<<<< HEAD
      * @param int     $value Number of seconds
+=======
+     * @param integer $value Number of seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response
      *
@@ -822,7 +879,11 @@ class Response
      * When the responses TTL is <= 0, the response may not be served from cache without first
      * revalidating with the origin.
      *
+<<<<<<< HEAD
      * @return int|null     The TTL in seconds
+=======
+     * @return integer|null The TTL in seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -831,6 +892,11 @@ class Response
         if (null !== $maxAge = $this->getMaxAge()) {
             return $maxAge - $this->getAge();
         }
+<<<<<<< HEAD
+=======
+
+        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -838,7 +904,11 @@ class Response
      *
      * This method adjusts the Cache-Control/s-maxage directive.
      *
+<<<<<<< HEAD
      * @param int     $seconds Number of seconds
+=======
+     * @param integer $seconds Number of seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response
      *
@@ -856,7 +926,11 @@ class Response
      *
      * This method adjusts the Cache-Control/max-age directive.
      *
+<<<<<<< HEAD
      * @param int     $seconds Number of seconds
+=======
+     * @param integer $seconds Number of seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response
      *
@@ -923,7 +997,11 @@ class Response
      * Sets the ETag value.
      *
      * @param string|null $etag The ETag unique identifier or null to remove the header
+<<<<<<< HEAD
      * @param bool        $weak Whether you want a weak ETag or not
+=======
+     * @param Boolean     $weak Whether you want a weak ETag or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response
      *
@@ -1026,7 +1104,11 @@ class Response
     /**
      * Returns true if the response includes a Vary header.
      *
+<<<<<<< HEAD
      * @return bool    true if the response includes a Vary header, false otherwise
+=======
+     * @return Boolean true if the response includes a Vary header, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1060,7 +1142,11 @@ class Response
      * Sets the Vary header.
      *
      * @param string|array $headers
+<<<<<<< HEAD
      * @param bool         $replace Whether to replace the actual value of not (true by default)
+=======
+     * @param Boolean      $replace Whether to replace the actual value of not (true by default)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Response
      *
@@ -1082,7 +1168,11 @@ class Response
      *
      * @param Request $request A Request instance
      *
+<<<<<<< HEAD
      * @return bool    true if the Response validators match the Request, false otherwise
+=======
+     * @return Boolean true if the Response validators match the Request, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1111,7 +1201,11 @@ class Response
     /**
      * Is response invalid?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1123,7 +1217,11 @@ class Response
     /**
      * Is response informative?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1135,7 +1233,11 @@ class Response
     /**
      * Is response successful?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1147,7 +1249,11 @@ class Response
     /**
      * Is the response a redirect?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1159,7 +1265,11 @@ class Response
     /**
      * Is there a client error?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1171,7 +1281,11 @@ class Response
     /**
      * Was there a server side error?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1183,7 +1297,11 @@ class Response
     /**
      * Is the response OK?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1195,7 +1313,11 @@ class Response
     /**
      * Is the response forbidden?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1207,7 +1329,11 @@ class Response
     /**
      * Is the response a not found error?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1221,7 +1347,11 @@ class Response
      *
      * @param string $location
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -1233,13 +1363,21 @@ class Response
     /**
      * Is the response empty?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
     public function isEmpty()
     {
+<<<<<<< HEAD
         return in_array($this->statusCode, array(204, 304));
+=======
+        return in_array($this->statusCode, array(201, 204, 304));
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

@@ -30,7 +30,11 @@ namespace Symfony\Component\EventDispatcher;
 class Event
 {
     /**
+<<<<<<< HEAD
      * @var bool    Whether no further event listeners should be triggered
+=======
+     * @var Boolean Whether no further event listeners should be triggered
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $propagationStopped = false;
 
@@ -48,7 +52,11 @@ class Event
      * Returns whether further event listeners should be triggered.
      *
      * @see Event::stopPropagation
+<<<<<<< HEAD
      * @return bool    Whether propagation was already stopped for this event.
+=======
+     * @return Boolean Whether propagation was already stopped for this event.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

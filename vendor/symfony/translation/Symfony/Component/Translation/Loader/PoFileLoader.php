@@ -134,7 +134,11 @@ class PoFileLoader extends ArrayLoader implements LoaderInterface
                 $item['ids']['plural'] = substr($line, 14, -1);
             } elseif (substr($line, 0, 7) === 'msgstr[') {
                 $size = strpos($line, ']');
+<<<<<<< HEAD
                 $item['translated'][(int) substr($line, 7, 1)] = substr($line, $size + 3, -1);
+=======
+                $item['translated'][(integer) substr($line, 7, 1)] = substr($line, $size + 3, -1);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
             }
 
         }

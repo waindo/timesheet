@@ -163,7 +163,11 @@ EOF;
      *
      * @param string $text The last segment of the entered text
      *
+<<<<<<< HEAD
      * @return bool|array    A list of guessed strings or true
+=======
+     * @return Boolean|array A list of guessed strings or true
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private function autocompleter($text)
     {
@@ -219,7 +223,11 @@ EOF;
 
     public function setProcessIsolation($processIsolation)
     {
+<<<<<<< HEAD
         $this->processIsolation = (bool) $processIsolation;
+=======
+        $this->processIsolation = (Boolean) $processIsolation;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         if ($this->processIsolation && !class_exists('Symfony\\Component\\Process\\Process')) {
             throw new \RuntimeException('Unable to isolate processes as the Symfony Process Component is not installed.');

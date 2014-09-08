@@ -35,7 +35,11 @@ interface PasswordEncoderInterface
      * @param string $raw     A raw password
      * @param string $salt    The salt
      *
+<<<<<<< HEAD
      * @return bool    true if the password is valid, false otherwise
+=======
+     * @return Boolean true if the password is valid, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isPasswordValid($encoded, $raw, $salt);
 }

@@ -23,7 +23,11 @@ interface SessionInterface
     /**
      * Starts the session storage.
      *
+<<<<<<< HEAD
      * @return bool    True if session started.
+=======
+     * @return Boolean True if session started.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \RuntimeException If session fails to start.
      *
@@ -73,12 +77,20 @@ interface SessionInterface
      * Clears all session attributes and flashes and regenerates the
      * session and deletes the old session from persistence.
      *
+<<<<<<< HEAD
      * @param int     $lifetime Sets the cookie lifetime for the session cookie. A null value
+=======
+     * @param integer $lifetime Sets the cookie lifetime for the session cookie. A null value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                          will leave the system settings unchanged, 0 sets the cookie
      *                          to expire with browser session. Time is in seconds, and is
      *                          not a Unix timestamp.
      *
+<<<<<<< HEAD
      * @return bool    True if session invalidated, false if error.
+=======
+     * @return Boolean True if session invalidated, false if error.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -88,13 +100,22 @@ interface SessionInterface
      * Migrates the current session to a new session id while maintaining all
      * session attributes.
      *
+<<<<<<< HEAD
      * @param bool    $destroy  Whether to delete the old session or leave it to garbage collection.
      * @param int     $lifetime Sets the cookie lifetime for the session cookie. A null value
+=======
+     * @param Boolean $destroy  Whether to delete the old session or leave it to garbage collection.
+     * @param integer $lifetime Sets the cookie lifetime for the session cookie. A null value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *                          will leave the system settings unchanged, 0 sets the cookie
      *                          to expire with browser session. Time is in seconds, and is
      *                          not a Unix timestamp.
      *
+<<<<<<< HEAD
      * @return bool    True if session migrated, false if error.
+=======
+     * @return Boolean True if session migrated, false if error.
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -114,7 +135,11 @@ interface SessionInterface
      *
      * @param string $name The attribute name
      *
+<<<<<<< HEAD
      * @return bool    true if the attribute is defined, false otherwise
+=======
+     * @return Boolean true if the attribute is defined, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -179,7 +204,11 @@ interface SessionInterface
     /**
      * Checks if the session was started.
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isStarted();
 

@@ -23,7 +23,11 @@ class TagProcessorTest extends TestCase
         $tags = array(1, 2, 3);
         $processor = new TagProcessor($tags);
         $record = $processor($this->getRecord());
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $this->assertEquals($tags, $record['extra']['tags']);
     }
 }

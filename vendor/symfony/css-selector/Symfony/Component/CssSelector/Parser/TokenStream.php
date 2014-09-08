@@ -30,7 +30,11 @@ class TokenStream
     private $tokens = array();
 
     /**
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $frozen = false;
 
@@ -50,7 +54,11 @@ class TokenStream
     private $peeked = null;
 
     /**
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $peeking = false;
 
@@ -162,7 +170,11 @@ class TokenStream
         }
 
         if ($next->isDelimiter(array('*'))) {
+<<<<<<< HEAD
             return;
+=======
+            return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         throw SyntaxErrorException::unexpectedToken('identifier or "*"', $next);

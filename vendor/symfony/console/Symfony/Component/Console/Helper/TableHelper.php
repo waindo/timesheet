@@ -313,7 +313,11 @@ class TableHelper extends Helper
     /**
      * Sets cell padding type.
      *
+<<<<<<< HEAD
      * @param int     $padType STR_PAD_*
+=======
+     * @param integer $padType STR_PAD_*
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return TableHelper
      */
@@ -414,7 +418,11 @@ class TableHelper extends Helper
      * Renders table cell with padding.
      *
      * @param array   $row
+<<<<<<< HEAD
      * @param int     $column
+=======
+     * @param integer $column
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $cellFormat
      */
     private function renderCell(array $row, $column, $cellFormat)
@@ -457,7 +465,11 @@ class TableHelper extends Helper
     /**
      * Gets column width.
      *
+<<<<<<< HEAD
      * @param int     $column
+=======
+     * @param integer $column
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return int
      */
@@ -480,7 +492,11 @@ class TableHelper extends Helper
      * Gets cell width.
      *
      * @param array   $row
+<<<<<<< HEAD
      * @param int     $column
+=======
+     * @param integer $column
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return int
      */
@@ -511,7 +527,11 @@ class TableHelper extends Helper
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getName()
     {

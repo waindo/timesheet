@@ -34,7 +34,11 @@ class PhpProcess extends Process
      * @param string  $script  The PHP script to run (as a string)
      * @param string  $cwd     The working directory
      * @param array   $env     The environment variables
+<<<<<<< HEAD
      * @param int     $timeout The timeout in seconds
+=======
+     * @param integer $timeout The timeout in seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $options An array of options for proc_open
      *
      * @api

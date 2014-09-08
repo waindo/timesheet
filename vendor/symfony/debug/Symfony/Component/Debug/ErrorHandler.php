@@ -59,8 +59,13 @@ class ErrorHandler
     /**
      * Registers the error handler.
      *
+<<<<<<< HEAD
      * @param int  $level         The level at which the conversion to Exception is done (null to use the error_reporting() value and 0 to disable)
      * @param bool $displayErrors Display errors (for dev environment) or just log them (production usage)
+=======
+     * @param integer $level         The level at which the conversion to Exception is done (null to use the error_reporting() value and 0 to disable)
+     * @param Boolean $displayErrors Display errors (for dev environment) or just log them (production usage)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return ErrorHandler The registered error handler
      */
@@ -81,7 +86,11 @@ class ErrorHandler
     /**
      * Sets the level at which the conversion to Exception is done.
      *
+<<<<<<< HEAD
      * @param int|null     $level The level (null to use the error_reporting() value and 0 to disable)
+=======
+     * @param integer|null $level The level (null to use the error_reporting() value and 0 to disable)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setLevel($level)
     {
@@ -91,7 +100,11 @@ class ErrorHandler
     /**
      * Sets the display_errors flag value.
      *
+<<<<<<< HEAD
      * @param int     $displayErrors The display_errors flag value
+=======
+     * @param integer $displayErrors The display_errors flag value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setDisplayErrors($displayErrors)
     {

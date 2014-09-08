@@ -50,6 +50,7 @@ class SimpleFormAuthenticationListener extends AbstractAuthenticationListener
      *                                                                      successful, or failed authentication attempt
      * @param LoggerInterface                        $logger                A LoggerInterface instance
      * @param EventDispatcherInterface               $dispatcher            An EventDispatcherInterface instance
+<<<<<<< HEAD
      * @param CsrfTokenManagerInterface              $csrfTokenManager      A CsrfTokenManagerInterface instance
      * @param SimpleFormAuthenticatorInterface       $simpleAuthenticator   A SimpleFormAuthenticatorInterface instance
      *
@@ -57,6 +58,12 @@ class SimpleFormAuthenticationListener extends AbstractAuthenticationListener
      * @throws InvalidArgumentException  In case an invalid CSRF token manager is passed
      */
     public function __construct(SecurityContextInterface $securityContext, AuthenticationManagerInterface $authenticationManager, SessionAuthenticationStrategyInterface $sessionStrategy, HttpUtils $httpUtils, $providerKey, AuthenticationSuccessHandlerInterface $successHandler, AuthenticationFailureHandlerInterface $failureHandler, array $options = array(), LoggerInterface $logger = null, EventDispatcherInterface $dispatcher = null, $csrfTokenManager = null, SimpleFormAuthenticatorInterface $simpleAuthenticator = null)
+=======
+     * @param SimpleFormAuthenticatorInterface       $simpleAuthenticator   A SimpleFormAuthenticatorInterface instance
+     * @param CsrfTokenManagerInterface              $csrfTokenManager      A CsrfTokenManagerInterface instance
+     */
+    public function __construct(SecurityContextInterface $securityContext, AuthenticationManagerInterface $authenticationManager, SessionAuthenticationStrategyInterface $sessionStrategy, HttpUtils $httpUtils, $providerKey, AuthenticationSuccessHandlerInterface $successHandler, AuthenticationFailureHandlerInterface $failureHandler, array $options = array(), LoggerInterface $logger = null, EventDispatcherInterface $dispatcher = null, CsrfTokenManagerInterface $csrfTokenManager = null, SimpleFormAuthenticatorInterface $simpleAuthenticator = null)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     {
         if (!$simpleAuthenticator) {
             throw new \InvalidArgumentException('Missing simple authenticator');

@@ -56,7 +56,11 @@ class Esi
      *
      * @param Request $request A Request instance
      *
+<<<<<<< HEAD
      * @return bool    true if one surrogate has ESI/1.0 capability, false otherwise
+=======
+     * @return Boolean true if one surrogate has ESI/1.0 capability, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasSurrogateEsiCapability(Request $request)
     {
@@ -99,7 +103,11 @@ class Esi
      *
      * @param Response $response A Response instance
      *
+<<<<<<< HEAD
      * @return bool    true if the Response needs to be parsed, false otherwise
+=======
+     * @return Boolean true if the Response needs to be parsed, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function needsEsiParsing(Response $response)
     {
@@ -107,7 +115,11 @@ class Esi
             return false;
         }
 
+<<<<<<< HEAD
         return (bool) preg_match('#content="[^"]*ESI/1.0[^"]*"#', $control);
+=======
+        return (Boolean) preg_match('#content="[^"]*ESI/1.0[^"]*"#', $control);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -115,7 +127,11 @@ class Esi
      *
      * @param string  $uri          A URI
      * @param string  $alt          An alternate URI
+<<<<<<< HEAD
      * @param bool    $ignoreErrors Whether to ignore errors or not
+=======
+     * @param Boolean $ignoreErrors Whether to ignore errors or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param string  $comment      A comment to add as an esi:include tag
      *
      * @return string
@@ -185,7 +201,11 @@ class Esi
      * @param HttpCache $cache        An HttpCache instance
      * @param string    $uri          The main URI
      * @param string    $alt          An alternative URI
+<<<<<<< HEAD
      * @param bool      $ignoreErrors Whether to ignore errors or not
+=======
+     * @param Boolean   $ignoreErrors Whether to ignore errors or not
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string
      *

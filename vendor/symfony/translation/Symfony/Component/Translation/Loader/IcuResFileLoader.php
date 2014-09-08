@@ -36,12 +36,16 @@ class IcuResFileLoader implements LoaderInterface
             throw new NotFoundResourceException(sprintf('File "%s" not found.', $resource));
         }
 
+<<<<<<< HEAD
         try {
             $rb = new \ResourceBundle($locale, $resource);
         } catch (\Exception $e) {
             // HHVM compatibility: constructor throws on invalid resource
             $rb = null;
         }
+=======
+        $rb = new \ResourceBundle($locale, $resource);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
         if (!$rb) {
             throw new InvalidResourceException(sprintf('Cannot load resource "%s"', $resource));

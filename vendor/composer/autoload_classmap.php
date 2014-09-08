@@ -28,6 +28,7 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+<<<<<<< HEAD
     'CreateTCodes' => $baseDir . '/app/database/migrations/2014_06_27_040314_create_t_codes.php',
     'CreateTKryws' => $baseDir . '/app/database/migrations/2014_06_12_075543_create_t_kryws.php',
     'CreateTPrjcs' => $baseDir . '/app/database/migrations/2014_06_11_044955_create_t_prjcs.php',
@@ -35,6 +36,8 @@ return array(
     'CreateTSheds' => $baseDir . '/app/database/migrations/2014_06_10_085915_create_t_sheds.php',
     'CreateUserTable' => $baseDir . '/app/database/migrations/2014_06_16_130805_create_user_table.php',
     'CreateUsersGrups' => $baseDir . '/app/database/migrations/2014_06_26_191735_create_users_grups.php',
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
@@ -46,7 +49,10 @@ return array(
     'Crypt_Rijndael' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Rijndael.php',
     'Crypt_TripleDES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php',
     'Crypt_Twofish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php',
+<<<<<<< HEAD
     'DashboardController' => $baseDir . '/app/controllers/DashboardController.php',
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     'DatabaseSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'File_ANSI' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/ANSI.php',
     'File_ASN1' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
@@ -1617,6 +1623,7 @@ return array(
     'Symfony\\Component\\Translation\\Writer\\TranslationWriter' => $vendorDir . '/symfony/translation/Symfony/Component/Translation/Writer/TranslationWriter.php',
     'System_SSH_Agent' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH_Agent.php',
     'System_SSH_Agent_Identity' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH_Agent.php',
+<<<<<<< HEAD
     'TCodes' => $baseDir . '/app/models/TCodes.php',
     'TCodesController' => $baseDir . '/app/controllers/TCodesController.php',
     'TKryws' => $baseDir . '/app/models/TKryws.php',
@@ -1628,6 +1635,10 @@ return array(
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
     'UserController' => $baseDir . '/app/controllers/UserController.php',
+=======
+    'TestCase' => $baseDir . '/app/tests/TestCase.php',
+    'User' => $baseDir . '/app/models/User.php',
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
     'Whoops\\Exception\\Frame' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Frame.php',
     'Whoops\\Exception\\FrameCollection' => $vendorDir . '/filp/whoops/src/Whoops/Exception/FrameCollection.php',

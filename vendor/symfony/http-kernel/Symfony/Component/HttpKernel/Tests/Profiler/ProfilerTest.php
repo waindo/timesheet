@@ -19,22 +19,43 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ProfilerTest extends \PHPUnit_Framework_TestCase
 {
+<<<<<<< HEAD
     private $tmp;
     private $storage;
 
     public function testCollect()
     {
+=======
+    public function testCollect()
+    {
+        if (!class_exists('SQLite3') && (!class_exists('PDO') || !in_array('sqlite', \PDO::getAvailableDrivers()))) {
+            $this->markTestSkipped('This test requires SQLite support in your environment');
+        }
+
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $request = new Request();
         $request->query->set('foo', 'bar');
         $response = new Response();
         $collector = new RequestDataCollector();
 
+<<<<<<< HEAD
         $profiler = new Profiler($this->storage);
+=======
+        $tmp = tempnam(sys_get_temp_dir(), 'sf2_profiler');
+        if (file_exists($tmp)) {
+            @unlink($tmp);
+        }
+        $storage = new SqliteProfilerStorage('sqlite:'.$tmp);
+        $storage->purge();
+
+        $profiler = new Profiler($storage);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         $profiler->add($collector);
         $profile = $profiler->collect($request, $response);
 
         $profile = $profiler->loadProfile($profile->getToken());
         $this->assertEquals(array('foo' => 'bar'), $profiler->get('request')->getRequestQuery()->all());
+<<<<<<< HEAD
     }
 
     public function testFindWorksWithDates()
@@ -83,5 +104,9 @@ class ProfilerTest extends \PHPUnit_Framework_TestCase
         $this->storage = null;
 
         @unlink($this->tmp);
+=======
+
+        @unlink($tmp);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 }

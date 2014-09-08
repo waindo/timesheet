@@ -25,7 +25,11 @@ class ConsoleTerminateEvent extends ConsoleEvent
     /**
      * The exit code of the command.
      *
+<<<<<<< HEAD
      * @var int
+=======
+     * @var integer
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $exitCode;
 
@@ -39,7 +43,11 @@ class ConsoleTerminateEvent extends ConsoleEvent
     /**
      * Sets the exit code.
      *
+<<<<<<< HEAD
      * @param int     $exitCode The command exit code
+=======
+     * @param integer $exitCode The command exit code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setExitCode($exitCode)
     {
@@ -49,7 +57,11 @@ class ConsoleTerminateEvent extends ConsoleEvent
     /**
      * Gets the exit code.
      *
+<<<<<<< HEAD
      * @return int     The command exit code
+=======
+     * @return integer The command exit code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getExitCode()
     {

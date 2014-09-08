@@ -298,11 +298,18 @@ class RequestDataCollector extends DataCollector implements EventSubscriberInter
             } elseif ($expires instanceof \DateTime) {
                 $expires = $expires->getTimestamp();
             } else {
+<<<<<<< HEAD
                 $tmp = strtotime($expires);
                 if (false === $tmp || -1 == $tmp) {
                     throw new \InvalidArgumentException(sprintf('The "expires" cookie parameter is not valid (%s).', $expires));
                 }
                 $expires = $tmp;
+=======
+                $expires = strtotime($expires);
+                if (false === $expires || -1 == $expires) {
+                    throw new \InvalidArgumentException(sprintf('The "expires" cookie parameter is not valid.', $expires));
+                }
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
             }
 
             $cookie .= '; expires='.str_replace('+0000', '', \DateTime::createFromFormat('U', $expires, new \DateTimeZone('GMT'))->format('D, d-M-Y H:i:s T'));

@@ -149,7 +149,11 @@ class InputDefinition
     /**
      * Returns an InputArgument by name or by position.
      *
+<<<<<<< HEAD
      * @param string|int     $name The InputArgument name or position
+=======
+     * @param string|integer $name The InputArgument name or position
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return InputArgument An InputArgument object
      *
@@ -171,9 +175,15 @@ class InputDefinition
     /**
      * Returns true if an InputArgument object exists by name or position.
      *
+<<<<<<< HEAD
      * @param string|int     $name The InputArgument name or position
      *
      * @return bool    true if the InputArgument object exists, false otherwise
+=======
+     * @param string|integer $name The InputArgument name or position
+     *
+     * @return Boolean true if the InputArgument object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -199,7 +209,11 @@ class InputDefinition
     /**
      * Returns the number of InputArguments.
      *
+<<<<<<< HEAD
      * @return int     The number of InputArguments
+=======
+     * @return integer The number of InputArguments
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getArgumentCount()
     {
@@ -209,7 +223,11 @@ class InputDefinition
     /**
      * Returns the number of required InputArguments.
      *
+<<<<<<< HEAD
      * @return int     The number of required InputArguments
+=======
+     * @return integer The number of required InputArguments
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function getArgumentRequiredCount()
     {
@@ -315,7 +333,11 @@ class InputDefinition
      *
      * @param string $name The InputOption name
      *
+<<<<<<< HEAD
      * @return bool    true if the InputOption object exists, false otherwise
+=======
+     * @return Boolean true if the InputOption object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -341,7 +363,11 @@ class InputDefinition
      *
      * @param string $name The InputOption shortcut
      *
+<<<<<<< HEAD
      * @return bool    true if the InputOption object exists, false otherwise
+=======
+     * @return Boolean true if the InputOption object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasShortcut($name)
     {
@@ -436,7 +462,11 @@ class InputDefinition
     /**
      * Returns an XML representation of the InputDefinition.
      *
+<<<<<<< HEAD
      * @param bool    $asDom Whether to return a DOM or an XML string
+=======
+     * @param Boolean $asDom Whether to return a DOM or an XML string
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return string|\DOMDocument An XML string representing the InputDefinition
      *

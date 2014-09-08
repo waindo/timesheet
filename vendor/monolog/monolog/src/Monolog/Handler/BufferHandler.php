@@ -28,7 +28,10 @@ class BufferHandler extends AbstractHandler
     protected $bufferLimit;
     protected $flushOnOverflow;
     protected $buffer = array();
+<<<<<<< HEAD
     protected $initialized = false;
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 
     /**
      * @param HandlerInterface $handler         Handler.
@@ -43,6 +46,12 @@ class BufferHandler extends AbstractHandler
         $this->handler = $handler;
         $this->bufferLimit = (int) $bufferLimit;
         $this->flushOnOverflow = $flushOnOverflow;
+<<<<<<< HEAD
+=======
+
+        // __destructor() doesn't get called on Fatal errors
+        register_shutdown_function(array($this, 'close'));
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -54,12 +63,15 @@ class BufferHandler extends AbstractHandler
             return false;
         }
 
+<<<<<<< HEAD
         if (!$this->initialized) {
             // __destructor() doesn't get called on Fatal errors
             register_shutdown_function(array($this, 'close'));
             $this->initialized = true;
         }
 
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         if ($this->bufferLimit > 0 && $this->bufferSize === $this->bufferLimit) {
             if ($this->flushOnOverflow) {
                 $this->flush();

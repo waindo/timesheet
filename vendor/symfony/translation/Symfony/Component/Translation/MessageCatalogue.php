@@ -253,6 +253,11 @@ class MessageCatalogue implements MessageCatalogueInterface, MetadataAwareInterf
                 return $this->metadata[$domain][$key];
             }
         }
+<<<<<<< HEAD
+=======
+
+        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**

@@ -107,7 +107,11 @@ class Crawler extends \SplObjectStorage
 
         // DOM only for HTML/XML content
         if (!preg_match('/(x|ht)ml/i', $type, $xmlMatches)) {
+<<<<<<< HEAD
             return;
+=======
+            return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         }
 
         $charset = null;
@@ -294,7 +298,11 @@ class Crawler extends \SplObjectStorage
     /**
      * Returns a node given its position in the node list.
      *
+<<<<<<< HEAD
      * @param int     $position The position
+=======
+     * @param integer $position The position
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return Crawler A new instance of the Crawler with the selected node, or an empty Crawler if it does not exist.
      *
@@ -808,7 +816,11 @@ class Crawler extends \SplObjectStorage
     }
 
     /**
+<<<<<<< HEAD
      * @param int     $position
+=======
+     * @param integer $position
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @return \DOMElement|null
      */
@@ -820,6 +832,11 @@ class Crawler extends \SplObjectStorage
             }
         // @codeCoverageIgnoreStart
         }
+<<<<<<< HEAD
+=======
+
+        return null;
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
         // @codeCoverageIgnoreEnd
     }
 

@@ -36,8 +36,13 @@ interface OutputInterface
      * Writes a message to the output.
      *
      * @param string|array $messages The message as an array of lines or a single string
+<<<<<<< HEAD
      * @param bool         $newline  Whether to add a newline
      * @param int          $type     The type of output (one of the OUTPUT constants)
+=======
+     * @param Boolean      $newline  Whether to add a newline
+     * @param integer      $type     The type of output (one of the OUTPUT constants)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException When unknown output type is given
      *
@@ -49,7 +54,11 @@ interface OutputInterface
      * Writes a message to the output and adds a newline at the end.
      *
      * @param string|array $messages The message as an array of lines of a single string
+<<<<<<< HEAD
      * @param int          $type     The type of output (one of the OUTPUT constants)
+=======
+     * @param integer      $type     The type of output (one of the OUTPUT constants)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException When unknown output type is given
      *
@@ -60,7 +69,11 @@ interface OutputInterface
     /**
      * Sets the verbosity of the output.
      *
+<<<<<<< HEAD
      * @param int     $level The level of verbosity (one of the VERBOSITY constants)
+=======
+     * @param integer $level The level of verbosity (one of the VERBOSITY constants)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -69,7 +82,11 @@ interface OutputInterface
     /**
      * Gets the current verbosity of the output.
      *
+<<<<<<< HEAD
      * @return int     The current level of verbosity (one of the VERBOSITY constants)
+=======
+     * @return integer The current level of verbosity (one of the VERBOSITY constants)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -78,7 +95,11 @@ interface OutputInterface
     /**
      * Sets the decorated flag.
      *
+<<<<<<< HEAD
      * @param bool    $decorated Whether to decorate the messages
+=======
+     * @param Boolean $decorated Whether to decorate the messages
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */
@@ -87,7 +108,11 @@ interface OutputInterface
     /**
      * Gets the decorated flag.
      *
+<<<<<<< HEAD
      * @return bool    true if the output will decorate messages, false otherwise
+=======
+     * @return Boolean true if the output will decorate messages, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @api
      */

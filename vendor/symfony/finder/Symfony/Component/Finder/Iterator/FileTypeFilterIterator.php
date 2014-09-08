@@ -27,7 +27,11 @@ class FileTypeFilterIterator extends FilterIterator
      * Constructor.
      *
      * @param \Iterator $iterator The Iterator to filter
+<<<<<<< HEAD
      * @param int       $mode     The mode (self::ONLY_FILES or self::ONLY_DIRECTORIES)
+=======
+     * @param integer   $mode     The mode (self::ONLY_FILES or self::ONLY_DIRECTORIES)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function __construct(\Iterator $iterator, $mode)
     {
@@ -39,7 +43,11 @@ class FileTypeFilterIterator extends FilterIterator
     /**
      * Filters the iterator values.
      *
+<<<<<<< HEAD
      * @return bool    true if the value should be kept, false otherwise
+=======
+     * @return Boolean true if the value should be kept, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function accept()
     {

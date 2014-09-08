@@ -81,7 +81,11 @@ class Token
     }
 
     /**
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isFileEnd()
     {
@@ -91,7 +95,11 @@ class Token
     /**
      * @param array $values
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isDelimiter(array $values = array())
     {
@@ -107,7 +115,11 @@ class Token
     }
 
     /**
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isWhitespace()
     {
@@ -115,7 +127,11 @@ class Token
     }
 
     /**
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isIdentifier()
     {
@@ -123,7 +139,11 @@ class Token
     }
 
     /**
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isHash()
     {
@@ -131,7 +151,11 @@ class Token
     }
 
     /**
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isNumber()
     {
@@ -139,7 +163,11 @@ class Token
     }
 
     /**
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isString()
     {

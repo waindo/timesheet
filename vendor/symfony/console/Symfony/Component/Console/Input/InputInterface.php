@@ -33,7 +33,11 @@ interface InputInterface
      *
      * @param string|array $values The values to look for in the raw parameters (can be an array)
      *
+<<<<<<< HEAD
      * @return bool    true if the value is contained in the raw parameters
+=======
+     * @return Boolean true if the value is contained in the raw parameters
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasParameterOption($values);
 
@@ -95,9 +99,15 @@ interface InputInterface
     /**
      * Returns true if an InputArgument object exists by name or position.
      *
+<<<<<<< HEAD
      * @param string|int     $name The InputArgument name or position
      *
      * @return bool    true if the InputArgument object exists, false otherwise
+=======
+     * @param string|integer $name The InputArgument name or position
+     *
+     * @return Boolean true if the InputArgument object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasArgument($name);
 
@@ -121,7 +131,11 @@ interface InputInterface
      * Sets an option value by name.
      *
      * @param string         $name  The option name
+<<<<<<< HEAD
      * @param string|bool    $value The option value
+=======
+     * @param string|boolean $value The option value
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      *
      * @throws \InvalidArgumentException When option given doesn't exist
      */
@@ -132,21 +146,33 @@ interface InputInterface
      *
      * @param string $name The InputOption name
      *
+<<<<<<< HEAD
      * @return bool    true if the InputOption object exists, false otherwise
+=======
+     * @return Boolean true if the InputOption object exists, false otherwise
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function hasOption($name);
 
     /**
      * Is this input means interactive?
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function isInteractive();
 
     /**
      * Sets the input interactivity.
      *
+<<<<<<< HEAD
      * @param bool    $interactive If the input should be interactive
+=======
+     * @param Boolean $interactive If the input should be interactive
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function setInteractive($interactive);
 }

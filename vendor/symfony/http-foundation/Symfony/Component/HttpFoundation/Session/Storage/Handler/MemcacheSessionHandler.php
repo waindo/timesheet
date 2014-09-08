@@ -24,7 +24,11 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     private $memcache;
 
     /**
+<<<<<<< HEAD
      * @var int     Time to live in seconds
+=======
+     * @var integer Time to live in seconds
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $ttl;
 
@@ -59,7 +63,11 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function open($savePath, $sessionName)
     {
@@ -67,7 +75,11 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function close()
     {
@@ -75,7 +87,11 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function read($sessionId)
     {
@@ -83,7 +99,11 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function write($sessionId, $data)
     {
@@ -91,7 +111,11 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function destroy($sessionId)
     {
@@ -99,9 +123,15 @@ class MemcacheSessionHandler implements \SessionHandlerInterface
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
      */
     public function gc($maxlifetime)
+=======
+     * {@inheritDoc}
+     */
+    public function gc($lifetime)
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     {
         // not required here because memcache will auto expire the records anyhow.
         return true;

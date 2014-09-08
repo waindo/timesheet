@@ -31,7 +31,11 @@ class JsonResponse extends Response
      * Constructor.
      *
      * @param mixed   $data    The response data
+<<<<<<< HEAD
      * @param int     $status  The response status code
+=======
+     * @param integer $status  The response status code
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      * @param array   $headers An array of response headers
      */
     public function __construct($data = null, $status = 200, $headers = array())
@@ -45,7 +49,11 @@ class JsonResponse extends Response
     }
 
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * {@inheritDoc}
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public static function create($data = null, $status = 200, $headers = array())
     {

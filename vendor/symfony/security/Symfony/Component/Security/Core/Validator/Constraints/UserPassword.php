@@ -15,7 +15,10 @@ use Symfony\Component\Validator\Constraint;
 
 /**
  * @Annotation
+<<<<<<< HEAD
  * @Target({"PROPERTY", "METHOD", "ANNOTATION"})
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
  */
 class UserPassword extends Constraint
 {

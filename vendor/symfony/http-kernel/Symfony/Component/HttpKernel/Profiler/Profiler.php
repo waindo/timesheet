@@ -40,7 +40,11 @@ class Profiler
     private $logger;
 
     /**
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     private $enabled = true;
 
@@ -105,7 +109,11 @@ class Profiler
      *
      * @param Profile $profile A Profile instance
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function saveProfile(Profile $profile)
     {
@@ -175,11 +183,33 @@ class Profiler
      *
      * @return array An array of tokens
      *
+<<<<<<< HEAD
      * @see http://php.net/manual/en/datetime.formats.php for the supported date/time formats
      */
     public function find($ip, $url, $limit, $method, $start, $end)
     {
         return $this->storage->find($ip, $url, $limit, $method, $this->getTimestamp($start), $this->getTimestamp($end));
+=======
+     * @see http://fr2.php.net/manual/en/datetime.formats.php for the supported date/time formats
+     */
+    public function find($ip, $url, $limit, $method, $start, $end)
+    {
+        if ('' != $start && null !== $start) {
+            $start = new \DateTime($start);
+            $start = $start->getTimestamp();
+        } else {
+            $start = null;
+        }
+
+        if ('' != $end && null !== $end) {
+            $end = new \DateTime($end);
+            $end = $end->getTimestamp();
+        } else {
+            $end = null;
+        }
+
+        return $this->storage->find($ip, $url, $limit, $method, $start, $end);
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
     }
 
     /**
@@ -253,7 +283,11 @@ class Profiler
      *
      * @param string $name A collector name
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return Boolean
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
      */
     public function has($name)
     {
@@ -277,6 +311,7 @@ class Profiler
 
         return $this->collectors[$name];
     }
+<<<<<<< HEAD
 
     private function getTimestamp($value)
     {
@@ -292,4 +327,6 @@ class Profiler
 
         return $value->getTimestamp();
     }
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
 }

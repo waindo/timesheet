@@ -15,7 +15,10 @@ namespace Symfony\Component\Routing\Annotation;
  * Annotation class for @Route().
  *
  * @Annotation
+<<<<<<< HEAD
  * @Target({"CLASS", "METHOD"})
+=======
+>>>>>>> c742c5d59814f58a71be789c21c15cbbb3ca2887
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
