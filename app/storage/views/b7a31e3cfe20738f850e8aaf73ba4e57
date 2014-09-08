@@ -1,0 +1,31 @@
+
+<?php $__env->startSection('content'); ?>
+<section class="container">
+ <table class="table table-bordered table-hover">
+ <thead>
+    <tr>
+	   <th>Codes Heads</th>
+       <th>Codes Codes</th>
+       <th>Codes Desc 1</th>
+	   <th>Codes Desc 2</th>
+	   <th>Codes Status</th>
+	   <th>Actions</th> <td><?php echo HTML::link('formcodes', 'ADD', array('class' => 'btn btn-primary')); ?></td>
+    </tr>
+	</thead>
+	<tbody>
+    <?php foreach($codesdata as $tcodes): ?>
+      <tr>
+		<td><?php echo $tcodes->codesHeads; ?></td> 
+         <td><?php echo $tcodes->codesCodes; ?></td>
+         <td><?php echo $tcodes->codesDesc1; ?></td>
+		 <td><?php echo $tcodes->codesDesc2; ?></td>
+		 <td><?php echo $tcodes->codesStats; ?></td>
+         <td><?php echo link_to_action('TCodesController@edit', 'edit', array($tcodes->id)); ?> | 
+		 <?php echo link_to_action('TCodesController@confirm', 'delete', array($tcodes->id)); ?></td>
+      </tr>
+    <?php endforeach; ?>
+	</tbody>
+ </table>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultlist', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

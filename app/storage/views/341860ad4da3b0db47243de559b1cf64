@@ -1,0 +1,36 @@
+
+<?php $__env->startSection('content'); ?>
+
+<section class="container">
+<?php echo Form::open(array('url' => 'listsheds')); ?>
+
+ <table class="table table-bordered table-hover">
+ <thead>
+
+    <tr>
+	  
+       <th>Tanggal</th>
+       <th>Kegiatan</th>
+	   <th>Actions</th>
+	    <td> <?php echo HTML::link('formtimesheet', 'ADD', array('class' => 'btn btn-primary')); ?></td>
+	   
+	   
+       
+    </tr>
+	</thead>
+	<tbody>
+    <?php foreach($shedsdata as $tsheds): ?>
+      <tr>
+	   
+         <td><?php echo $tsheds->shedsTnggl; ?></td>
+         <td><?php echo $tsheds->shedsKgtan; ?></td>
+         <td><?php echo link_to_action('TShedsController@edit', 'edit', array($tsheds->id)); ?> | 
+		 <?php echo link_to_action('TShedsController@confirm', 'delete', array($tsheds->id)); ?> </td>
+      </tr>
+    <?php endforeach; ?>
+	</tbody>
+ </table>
+</section>
+ <?php echo Form::close(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultlist', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

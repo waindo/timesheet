@@ -1,0 +1,33 @@
+
+<?php $__env->startSection('content'); ?>
+
+<!doctype html>
+
+	<div class="container login">
+			<h1>Login</h1>
+ <?php if(Session::has('pesan_error')): ?>
+   <div class="alert alert-danger"><?php echo Session::get('pesan_error'); ?></div>
+ <?php endif; ?>
+ 
+  <?php if(Session::has('pesan')): ?>
+<?php echo Session::get('pesan'); ?>
+
+<?php endif; ?>
+
+
+
+<?php echo Form::open(array('action' => 'UserController@authenticate')); ?>
+<?php echo Form::label('email', 'Email'); ?>
+<?php echo Form::text('email', '', array('class' => 'form-control', 'maxlenght' => 20 ,'placeholder'=> 'email')); ?>
+<?php echo Form::label('password', 'Password'); ?>
+<?php echo Form::password('password', array('class' => 'form-control' ,'placeholder'=> 'password')); ?></br>
+<?php echo Form::submit('Login', array('class' => 'btn btn-success')); ?> 
+<?php echo HTML::link('register','Register', array('class' => 'btn btn-primary')); ?>
+<?php echo Form::close(); ?>
+					
+<?php echo Form::close(); ?>
+					
+					</div>
+
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultlogin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

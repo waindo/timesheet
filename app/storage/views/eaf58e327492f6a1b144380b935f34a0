@@ -1,0 +1,18 @@
+
+<?php $__env->startSection('content'); ?>
+<section class="container">
+ <table class="table">
+    <tr>
+       <th>Tanggal</th>
+       <th>Kegiatan</th>
+    </tr>
+    <?php foreach($shedsdata as $tsheds): ?>
+      <tr>
+         <td><?php echo $tsheds->shedsTnggl; ?></td>
+         <td><?php echo $tsheds->shedsKgtan; ?></td>
+      </tr>
+    <?php endforeach; ?>
+ </table>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaulttimesheet', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

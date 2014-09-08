@@ -1,0 +1,1 @@
+<div class="center" "fixed"><?php echo HTML::background('/assets/img/intro-bg.png'); ?> </div>

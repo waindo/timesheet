@@ -1,0 +1,27 @@
+<?php $__env->startSection('content'); ?> 
+  <div class="container"> <h2>Register</h2> 
+
+  <?php if(Session::has('pesan')): ?>
+  <div class="alert alert-success"><?php echo Session::get('pesan'); ?></div>
+  <?php endif; ?>
+
+<?php echo Form::open(array('action' => 'UserController@store')); ?>
+ 
+   <?php echo Form::label('nik', 'NIK'); ?> 
+  <?php echo Form::text('krywsNkywn', '', array('class' => 'form-control')); ?> 
+  <?php echo $errors->first('krywsNkywn', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+  <?php echo Form::label('email', 'Email'); ?> 
+  <?php echo Form::text('email', '', array('class' => 'form-control')); ?> 
+  <?php echo $errors->first('email', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+  <?php echo Form::label('password', 'Password'); ?> 
+  <?php echo Form::password('password', array('class' => 'form-control')); ?> 
+  <?php echo $errors->first('password', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+  <br>    
+  <?php echo Form::submit('Register', array('class' => 'btn btn-success')); ?> 
+    <?php echo HTML::link('/','Login', array('class' => 'btn btn-danger')); ?> 
+ <?php echo Form::close(); ?> </div> <?php $__env->stopSection(); ?>
+ 
+	<footer class="row">
+		<?php echo $__env->make('includes.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			<div id="modal" class="modal hide fade" aria-hidden="true" data-backdrop="static"></div>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 

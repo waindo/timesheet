@@ -1,0 +1,57 @@
+
+<?php $__env->startSection('content'); ?>
+
+<div class='container'>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <?php echo HTML::link('codeslist','Back to list', array('class' => 'btn btn-danger')); ?> 
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div align="center"><h3>Edit Codes</h3></div>
+
+  <?php echo Form::open(array('action' => 'TCodesController@update')); ?>
+
+ <?php echo Form::hidden('id', $tcodes->id); ?>
+
+<?php echo Form::label('codesheads', 'Codes Heads'); ?></br>
+ <?php echo Form::text('codesHeads',$tcodes->codesHeads, array('class' => 'form-control','placeholder' => 'Codes Heads')); ?></br>
+ <?php echo $errors->first('codesHeads', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+ <?php echo Form::label('codescodes', 'Codes Codes'); ?></br>
+ <?php echo Form::text('codesCodes',$tcodes->codescodes, array('class' => 'form-control','placeholder' => 'Codes Codes')); ?></br>
+<?php echo $errors->first('codesCodes', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+  <?php echo Form::label('codesdesc1', 'Codes Desc 1'); ?></br>
+ <?php echo Form::textarea('codesDesc1',$tcodes->codesDesc1, array('class' => 'form-control','placeholder' => 'Codes Desc 1')); ?></br>
+ <?php echo $errors->first('codesDesc1', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+  <?php echo Form::label('codesdesc2', 'Codes Desc 2'); ?></br>
+ <?php echo Form::textarea('codesDesc2',$tcodes->codesDesc2, array('class' => 'form-control','placeholder' => 'Codes Desc 2')); ?></br>
+ <?php echo $errors->first('codesDesc2', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+ <?php echo Form::label('codesstats', 'Codes Status'); ?></br>
+ <?php echo Form::select('codesStats', array('0' => '0','1' => '1'),'0'); ?></br>
+<?php echo $errors->first('codesStats', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ <?php echo Form::submit('Update', array('class' => 'btn btn-primary')); ?> 
+<?php echo Form::reset('Cancel',array('class' => 'btn btn-primary')); ?>
+ <?php echo Form::close(); ?>
+
+ </div>
+
+ <?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

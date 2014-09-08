@@ -1,0 +1,71 @@
+
+<?php $__env->startSection('content'); ?>
+
+<div class='container'>
+
+<h3>TAMBAH KARYAWAN</h3>
+
+ <?php echo Form::open(array('action' => 'TKrywsController@store')); ?>
+
+ <?php echo Form::label('Nik', 'NIK'); ?>
+
+ <?php echo Form::text('krywsNkywn', '', array('class' => 'form-control','placeholder' => 'Nik')); ?></br>
+<?php echo $errors->first('krywsNkywn', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+
+ <?php echo Form::label('nama', 'Nama'); ?>
+
+ <?php echo Form::text('krywsNames', '', array('class' => 'form-control','placeholder' => 'nama')); ?></br>
+<?php echo $errors->first('krywsNames', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ <?php echo Form::label('tempatlahir', 'Tempat Lahir'); ?>
+
+ <?php echo Form::text('krywsTmlhr', '', array('class' => 'form-control','placeholder' => 'tempatlahir')); ?></br>
+<?php echo $errors->first('krywsTmlhr', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ <?php echo Form::label('tanggallahir', 'Tanggal Lahir'); ?>
+
+ <?php echo Form::input('date','krywsTglhr', '', array('class' => 'form-control','placeholder' => 'tanggallahir')); ?></br>
+<?php echo $errors->first('krywsTglhr', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ <?php echo Form::label('kelamin', 'Jenis Kelamin'); ?></br>
+ <?php echo Form::select('krywsJnskl', array('P' => 'pria','W' => 'wanita'),'P'); ?></br> </br>
+ <?php echo $errors->first('krywsJnskl', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ <?php echo Form::label('agama', 'Agama'); ?> </br>
+ <?php echo Form::select('krywsAgama', array('I' => 'islam','K' => 'kristen'),'I'); ?></br> </br>
+<?php echo $errors->first('krywsAgama', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+  <?php echo Form::label('alamat', 'Alamat'); ?> </br>
+ <?php echo Form::text('krywsAlmat', '', array('class' => 'form-control','placeholder' => 'alamat')); ?></br>
+ <?php echo $errors->first('krywsAlmat', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ 
+ <?php echo Form::label('hp', 'No hp'); ?> </br>
+ <?php echo Form::text('krywsNomhp', '', array('class' => 'form-control','placeholder' => 'hp')); ?></br>
+ <?php echo $errors->first('krywsNomhp', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+<?php echo Form::label('tahunmasuk', 'Tahun Masuk'); ?> </br>
+ <?php echo Form::text('krywsThnms', '', array('class' => 'form-control','placeholder' => 'tahunmasuk')); ?></br>
+ <?php echo $errors->first('krywsThnms', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ 
+<?php echo Form::label('divisi', 'Divisi'); ?> </br>
+ <?php echo Form::select('krywsDvisi', array('it' => 'IT','gis' => 'GIS'),'gis'); ?></br></br>
+ <?php echo $errors->first('krywsDvisi', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+<?php echo Form::label('jabatan', 'Jabatan'); ?> </br>
+ <?php echo Form::select('krywsJabat', array('mngr' => 'Manager','kryw' => 'Karyawan'),'kryw'); ?></br>
+<?php echo $errors->first('JABATAN', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+ 
+</br>
+ <?php echo Form::submit('Submit', array('class' => 'btn btn-primary')); ?>
+  <?php echo Form::reset('Cancel', array('class' => 'btn btn-primary')); ?> 
+
+ <?php echo Form::close(); ?>
+
+ </div>
+
+ <?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultkaryawan', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

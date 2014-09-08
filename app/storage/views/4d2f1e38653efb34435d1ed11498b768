@@ -1,0 +1,25 @@
+
+<?php $__env->startSection('content'); ?>
+<section class="container">
+ <table class="table">
+    <tr>
+       <th>Project</th>
+       <th>Instansi</th>
+	   <th>Tahun</th>
+	  
+	   <th>Actions</th> <td><?php echo HTML::link('formproject', 'ADD', array('class' => 'btn btn-primary')); ?></td>
+    </tr>
+    <?php foreach($prjcsdata as $tprjcs): ?>
+      <tr> 
+         <td><?php echo $tprjcs->prjcsNames; ?></td>
+         <td><?php echo $tprjcs->prjcsInsta; ?></td>
+		 <td><?php echo $tprjcs->prjcsYears; ?></td>
+         <td><?php echo link_to_action('TPrjcsController@edit', 'edit', array($tprjcs->id)); ?> | 
+		 <?php echo link_to_action('TPrjcsController@confirm', 'delete', array($tprjcs->id)); ?></td>
+		 
+		 </tr>
+    <?php endforeach; ?>
+ </table>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultlist', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

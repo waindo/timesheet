@@ -1,0 +1,30 @@
+
+<?php $__env->startSection('content'); ?>
+
+<div class='container'>
+
+<h3>ISI TIMESHEET</h3>
+
+<?php echo Form::open(array('action' => 'TShetdController@store')); ?>
+
+ <?php echo Form::label('tanggal', 'Tanggal'); ?>
+ 
+ 
+<?php echo Form::input('date', 'shetdTnggl', null, ['class' => 'form-control', 'placeholder' => 'Date']); ?>
+
+
+
+ <?php echo Form::label('kegiatan', 'Kegiatan'); ?>
+
+ <?php echo Form::textarea('shetdKgtan', '', array('class' => 'form-control','placeholder' => 'Isi kegiatan anda')); ?></br>
+
+</br>
+ <?php echo Form::submit('Submit', array('class' => 'btn btn-primary')); ?>
+  <?php echo Form::submit('Cancel', array('class' => 'btn btn-primary')); ?>
+
+ <?php echo Form::close(); ?>
+
+ </div>
+
+ <?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

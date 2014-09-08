@@ -1,0 +1,66 @@
+<script type="text/javascript">
+	/*var url_home = '<?php echo route('home'); ?>';
+
+	var url_data_buku = '<?php echo route('data_buku'); ?>';
+	var url_urut_buku = '<?php echo route('urut_buku'); ?>';
+	var url_cari_buku = '<?php echo route('cari_buku'); ?>';
+	var url_cover_buku = '<?php echo route('cover_buku'); ?>';
+	var url_tambah_buku = '<?php echo route('tambah_buku'); ?>';
+	var url_rubah_buku = '<?php echo route('rubah_buku'); ?>';
+	var url_hapus_buku = '<?php echo route('hapus_buku'); ?>';
+	var url_hapus_ceklis_buku = '<?php echo route('hapus_ceklis_buku'); ?>';
+	var url_pdf_buku = '<?php echo route('pdf_buku'); ?>';
+	var url_excel_buku = '<?php echo route('excel_buku'); ?>';
+
+	var url_data_siswa = '<?php echo route('data_siswa'); ?>';
+	var url_urut_siswa = '<?php echo route('urut_siswa'); ?>';
+	var url_cari_siswa = '<?php echo route('cari_siswa'); ?>';
+	var url_foto_siswa = '<?php echo route('foto_siswa'); ?>';
+	var url_tambah_siswa = '<?php echo route('tambah_siswa'); ?>';
+	var url_rubah_siswa = '<?php echo route('rubah_siswa'); ?>';
+	var url_hapus_siswa = '<?php echo route('hapus_siswa'); ?>';
+	var url_hapus_ceklis_siswa = '<?php echo route('hapus_ceklis_siswa'); ?>';
+	var url_pdf_siswa = '<?php echo route('pdf_siswa'); ?>';
+	var url_excel_siswa = '<?php echo route('excel_siswa'); ?>';
+
+	var url_data_peminjaman = '<?php echo route('data_peminjaman'); ?>';
+	var url_tampil_peminjaman = '<?php echo route('tampil_peminjaman'); ?>';
+	var url_cari_peminjaman = '<?php echo route('cari_peminjaman'); ?>';
+	var url_tambah_peminjaman = '<?php echo route('tambah_peminjaman'); ?>';
+	var url_rubah_peminjaman = '<?php echo route('rubah_peminjaman'); ?>';
+	var url_kembalikan_peminjaman = '<?php echo route('kembalikan_peminjaman'); ?>';
+	var url_hapus_peminjaman = '<?php echo route('hapus_peminjaman'); ?>';
+	var url_hapus_ceklis_peminjaman = '<?php echo route('hapus_ceklis_peminjaman'); ?>';
+	var url_pdf_peminjaman = '<?php echo route('pdf_peminjaman'); ?>';
+	var url_excel_peminjaman = '<?php echo route('excel_peminjaman'); ?>';
+
+	var url_data_pengembalian = '<?php echo route('data_pengembalian'); ?>';
+	var url_tampil_pengembalian = '<?php echo route('tampil_pengembalian'); ?>';
+	var url_cari_pengembalian = '<?php echo route('cari_pengembalian'); ?>';
+	var url_pdf_pengembalian = '<?php echo route('pdf_pengembalian'); ?>';
+	var url_excel_pengembalian = '<?php echo route('excel_pengembalian'); ?>';
+
+	var url_grafik = '<?php echo route('grafik'); ?>';
+
+	var url_data_pengguna = '<?php echo route('data_pengguna'); ?>';
+	var url_tambah_pengguna = '<?php echo route('tambah_pengguna'); ?>';
+	var url_rubah_pengguna = '<?php echo route('rubah_pengguna'); ?>';
+	var url_foto_pengguna = '<?php echo route('foto_pengguna'); ?>';
+	var url_hapus_pengguna = '<?php echo route('hapus_pengguna'); ?>';
+	var url_hapus_ceklis_pengguna = '<?php echo route('hapus_ceklis_pengguna'); ?>';
+	var url_pdf_pengguna = '<?php echo route('pdf_pengguna'); ?>';
+	var url_excel_pengguna = '<?php echo route('excel_pengguna'); ?>';
+
+	var url_backup = '<?php echo route('backup'); ?>';
+	var url_restore = '<?php echo route('restore'); ?>';
+
+	var url_rubah_foto = '<?php echo route('rubah_foto'); ?>';
+	var url_rubah_nama = '<?php echo route('rubah_nama'); ?>';
+	var url_rubah_sekolah = '<?php echo route('rubah_sekolah'); ?>';
+	var url_rubah_username = '<?php echo route('rubah_username'); ?>';
+	var url_rubah_password = '<?php echo route('rubah_password'); ?>';
+	var url_login = '<?php echo route('login'); ?>';*/
+	var url_logout = '<?php echo route('logout'); ?>';
+	
+	var token = '<?php echo csrf_token(); ?>';
+</script>

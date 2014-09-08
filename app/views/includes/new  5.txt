@@ -1,0 +1,4 @@
+Bikin crud codes, join dengan user pakai users_grups.
+post smua codes ke dropdown menu.
+
+gunakan belongsTo dan hasmany.

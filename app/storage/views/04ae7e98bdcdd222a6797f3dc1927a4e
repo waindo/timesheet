@@ -1,0 +1,1 @@
+<div class="background-100% background"><?php echo HTML::background('/assets/img/header.png'); ?>

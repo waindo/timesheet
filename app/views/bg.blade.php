@@ -1,0 +1,1 @@
+<div class="background-100% background">{{HTML::background('/assets/img/header.png')}}

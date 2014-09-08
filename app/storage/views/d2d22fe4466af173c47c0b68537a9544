@@ -1,0 +1,30 @@
+
+<?php $__env->startSection('content'); ?>
+<section class="container">
+ <table class="table">
+    <tr>
+       <th>Nama</th>
+       <th>NIK</th>
+	   <th>Divisi</th>
+	   <th>Jabatan</th>
+	   	   <th>Actions</th> <td><?php echo HTML::link('formkaryawan', 'ADD', array('class' => 'btn btn-primary')); ?></td>
+	   
+       
+    </tr>
+
+    <?php foreach($krywsdata as $tkryws): ?>
+      <tr>
+         <td><?php echo $tkryws->krywsNames; ?></td>
+         <td><?php echo $tkryws->krywsNkywn; ?></td>
+		 <td> <?php echo $tkryws->krywsDvisi; ?></td>
+         <td><?php echo $tkryws->krywsJabat; ?></td>
+		 <td><?php echo link_to_action('TKrywsController@edit', 'edit', array($tkryws->id)); ?> | 
+		 <?php echo link_to_action('TKrywsController@confirm', 'delete', array($tkryws->id)); ?> </td>
+		
+		 
+      </tr>
+    <?php endforeach; ?>
+ </table>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultlist', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

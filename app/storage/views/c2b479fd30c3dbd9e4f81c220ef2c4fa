@@ -1,0 +1,39 @@
+
+<?php $__env->startSection('content'); ?>
+
+<div class='container'>
+
+<h3>TAMBAH CODES</h3>
+
+  <?php echo Form::open(array('action' => 'TCodesController@store')); ?> 
+
+ <?php echo Form::label('heads', 'Heads'); ?>
+ <?php echo Form::text('codesHeads', '', array('class' => 'form-control','placeholder' => 'Heads')); ?></br>
+ <?php echo $errors->first('codesHeads', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+ <?php echo Form::label('codes', 'Codes'); ?>
+ <?php echo Form::text('codesCodes', '', array('class' => 'form-control','placeholder' => 'Codes')); ?></br>
+<?php echo $errors->first('codesCodes', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+ <?php echo Form::label('desc1', 'Desc 1'); ?>
+ <?php echo Form::textarea('codesDesc1', '', array('class' => 'form-control')); ?>
+ <?php echo $errors->first('codesDesc1', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+ <?php echo Form::label('desc2', 'Desc 2'); ?>
+ <?php echo Form::textarea('codesDesc2', '', array('class' => 'form-control')); ?>
+ <?php echo $errors->first('codesDesc2', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+ <?php echo Form::label('stats', 'Status'); ?> </br>
+  <?php echo Form::select('codesStats', array('1' => '1','0' => '0'),'1'); ?></br>
+ <?php echo $errors->first('codesStats', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+ 
+</br>
+ <?php echo Form::submit('Submit', array('class' => 'btn btn-primary')); ?>
+  <?php echo Form::reset('Cancel', array('class' => 'btn btn-primary')); ?></br>
+
+ <?php echo Form::close(); ?>
+
+ </div>
+
+ <?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultkaryawan', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

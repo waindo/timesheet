@@ -1,0 +1,19 @@
+
+<?php $__env->startSection('content'); ?>
+
+<div class='container'>
+
+<div align='center'>
+<?php echo Form::open(array('action' => 'TPrjcsController@delete')); ?>
+Anda ingin menghapus data tersebut ? </br>
+
+ <?php echo link_to_action('TPrjcsController@delete', 'Yes', array($tprjcs->id)); ?> </td>
+ 
+<?php echo HTML::link('prjcslist', 'No', array('class' => 'btn btn-primary')); ?></td>
+
+ <?php echo Form::close(); ?>
+</div>
+ </div>
+</br>
+ <?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

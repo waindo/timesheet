@@ -1,0 +1,39 @@
+
+<?php $__env->startSection('content'); ?>
+
+<div class='container'>
+
+<h3>TAMBAH PROJECT</h3>
+
+
+<?php echo Form::open(array('action' => 'TPrjcsController@store')); ?>
+
+ 
+ <?php echo Form::label('project', 'Project'); ?>
+ <?php echo Form::text('prjcsNames', '', array('class' => 'form-control','placeholder' => 'project')); ?></br>
+ <?php echo $errors->first('prjcsNames', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+
+ 
+ <?php echo Form::label('instansi', 'Instansi'); ?></br>
+ <?php echo Form::select('prjcsInsta', $tcodes, Input::old('codes')); ?></br>
+ <?php echo $errors->first('prjcsInsta', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+
+
+ <?php echo Form::label('tahun', 'Tahun'); ?></br>
+ <?php echo Form::text('prjcsYears', '', array('class' => 'form-control','placeholder' => 'tahun')); ?></br>
+ <?php echo $errors->first('prjcsYears', '<div class="alert alert-danger"><b>:message</b></div>'); ?>
+
+
+ 
+</br>
+ <?php echo Form::submit('Submit', array('class' => 'btn btn-primary')); ?>
+    <?php echo Form::reset('Cancel', array('class' => 'btn btn-primary')); ?> 
+
+ <?php echo Form::close(); ?>
+
+ </div>
+
+ <?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.defaultproject', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
